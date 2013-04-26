@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		324EF3E7172A9F0500246733 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3E6172A9F0500246733 /* UIKit.framework */; };
+		324EF3E9172A9F0500246733 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3E8172A9F0500246733 /* Foundation.framework */; };
+		324EF3EB172A9F0500246733 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3EA172A9F0500246733 /* CoreGraphics.framework */; };
+		324EF3F1172A9F0500246733 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 324EF3EF172A9F0500246733 /* InfoPlist.strings */; };
+		324EF3F3172A9F0500246733 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF3F2172A9F0500246733 /* main.m */; };
+		324EF3F7172A9F0500246733 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF3F6172A9F0500246733 /* AppDelegate.m */; };
+		324EF3F9172A9F0500246733 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 324EF3F8172A9F0500246733 /* Default.png */; };
+		324EF3FB172A9F0500246733 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 324EF3FA172A9F0500246733 /* Default@2x.png */; };
+		324EF3FD172A9F0500246733 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 324EF3FC172A9F0500246733 /* Default-568h@2x.png */; };
+		324EF400172A9F0600246733 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324EF3FE172A9F0500246733 /* MainStoryboard.storyboard */; };
+		324EF403172A9F0600246733 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF402172A9F0600246733 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		324EF3E3172A9F0500246733 /* Guess Who.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess Who.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		324EF3E6172A9F0500246733 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		324EF3E8172A9F0500246733 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		324EF3EA172A9F0500246733 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		324EF3EE172A9F0500246733 /* Guess Who-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Guess Who-Info.plist"; sourceTree = "<group>"; };
+		324EF3F0172A9F0500246733 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		324EF3F2172A9F0500246733 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		324EF3F4172A9F0500246733 /* Guess Who-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Guess Who-Prefix.pch"; sourceTree = "<group>"; };
+		324EF3F5172A9F0500246733 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		324EF3F6172A9F0500246733 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		324EF3F8172A9F0500246733 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		324EF3FA172A9F0500246733 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		324EF3FC172A9F0500246733 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		324EF3FF172A9F0600246733 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		324EF401172A9F0600246733 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		324EF402172A9F0600246733 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		324EF3E0172A9F0500246733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324EF3E7172A9F0500246733 /* UIKit.framework in Frameworks */,
+				324EF3E9172A9F0500246733 /* Foundation.framework in Frameworks */,
+				324EF3EB172A9F0500246733 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		324EF3DA172A9F0500246733 = {
+			isa = PBXGroup;
+			children = (
+				324EF3EC172A9F0500246733 /* Guess Who */,
+				324EF3E5172A9F0500246733 /* Frameworks */,
+				324EF3E4172A9F0500246733 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		324EF3E4172A9F0500246733 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				324EF3E3172A9F0500246733 /* Guess Who.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		324EF3E5172A9F0500246733 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				324EF3E6172A9F0500246733 /* UIKit.framework */,
+				324EF3E8172A9F0500246733 /* Foundation.framework */,
+				324EF3EA172A9F0500246733 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		324EF3EC172A9F0500246733 /* Guess Who */ = {
+			isa = PBXGroup;
+			children = (
+				324EF3F5172A9F0500246733 /* AppDelegate.h */,
+				324EF3F6172A9F0500246733 /* AppDelegate.m */,
+				324EF3FE172A9F0500246733 /* MainStoryboard.storyboard */,
+				324EF401172A9F0600246733 /* ViewController.h */,
+				324EF402172A9F0600246733 /* ViewController.m */,
+				324EF3ED172A9F0500246733 /* Supporting Files */,
+			);
+			path = "Guess Who";
+			sourceTree = "<group>";
+		};
+		324EF3ED172A9F0500246733 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				324EF3EE172A9F0500246733 /* Guess Who-Info.plist */,
+				324EF3EF172A9F0500246733 /* InfoPlist.strings */,
+				324EF3F2172A9F0500246733 /* main.m */,
+				324EF3F4172A9F0500246733 /* Guess Who-Prefix.pch */,
+				324EF3F8172A9F0500246733 /* Default.png */,
+				324EF3FA172A9F0500246733 /* Default@2x.png */,
+				324EF3FC172A9F0500246733 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		324EF3E2172A9F0500246733 /* Guess Who */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 324EF406172A9F0600246733 /* Build configuration list for PBXNativeTarget "Guess Who" */;
+			buildPhases = (
+				324EF3DF172A9F0500246733 /* Sources */,
+				324EF3E0172A9F0500246733 /* Frameworks */,
+				324EF3E1172A9F0500246733 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Guess Who";
+			productName = "Guess Who";
+			productReference = 324EF3E3172A9F0500246733 /* Guess Who.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		324EF3DB172A9F0500246733 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Dima;
+			};
+			buildConfigurationList = 324EF3DE172A9F0500246733 /* Build configuration list for PBXProject "Guess Who" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 324EF3DA172A9F0500246733;
+			productRefGroup = 324EF3E4172A9F0500246733 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				324EF3E2172A9F0500246733 /* Guess Who */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		324EF3E1172A9F0500246733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324EF3F1172A9F0500246733 /* InfoPlist.strings in Resources */,
+				324EF3F9172A9F0500246733 /* Default.png in Resources */,
+				324EF3FB172A9F0500246733 /* Default@2x.png in Resources */,
+				324EF3FD172A9F0500246733 /* Default-568h@2x.png in Resources */,
+				324EF400172A9F0600246733 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		324EF3DF172A9F0500246733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324EF3F3172A9F0500246733 /* main.m in Sources */,
+				324EF3F7172A9F0500246733 /* AppDelegate.m in Sources */,
+				324EF403172A9F0600246733 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		324EF3EF172A9F0500246733 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				324EF3F0172A9F0500246733 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		324EF3FE172A9F0500246733 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				324EF3FF172A9F0600246733 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		324EF404172A9F0600246733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		324EF405172A9F0600246733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		324EF407172A9F0600246733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Guess Who/Guess Who-Prefix.pch";
+				INFOPLIST_FILE = "Guess Who/Guess Who-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		324EF408172A9F0600246733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Guess Who/Guess Who-Prefix.pch";
+				INFOPLIST_FILE = "Guess Who/Guess Who-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		324EF3DE172A9F0500246733 /* Build configuration list for PBXProject "Guess Who" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324EF404172A9F0600246733 /* Debug */,
+				324EF405172A9F0600246733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		324EF406172A9F0600246733 /* Build configuration list for PBXNativeTarget "Guess Who" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324EF407172A9F0600246733 /* Debug */,
+				324EF408172A9F0600246733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 324EF3DB172A9F0500246733 /* Project object */;
+}
