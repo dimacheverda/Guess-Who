@@ -16,8 +16,12 @@
 		324EF3F9172A9F0500246733 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 324EF3F8172A9F0500246733 /* Default.png */; };
 		324EF3FB172A9F0500246733 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 324EF3FA172A9F0500246733 /* Default@2x.png */; };
 		324EF3FD172A9F0500246733 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 324EF3FC172A9F0500246733 /* Default-568h@2x.png */; };
-		324EF400172A9F0600246733 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324EF3FE172A9F0500246733 /* MainStoryboard.storyboard */; };
-		324EF403172A9F0600246733 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF402172A9F0600246733 /* ViewController.m */; };
+		324EF414172A9FC900246733 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324EF413172A9FC900246733 /* MainStoryboard.storyboard */; };
+		324EF415172AA0AA00246733 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF40A172A9FB100246733 /* MainMenuViewController.m */; };
+		324EF416172AA0AE00246733 /* PlaySession.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF40C172A9FB100246733 /* PlaySession.m */; };
+		324EF417172AA0B100246733 /* PlaySessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF40E172A9FB100246733 /* PlaySessionViewController.m */; };
+		324EF418172AA0B500246733 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF410172A9FB100246733 /* Question.m */; };
+		324EF419172AA0B800246733 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF412172A9FB100246733 /* SummaryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +38,17 @@
 		324EF3F8172A9F0500246733 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		324EF3FA172A9F0500246733 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		324EF3FC172A9F0500246733 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		324EF3FF172A9F0600246733 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		324EF401172A9F0600246733 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		324EF402172A9F0600246733 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		324EF409172A9FB100246733 /* MainMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		324EF40A172A9FB100246733 /* MainMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		324EF40B172A9FB100246733 /* PlaySession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaySession.h; sourceTree = "<group>"; };
+		324EF40C172A9FB100246733 /* PlaySession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaySession.m; sourceTree = "<group>"; };
+		324EF40D172A9FB100246733 /* PlaySessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaySessionViewController.h; sourceTree = "<group>"; };
+		324EF40E172A9FB100246733 /* PlaySessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaySessionViewController.m; sourceTree = "<group>"; };
+		324EF40F172A9FB100246733 /* Question.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		324EF410172A9FB100246733 /* Question.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		324EF411172A9FB100246733 /* SummaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
+		324EF412172A9FB100246733 /* SummaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
+		324EF413172A9FC900246733 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +95,17 @@
 		324EF3EC172A9F0500246733 /* Guess Who */ = {
 			isa = PBXGroup;
 			children = (
-				324EF3F5172A9F0500246733 /* AppDelegate.h */,
-				324EF3F6172A9F0500246733 /* AppDelegate.m */,
-				324EF3FE172A9F0500246733 /* MainStoryboard.storyboard */,
-				324EF401172A9F0600246733 /* ViewController.h */,
-				324EF402172A9F0600246733 /* ViewController.m */,
+				324EF413172A9FC900246733 /* MainStoryboard.storyboard */,
+				324EF409172A9FB100246733 /* MainMenuViewController.h */,
+				324EF40A172A9FB100246733 /* MainMenuViewController.m */,
+				324EF40B172A9FB100246733 /* PlaySession.h */,
+				324EF40C172A9FB100246733 /* PlaySession.m */,
+				324EF40D172A9FB100246733 /* PlaySessionViewController.h */,
+				324EF40E172A9FB100246733 /* PlaySessionViewController.m */,
+				324EF40F172A9FB100246733 /* Question.h */,
+				324EF410172A9FB100246733 /* Question.m */,
+				324EF411172A9FB100246733 /* SummaryViewController.h */,
+				324EF412172A9FB100246733 /* SummaryViewController.m */,
 				324EF3ED172A9F0500246733 /* Supporting Files */,
 			);
 			path = "Guess Who";
@@ -96,6 +114,8 @@
 		324EF3ED172A9F0500246733 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				324EF3F5172A9F0500246733 /* AppDelegate.h */,
+				324EF3F6172A9F0500246733 /* AppDelegate.m */,
 				324EF3EE172A9F0500246733 /* Guess Who-Info.plist */,
 				324EF3EF172A9F0500246733 /* InfoPlist.strings */,
 				324EF3F2172A9F0500246733 /* main.m */,
@@ -162,7 +182,7 @@
 				324EF3F9172A9F0500246733 /* Default.png in Resources */,
 				324EF3FB172A9F0500246733 /* Default@2x.png in Resources */,
 				324EF3FD172A9F0500246733 /* Default-568h@2x.png in Resources */,
-				324EF400172A9F0600246733 /* MainStoryboard.storyboard in Resources */,
+				324EF414172A9FC900246733 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +195,11 @@
 			files = (
 				324EF3F3172A9F0500246733 /* main.m in Sources */,
 				324EF3F7172A9F0500246733 /* AppDelegate.m in Sources */,
-				324EF403172A9F0600246733 /* ViewController.m in Sources */,
+				324EF415172AA0AA00246733 /* MainMenuViewController.m in Sources */,
+				324EF416172AA0AE00246733 /* PlaySession.m in Sources */,
+				324EF417172AA0B100246733 /* PlaySessionViewController.m in Sources */,
+				324EF418172AA0B500246733 /* Question.m in Sources */,
+				324EF419172AA0B800246733 /* SummaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +212,6 @@
 				324EF3F0172A9F0500246733 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		324EF3FE172A9F0500246733 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				324EF3FF172A9F0600246733 /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
