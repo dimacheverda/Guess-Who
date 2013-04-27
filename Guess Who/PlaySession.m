@@ -14,11 +14,15 @@
 
 @implementation PlaySession
 
-- (id)init
+- (id)initWithQuestionsCount:(NSUInteger)count
 {
     if (self) {
         self.currentQuestionIndex = 0;
-        [self addQuestion];
+        for (int i = 0; i < count; i++) {
+            [self addQuestion];
+            self.currentQuestionIndex++;
+        }
+        self.currentQuestionIndex = 0;
     }
     return self;
 }
@@ -26,7 +30,7 @@
 - (void)nextQuestion
 {
     ++self.currentQuestionIndex;
-    [self addQuestion];
+//    [self addQuestion];
 }
 
 - (NSInteger)score

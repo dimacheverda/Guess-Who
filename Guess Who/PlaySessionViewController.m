@@ -36,7 +36,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
-    self.playSession = [[PlaySession alloc] init];
+    self.playSession = [[PlaySession alloc] initWithQuestionsCount:4];
     [self loadQuestion];
 }
 

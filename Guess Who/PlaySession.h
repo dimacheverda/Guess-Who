@@ -16,6 +16,7 @@
 @property (nonatomic, strong) NSString* selectedAnswerString;
 @property (nonatomic) NSInteger score;
 
+- (id)initWithQuestionsCount:(NSUInteger)count;
 - (void)nextQuestion;
 - (void)checkAnswer;
 
