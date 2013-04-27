@@ -16,6 +16,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 
+
+- (IBAction)answerButtonTouchDown;
+
 @end
 
 @implementation PlaySessionViewController
@@ -59,6 +62,14 @@
     
     self.progressView.progress = self.playSession.currentQuestionIndex / 4.0;
     self.currentQuestionIndexLabel.text = [NSString stringWithFormat:@"%d/10", (self.playSession.currentQuestionIndex + 1)];
+}
+
+- (IBAction)answerButtonTouchDown
+{
+    [self.answerOne setHighlighted:NO];
+    [self.answerTwo setHighlighted:NO];
+    [self.answerThree setHighlighted:NO];
+    [self.answerFour setHighlighted:NO];
 }
 
 - (void)highlightButton:(UIButton *)button

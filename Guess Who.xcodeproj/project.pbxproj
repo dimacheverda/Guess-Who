@@ -21,7 +21,7 @@
 		324EF416172AA0AE00246733 /* PlaySession.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF40C172A9FB100246733 /* PlaySession.m */; };
 		324EF417172AA0B100246733 /* PlaySessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF40E172A9FB100246733 /* PlaySessionViewController.m */; };
 		324EF418172AA0B500246733 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF410172A9FB100246733 /* Question.m */; };
-		324EF419172AA0B800246733 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF412172A9FB100246733 /* SummaryViewController.m */; };
+		324EF41A172AAA9600246733 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF412172A9FB100246733 /* SummaryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,10 +98,10 @@
 				324EF413172A9FC900246733 /* MainStoryboard.storyboard */,
 				324EF409172A9FB100246733 /* MainMenuViewController.h */,
 				324EF40A172A9FB100246733 /* MainMenuViewController.m */,
-				324EF40B172A9FB100246733 /* PlaySession.h */,
-				324EF40C172A9FB100246733 /* PlaySession.m */,
 				324EF40D172A9FB100246733 /* PlaySessionViewController.h */,
 				324EF40E172A9FB100246733 /* PlaySessionViewController.m */,
+				324EF40B172A9FB100246733 /* PlaySession.h */,
+				324EF40C172A9FB100246733 /* PlaySession.m */,
 				324EF40F172A9FB100246733 /* Question.h */,
 				324EF410172A9FB100246733 /* Question.m */,
 				324EF411172A9FB100246733 /* SummaryViewController.h */,
@@ -199,7 +199,7 @@
 				324EF416172AA0AE00246733 /* PlaySession.m in Sources */,
 				324EF417172AA0B100246733 /* PlaySessionViewController.m in Sources */,
 				324EF418172AA0B500246733 /* Question.m in Sources */,
-				324EF419172AA0B800246733 /* SummaryViewController.m in Sources */,
+				324EF41A172AAA9600246733 /* SummaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
