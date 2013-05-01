@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>question</key>
+		<string>Who is 44th USA president?</string>
+		<key>answer</key>
+		<string>Barack Obama</string>
+		<key>variants</key>
+		<array>
+			<string>Bill Clinton</string>
+			<string>Bill Gates</string>
+			<string>Barack Obama</string>
+			<string>George Bush</string>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Who invented electricity?</string>
+		<key>answer</key>
+		<string>Tomas Edison</string>
+		<key>variants</key>
+		<array>
+			<string>Thomas Edison</string>
+			<string>Nicola Tesla</string>
+			<string>Henry Ford</string>
+			<string>William Wright</string>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Who played Batman in all &apos;Batman&apos; movies?</string>
+		<key>answer</key>
+		<string>Christian Bale</string>
+		<key>variants</key>
+		<array>
+			<string>Hugh Jackman</string>
+			<string>Chrisitan Bale</string>
+			<string>Jason Statham</string>
+			<string>Chris Pine</string>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Who developed &apos;Family Guy&apos;?</string>
+		<key>answer</key>
+		<string>Seth MacFarlane</string>
+		<key>variants</key>
+		<array>
+			<string>Seth Green</string>
+			<string>Chery Chevapravadrumrong</string>
+			<string>Seth MacFarlane</string>
+			<string>Mathew Grooening</string>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Who developed assembly line</string>
+		<key>answer</key>
+		<string>Henry Ford</string>
+		<key>variants</key>
+		<array>
+			<string>Henry Ford</string>
+			<string>William Bentley</string>
+			<string>Joseph Henry</string>
+			<string>Eli Whitney</string>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Who was one of Microsoft co-founder?</string>
+		<key>answer</key>
+		<string>Paul Allen</string>
+		<key>variants</key>
+		<array>
+			<string>Steve Wozniac</string>
+			<string>Paul Allen</string>
+			<string>Steve Balmer</string>
+			<string>Jonathan Ive</string>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Who was author of the U.S. Declaration of Independence</string>
+		<key>answer</key>
+		<string>Thomas Jefferson</string>
+		<key>variants</key>
+		<array>
+			<string>George Washington</string>
+			<string>Abraham Lincoln</string>
+			<string>William Harrison</string>
+			<string>Thomas Jefferson</string>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Who discovered penicillin?</string>
+		<key>answer</key>
+		<string>Alexander Fleming</string>
+		<key>variants</key>
+		<array>
+			<string>Mary Anning</string>
+			<string>Charles Darwin</string>
+			<string>Erwin Chargaff</string>
+			<string>Alexander Fleming</string>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Who is USA president?</string>
+		<key>answer</key>
+		<string>Barack Obama</string>
+		<key>variants</key>
+		<array>
+			<string>Bill Clinton</string>
+			<string>Bill Gates</string>
+			<string>Barack Obama</string>
+			<string>George Bush</string>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Who is USA president?</string>
+		<key>answer</key>
+		<string>Barack Obama</string>
+		<key>variants</key>
+		<array>
+			<string>Bill Clinton</string>
+			<string>Bill Gates</string>
+			<string>Barack Obama</string>
+			<string>George Bush</string>
+		</array>
+	</dict>
+</array>
+</plist>
