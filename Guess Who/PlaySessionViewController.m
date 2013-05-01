@@ -55,13 +55,38 @@
     
     Question *question = [self.playSession.questions objectAtIndex:self.playSession.currentQuestionIndex];
     self.questionLabel.text = question.question;
-    [self.answerOne setTitle:[question.variants objectAtIndex:0] forState:UIControlStateNormal];
-    [self.answerTwo setTitle:[question.variants objectAtIndex:1] forState:UIControlStateNormal];
-    [self.answerThree setTitle:[question.variants objectAtIndex:2] forState:UIControlStateNormal];
-    [self.answerFour setTitle:[question.variants objectAtIndex:3] forState:UIControlStateNormal];
+    
+    [self shuffleAnswers:question.variants];
     
     self.progressView.progress = self.playSession.currentQuestionIndex / 4.0;
     self.currentQuestionIndexLabel.text = [NSString stringWithFormat:@"%d/10", (self.playSession.currentQuestionIndex + 1)];
+}
+
+- (void)shuffleAnswers:(NSArray *)variants
+{
+    NSMutableArray *used = [[NSMutableArray alloc] initWithObjects:@0, @0, @0, @0, nil];
+    int index = arc4random() % 4;
+    
+    [self.answerOne setTitle:[variants objectAtIndex:index] forState:UIControlStateNormal];
+    [used replaceObjectAtIndex:index withObject:@1];
+
+    while ([[used objectAtIndex:index] isEqual:@1]) {
+        index = arc4random() % 4;
+    }
+    [self.answerTwo setTitle:[variants objectAtIndex:index] forState:UIControlStateNormal];
+    [used replaceObjectAtIndex:index withObject:@1];
+    
+    while ([[used objectAtIndex:index] isEqual:@1]) {
+        index = arc4random() % 4;
+    }
+    [self.answerThree setTitle:[variants objectAtIndex:index] forState:UIControlStateNormal];
+    [used replaceObjectAtIndex:index withObject:@1];
+    
+    while ([[used objectAtIndex:index] isEqual:@1]) {
+        index = arc4random() % 4;
+    }
+    [self.answerFour setTitle:[variants objectAtIndex:index] forState:UIControlStateNormal];
+    [used replaceObjectAtIndex:index withObject:@1];
 }
 
 - (IBAction)answerButtonTouchDown

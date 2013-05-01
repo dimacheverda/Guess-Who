@@ -30,7 +30,6 @@
 - (void)nextQuestion
 {
     ++self.currentQuestionIndex;
-//    [self addQuestion];
 }
 
 - (NSInteger)score
