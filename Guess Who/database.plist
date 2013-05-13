@@ -108,28 +108,28 @@
 	</dict>
 	<dict>
 		<key>question</key>
-		<string>Who is USA president?</string>
+		<string>Who said: &apos;To be or not to be&apos;?</string>
 		<key>answer</key>
-		<string>Barack Obama</string>
+		<string>William Shakespear</string>
 		<key>variants</key>
 		<array>
-			<string>Bill Clinton</string>
-			<string>Bill Gates</string>
-			<string>Barack Obama</string>
-			<string>George Bush</string>
+			<string>William Shakespear</string>
+			<string>Jack London</string>
+			<string>Paulo Coelho</string>
+			<string>Franz Kafka</string>
 		</array>
 	</dict>
 	<dict>
 		<key>question</key>
-		<string>Who is USA president?</string>
+		<string>Who created james Bond charecter i n1953</string>
 		<key>answer</key>
-		<string>Barack Obama</string>
+		<string>Ian Fleming</string>
 		<key>variants</key>
 		<array>
-			<string>Bill Clinton</string>
-			<string>Bill Gates</string>
-			<string>Barack Obama</string>
-			<string>George Bush</string>
+			<string>John Gardner</string>
+			<string>Ian Fleming</string>
+			<string>William Boyd</string>
+			<string>Sebastian Faulks</string>
 		</array>
 	</dict>
 </array>
