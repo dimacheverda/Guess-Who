@@ -10,4 +10,6 @@
 
 @interface MainMenuViewController : UIViewController
 
+@property (nonatomic, strong) NSMutableDictionary *database;
+
 @end
