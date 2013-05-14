@@ -35,8 +35,7 @@
     NSString *errorDesc = nil;
     NSPropertyListFormat format;
     NSString *plistPath;
-    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
-                                                              NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     plistPath = [rootPath stringByAppendingPathComponent:@"database.plist"];
     NSLog(@"path: %@",plistPath);
     if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
