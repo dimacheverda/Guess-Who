@@ -13,8 +13,7 @@
 @property (nonatomic, strong) NSString *question;
 @property (nonatomic, strong) NSString *answer;
 @property (nonatomic, strong) NSArray *variants;
-@property (nonatomic) NSUInteger completition;
 
-- (id)init:(NSUInteger)questionIndex;
+- (id)initWithQuestionID:(NSUInteger)questionID fromQuestionDatabase:(NSArray *)questionDatabase;
 
 @end

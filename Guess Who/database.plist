@@ -8,7 +8,7 @@
 	<array>
 		<dict>
 			<key>question</key>
-			<string>Who created james Bond charecter i n1953</string>
+			<string>Who created james Bond charecter in 1953?</string>
 			<key>answer</key>
 			<string>Ian Fleming</string>
 			<key>variants</key>
@@ -47,7 +47,7 @@
 		</dict>
 		<dict>
 			<key>question</key>
-			<string>Who was author of the U.S. Declaration of Independence</string>
+			<string>Who was author of the U.S. Declaration of Independence?</string>
 			<key>answer</key>
 			<string>Thomas Jefferson</string>
 			<key>variants</key>
@@ -73,7 +73,7 @@
 		</dict>
 		<dict>
 			<key>question</key>
-			<string>Who developed assembly line</string>
+			<string>Who developed assembly line?</string>
 			<key>answer</key>
 			<string>Henry Ford</string>
 			<key>variants</key>

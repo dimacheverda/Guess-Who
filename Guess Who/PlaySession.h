@@ -11,12 +11,13 @@
 
 @interface PlaySession : NSObject
 
-@property (nonatomic, strong) NSMutableArray *questions;
+@property (nonatomic, strong) NSMutableArray *questionDatabase;
+@property (nonatomic, strong) Question *currentQuestion;
 @property (nonatomic) NSUInteger currentQuestionIndex;
 @property (nonatomic, strong) NSString* selectedAnswerString;
 @property (nonatomic) NSInteger score;
 
-- (id)initWithQuestionsCount:(NSUInteger)count;
+- (id)initWithQuestionsDatabase:(NSMutableArray *)questionDatabase;
 - (void)nextQuestion;
 - (void)checkAnswer;
 

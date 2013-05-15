@@ -12,12 +12,8 @@
 @interface PlaySessionViewController : UIViewController
 
 @property (nonatomic, strong) PlaySession *playSession;
+@property (nonatomic ,strong) NSMutableArray *questionDatabase;
 
 @property (weak, nonatomic) IBOutlet UILabel *questionLabel;
-@property (weak, nonatomic) IBOutlet UIButton *answerOne;
-@property (weak, nonatomic) IBOutlet UIButton *answerTwo;
-@property (weak, nonatomic) IBOutlet UIButton *answerThree;
-@property (weak, nonatomic) IBOutlet UIButton *answerFour;
-@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 
 @end

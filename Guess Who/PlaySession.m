@@ -10,26 +10,48 @@
 
 @interface PlaySession ()
 
+@property (nonatomic, strong) NSMutableSet *usedQuestionsID;
+
 @end
 
 @implementation PlaySession
 
-- (id)initWithQuestionsCount:(NSUInteger)count
+- (id)initWithQuestionsDatabase:(NSMutableArray *)questionDatabase
 {
     if (self) {
-        self.currentQuestionIndex = 0;
-        for (int i = 0; i < count; i++) {
-            [self addQuestion];
-            self.currentQuestionIndex++;
-        }
-        self.currentQuestionIndex = 0;
+        self.questionDatabase = questionDatabase;
     }
+//    NSLog(@"%@", self.questionDatabase);
     return self;
 }
+
+#define COUNT 10
 
 - (void)nextQuestion
 {
     ++self.currentQuestionIndex;
+    NSUInteger randomIndex = arc4random() % COUNT;
+    
+    while ([self.usedQuestionsID intersectsSet:[NSSet setWithObject:[NSNumber numberWithUnsignedInteger:randomIndex]]]) {
+        randomIndex = arc4random() % COUNT;
+    }
+    [self.usedQuestionsID addObject:[NSNumber numberWithUnsignedInteger:randomIndex]];
+    
+    Question *currentQuestion = [[Question alloc] initWithQuestionID:randomIndex fromQuestionDatabase:self.questionDatabase];
+    
+    self.currentQuestion = currentQuestion;
+    NSLog(@"%@", self.currentQuestion.question);
+    NSLog(@"%@", self.currentQuestion.answer);
+    NSLog(@"%@", self.currentQuestion.variants);
+    NSLog(@"%@", self.usedQuestionsID);
+    
+}
+
+- (NSMutableSet *)usedQuestionsID
+{
+    if (!_usedQuestionsID)
+        _usedQuestionsID = [[NSMutableSet alloc] init];
+    return _usedQuestionsID;
 }
 
 - (NSInteger)score
@@ -40,22 +62,17 @@
     return _score;
 }
 
-- (void)addQuestion
+- (NSUInteger)currentQuestionIndex
 {
-    Question *question = [[Question alloc] init:self.currentQuestionIndex];
-    if (!self.questions) {
-        self.questions = [[NSMutableArray alloc] init];
+    if (!_currentQuestionIndex) {
+        _currentQuestionIndex = 0;
     }
-    [self.questions addObject:question];
+    return _currentQuestionIndex;
 }
 
 - (void)checkAnswer
 {
-    Question *question = [self.questions objectAtIndex:self.currentQuestionIndex];
-    NSString *rightAnswer = question.answer;
-    if ([self.selectedAnswerString isEqualToString:rightAnswer]) {
-        self.score += 10;
-    }
+    
 }
 
 @end

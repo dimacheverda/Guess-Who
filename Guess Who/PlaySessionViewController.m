@@ -12,54 +12,44 @@
 @interface PlaySessionViewController ()
 
 @property (nonatomic) NSString* selectedButtonTitle;
+
+@property (weak, nonatomic) IBOutlet UIButton *answerOne;
+@property (weak, nonatomic) IBOutlet UIButton *answerTwo;
+@property (weak, nonatomic) IBOutlet UIButton *answerThree;
+@property (weak, nonatomic) IBOutlet UIButton *answerFour;
 @property (weak, nonatomic) IBOutlet UILabel *currentQuestionIndexLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
-
 
 - (IBAction)answerButtonTouchDown;
 
 @end
 
-@implementation PlaySessionViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-    
-}
+@implementation PlaySessionViewController
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
-    self.playSession = [[PlaySession alloc] initWithQuestionsCount:4];
+    self.playSession = [[PlaySession alloc] initWithQuestionsDatabase:self.questionDatabase];
+    [self refreshScore];
+    [self.playSession nextQuestion];
     [self loadQuestion];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self refreshScore];
 }
 
 - (void)loadQuestion
 {
-    [self.answerOne setHighlighted:NO];
-    [self.answerTwo setHighlighted:NO];
-    [self.answerThree setHighlighted:NO];
-    [self.answerFour setHighlighted:NO];
+    [self answerButtonTouchDown];
+    self.questionLabel.text = self.playSession.currentQuestion.question;
     
-    Question *question = [self.playSession.questions objectAtIndex:self.playSession.currentQuestionIndex];
-    self.questionLabel.text = question.question;
+    [self shuffleAnswers:self.playSession.currentQuestion.variants];
     
-    [self shuffleAnswers:question.variants];
-    
-    self.progressView.progress = self.playSession.currentQuestionIndex / 4.0;
-    self.currentQuestionIndexLabel.text = [NSString stringWithFormat:@"%d/10", (self.playSession.currentQuestionIndex + 1)];
+    self.currentQuestionIndexLabel.text = [NSString stringWithFormat:@"%d", self.playSession.currentQuestionIndex];
 }
 
 - (void)shuffleAnswers:(NSArray *)variants
@@ -109,6 +99,7 @@
 - (IBAction)answerButtonPressed:(UIButton *)sender
 {
     self.selectedButtonTitle = sender.titleLabel.text;
+    NSLog(@"%@", self.selectedButtonTitle);
     [self performSelector:@selector(highlightButton:) withObject:sender afterDelay:0.0];
 }
 
@@ -122,14 +113,14 @@
     self.playSession.selectedAnswerString = self.selectedButtonTitle;
     [self.playSession checkAnswer];
     [self refreshScore];
-    if (self.playSession.currentQuestionIndex < 3) {
+//    if (self.playSession.currentQuestionIndex < 3) {
         [self.playSession nextQuestion];
         [self loadQuestion];
-    } else {
-        self.progressView.progress = 1.0;
-        self.questionLabel.text = @"The End";
-        [self performSegueWithIdentifier:@"Show Summary" sender:self];
-    }
+//    } else {
+//        self.questionLabel.text = @"The End";
+//        [self performSegueWithIdentifier:@"Show Summary" sender:self];
+//    }
+    
 }
 
 @end
