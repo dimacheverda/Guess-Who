@@ -31,7 +31,6 @@
 {
     ++self.currentQuestionIndex;
     NSUInteger randomIndex = arc4random() % COUNT;
-    
     while ([self.usedQuestionsID intersectsSet:[NSSet setWithObject:[NSNumber numberWithUnsignedInteger:randomIndex]]]) {
         randomIndex = arc4random() % COUNT;
     }
@@ -40,11 +39,10 @@
     Question *currentQuestion = [[Question alloc] initWithQuestionID:randomIndex fromQuestionDatabase:self.questionDatabase];
     
     self.currentQuestion = currentQuestion;
-    NSLog(@"%@", self.currentQuestion.question);
-    NSLog(@"%@", self.currentQuestion.answer);
-    NSLog(@"%@", self.currentQuestion.variants);
-    NSLog(@"%@", self.usedQuestionsID);
-    
+//    NSLog(@"%@", self.currentQuestion.question);
+//    NSLog(@"%@", self.currentQuestion.answer);
+//    NSLog(@"%@", self.currentQuestion.variants);
+//    NSLog(@"%@", self.usedQuestionsID);
 }
 
 - (NSMutableSet *)usedQuestionsID
@@ -70,9 +68,23 @@
     return _currentQuestionIndex;
 }
 
-- (void)checkAnswer
+- (NSInteger)numberOfWrongAnswers
 {
-    
+    if (!_numberOfWrongAnswers) {
+        _numberOfWrongAnswers = 0;
+    }
+    return _numberOfWrongAnswers;
+}
+
+#define MULTIPLIER 10;
+
+- (void)checkAnswerWithTime:(NSInteger)time
+{
+    NSLog(@"%d", time);
+    if ([self.selectedAnswerString isEqualToString:self.currentQuestion.answer]) {
+        self.score += 1000;
+        self.score += time * MULTIPLIER;
+    } else self.numberOfWrongAnswers++;
 }
 
 @end

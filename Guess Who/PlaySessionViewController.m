@@ -11,7 +11,9 @@
 
 @interface PlaySessionViewController ()
 
-@property (nonatomic) NSString* selectedButtonTitle;
+@property (nonatomic, strong) NSString *selectedButtonTitle;
+@property (nonatomic ,strong) NSTimer *timer;
+@property (nonatomic) NSInteger time;
 
 @property (weak, nonatomic) IBOutlet UIButton *answerOne;
 @property (weak, nonatomic) IBOutlet UIButton *answerTwo;
@@ -46,10 +48,9 @@
 {
     [self answerButtonTouchDown];
     self.questionLabel.text = self.playSession.currentQuestion.question;
-    
     [self shuffleAnswers:self.playSession.currentQuestion.variants];
-    
-    self.currentQuestionIndexLabel.text = [NSString stringWithFormat:@"%d", self.playSession.currentQuestionIndex];
+    self.currentQuestionIndexLabel.text = [NSString stringWithFormat:@"№%d", self.playSession.currentQuestionIndex];
+    [self initTimer];
 }
 
 - (void)shuffleAnswers:(NSArray *)variants
@@ -99,8 +100,35 @@
 - (IBAction)answerButtonPressed:(UIButton *)sender
 {
     self.selectedButtonTitle = sender.titleLabel.text;
-    NSLog(@"%@", self.selectedButtonTitle);
+//    NSLog(@"%@", self.selectedButtonTitle);
     [self performSelector:@selector(highlightButton:) withObject:sender afterDelay:0.0];
+}
+
+#define TIME_FOR_ANSWER 30;
+
+- (void)initTimer
+{
+    self.time = 1 + TIME_FOR_ANSWER;
+    [self timerTick];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTick) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
+}
+
+- (void)timerTick
+{
+    if (!(self.time == 0)) {
+        self.time--;
+    }
+    NSString* timeNow = [NSString stringWithFormat:@"%02d", self.time];
+//    NSLog(@"%@", timeNow);
+    self.timeLabel.text = timeNow;
+}
+
+- (void)stopTimer
+{
+    [self.timer invalidate];
+    NSString* timeNow = [NSString stringWithFormat:@"%02d", self.time];
+    self.timeLabel.text= timeNow;
 }
 
 - (void)refreshScore
@@ -111,15 +139,20 @@
 - (IBAction)nextButtonPressed:(id)sender
 {
     self.playSession.selectedAnswerString = self.selectedButtonTitle;
-    [self.playSession checkAnswer];
+    [self stopTimer];
+    [self.playSession checkAnswerWithTime:self.time];
     [self refreshScore];
-//    if (self.playSession.currentQuestionIndex < 3) {
+    
+//    NSLog(@"%d", self.playSession.numberOfWrongAnswers);
+    
+    if (self.playSession.numberOfWrongAnswers < 3) {
         [self.playSession nextQuestion];
         [self loadQuestion];
-//    } else {
-//        self.questionLabel.text = @"The End";
-//        [self performSegueWithIdentifier:@"Show Summary" sender:self];
-//    }
+    } else {
+        [NSThread sleepForTimeInterval:2.0];
+        self.questionLabel.text = @"The End";
+        [self performSegueWithIdentifier:@"Show Summary" sender:self];
+    }
     
 }
 

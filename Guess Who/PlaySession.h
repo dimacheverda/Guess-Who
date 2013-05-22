@@ -16,9 +16,9 @@
 @property (nonatomic) NSUInteger currentQuestionIndex;
 @property (nonatomic, strong) NSString* selectedAnswerString;
 @property (nonatomic) NSInteger score;
+@property (nonatomic) NSInteger numberOfWrongAnswers;
 
 - (id)initWithQuestionsDatabase:(NSMutableArray *)questionDatabase;
 - (void)nextQuestion;
-- (void)checkAnswer;
-
+- (void)checkAnswerWithTime:(NSInteger)time;
 @end
