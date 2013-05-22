@@ -30,6 +30,9 @@
 - (void)nextQuestion
 {
     ++self.currentQuestionIndex;
+    if (self.usedQuestionsID.count == COUNT) {
+        [self.usedQuestionsID setSet:nil];
+    }
     NSUInteger randomIndex = arc4random() % COUNT;
     while ([self.usedQuestionsID intersectsSet:[NSSet setWithObject:[NSNumber numberWithUnsignedInteger:randomIndex]]]) {
         randomIndex = arc4random() % COUNT;
@@ -76,14 +79,14 @@
     return _numberOfWrongAnswers;
 }
 
-#define MULTIPLIER 10;
+#define TIME_MULTIPLIER 10;
 
 - (void)checkAnswerWithTime:(NSInteger)time
 {
-    NSLog(@"%d", time);
+//    NSLog(@"%d", time);
     if ([self.selectedAnswerString isEqualToString:self.currentQuestion.answer]) {
         self.score += 1000;
-        self.score += time * MULTIPLIER;
+        self.score += time * TIME_MULTIPLIER;
     } else self.numberOfWrongAnswers++;
 }
 
