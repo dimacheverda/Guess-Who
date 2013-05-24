@@ -23,6 +23,7 @@
 		324EF417172AA0B100246733 /* PlaySessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF40E172A9FB100246733 /* PlaySessionViewController.m */; };
 		324EF418172AA0B500246733 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF410172A9FB100246733 /* Question.m */; };
 		324EF41A172AAA9600246733 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF412172A9FB100246733 /* SummaryViewController.m */; };
+		327C98A0174FE67E00940FD1 /* error_image_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 327C989F174FE67E00940FD1 /* error_image_disabled.png */; };
 		3290D9411741614D00BCDF24 /* database.plist in Resources */ = {isa = PBXBuildFile; fileRef = 324EF41B173133AF00246733 /* database.plist */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		324EF412172A9FB100246733 /* SummaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
 		324EF413172A9FC900246733 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		324EF41B173133AF00246733 /* database.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = database.plist; sourceTree = "<group>"; };
+		327C989F174FE67E00940FD1 /* error_image_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error_image_disabled.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				324EF412172A9FB100246733 /* SummaryViewController.m */,
 				324EF41B173133AF00246733 /* database.plist */,
 				323DA6FF174F638800077901 /* error_image.png */,
+				327C989F174FE67E00940FD1 /* error_image_disabled.png */,
 				324EF3ED172A9F0500246733 /* Supporting Files */,
 			);
 			path = "Guess Who";
@@ -191,6 +194,7 @@
 				324EF414172A9FC900246733 /* MainStoryboard.storyboard in Resources */,
 				3290D9411741614D00BCDF24 /* database.plist in Resources */,
 				323DA700174F638800077901 /* error_image.png in Resources */,
+				327C98A0174FE67E00940FD1 /* error_image_disabled.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

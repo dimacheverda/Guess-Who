@@ -8,6 +8,136 @@
 	<array>
 		<dict>
 			<key>question</key>
+			<string>Who is author of &quot;Eragon&quot; thrilogy?</string>
+			<key>answer</key>
+			<string>Christopher Paolini</string>
+			<key>variants</key>
+			<array>
+				<string>Christopher Paolini</string>
+				<string>John Palencar</string>
+				<string>Stefen Fangmeier</string>
+				<string>Joanne Rowling</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Who said: “The man who does not read has no advantage over the man who cannot read.”?</string>
+			<key>answer</key>
+			<string>Mark Twain</string>
+			<key>variants</key>
+			<array>
+				<string>Mark Twain</string>
+				<string>Groucho Marx</string>
+				<string>Malcolm X</string>
+				<string>Jane Austen</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Whos quote it is: &quot;Be yourself; everyone else is already taken.&quot;? </string>
+			<key>answer</key>
+			<string>Oscar Wilde</string>
+			<key>variants</key>
+			<array>
+				<string>Oscar Wilde</string>
+				<string>Mark Twain</string>
+				<string>Jack London</string>
+				<string>Friedrich Nietzsche</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Who said &quot;Don&apos;t cry because it&apos;s over, smile because it happened&quot;?</string>
+			<key>answer</key>
+			<string>Dr. Seuss</string>
+			<key>variants</key>
+			<array>
+				<string>Dr. Seuss</string>
+				<string>Marilyn Monroe</string>
+				<string>Oscar Wilde</string>
+				<string>Mahatma Gandhi</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Who &apos;clearly thinks of himself as a hacker&apos;?</string>
+			<key>answer</key>
+			<string>Mark Zuckerberg</string>
+			<key>variants</key>
+			<array>
+				<string>Mark Zuckerberg</string>
+				<string>Bill Gates</string>
+				<string>Steve Jobs</string>
+				<string>Jack Dorsey</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Who thought that Newtonian mechanics was no longer enough to reconcile the laws of classical mechanics?</string>
+			<key>answer</key>
+			<string>Albert Einstein</string>
+			<key>variants</key>
+			<array>
+				<string>Albert Einstein</string>
+				<string>Michael Faraday</string>
+				<string>Wilhelm Röntgen</string>
+				<string>Ernest Rutherford</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Who was Robinson Crusoe bestfriend?</string>
+			<key>answer</key>
+			<string>Friday</string>
+			<key>variants</key>
+			<array>
+				<string>Friday</string>
+				<string>Saturday</string>
+				<string>Sunday</string>
+				<string>Wednesday</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Who author of &quot;The Old Man And The Sea&quot;?</string>
+			<key>answer</key>
+			<string>Ernest Hemingway</string>
+			<key>variants</key>
+			<array>
+				<string>Ernest Hemingway</string>
+				<string>Daniel Defoe</string>
+				<string>Oscar Wilde</string>
+				<string>Edgar Allan Poe</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Who was director of &quot;Titanic&quot; movie</string>
+			<key>answer</key>
+			<string> James Cameron</string>
+			<key>variants</key>
+			<array>
+				<string> James Cameron</string>
+				<string>Christopher Nolan</string>
+				<string>Martin Scorsese</string>
+				<string>Luc Besson</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Who invented tyre?</string>
+			<key>answer</key>
+			<string>Robert William Thomson</string>
+			<key>variants</key>
+			<array>
+				<string>John Boyd Dunlop</string>
+				<string>William Harvey</string>
+				<string>Robert William Thomson</string>
+				<string>Jack Bentley</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
 			<string>Who created james Bond charecter in 1953?</string>
 			<key>answer</key>
 			<string>Ian Fleming</string>
@@ -21,7 +151,7 @@
 		</dict>
 		<dict>
 			<key>question</key>
-			<string>Who said: &apos;To be or not to be&apos;?</string>
+			<string>Who said: &quot;To be or not to be&quot;?</string>
 			<key>answer</key>
 			<string>William Shakespear</string>
 			<key>variants</key>
@@ -99,7 +229,7 @@
 		</dict>
 		<dict>
 			<key>question</key>
-			<string>Who played Batman in all &apos;Batman&apos; movies?</string>
+			<string>Who played Batman in all &quot;Batman&quot; movies?</string>
 			<key>answer</key>
 			<string>Christian Bale</string>
 			<key>variants</key>

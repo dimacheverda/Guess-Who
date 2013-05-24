@@ -27,7 +27,7 @@
     return self;
 }
 
-#define COUNT 10
+#define COUNT 20
 
 - (void)nextQuestion
 {
