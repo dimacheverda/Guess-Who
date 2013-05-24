@@ -15,6 +15,7 @@
 @property (nonatomic ,strong) NSTimer *timer;
 @property (nonatomic) NSInteger time;
 
+@property (weak, nonatomic) IBOutlet UILabel *questionLabel;
 @property (weak, nonatomic) IBOutlet UIButton *answerOne;
 @property (weak, nonatomic) IBOutlet UIButton *answerTwo;
 @property (weak, nonatomic) IBOutlet UIButton *answerThree;
@@ -22,6 +23,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *currentQuestionIndexLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *firstErrorImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *secondErrorImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *thirdErrorImageView;
 
 - (IBAction)answerButtonTouchDown;
 
@@ -142,6 +146,7 @@
     [self stopTimer];
     [self.playSession checkAnswerWithTime:self.time];
     [self refreshScore];
+    [self checkErrors];
     
 //    NSLog(@"%d", self.playSession.numberOfWrongAnswers);
     
@@ -149,17 +154,31 @@
         [self.playSession nextQuestion];
         [self loadQuestion];
     } else {
-        [NSThread sleepForTimeInterval:2.0];
+//        [NSThread sleepForTimeInterval:2.0];
         self.questionLabel.text = @"The End";
         [self performSegueWithIdentifier:@"Show Summary" sender:self];
     }
     
 }
 
+- (void)checkErrors
+{
+    if (self.playSession.numberOfWrongAnswers >= 1) {
+        self.firstErrorImageView.image = [UIImage imageNamed:@"error_image"];
+    }
+    if (self.playSession.numberOfWrongAnswers >= 2) {
+        self.secondErrorImageView.image = [UIImage imageNamed:@"error_image"];
+    }
+    if (self.playSession.numberOfWrongAnswers >= 3) {
+        self.thirdErrorImageView.image = [UIImage imageNamed:@"error_image"];
+    }
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"Show Summary"]) {
-        
+        [segue.destinationViewController setScore:self.playSession.score];
+        [segue.destinationViewController setLongestStreak:self.playSession.longestStreak];
     }
 }
 

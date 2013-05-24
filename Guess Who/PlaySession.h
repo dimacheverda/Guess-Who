@@ -17,6 +17,8 @@
 @property (nonatomic, strong) NSString* selectedAnswerString;
 @property (nonatomic) NSInteger score;
 @property (nonatomic) NSInteger numberOfWrongAnswers;
+@property (nonatomic) NSInteger currentStreak;
+@property (nonatomic) NSInteger longestStreak;
 
 - (id)initWithQuestionsDatabase:(NSMutableArray *)questionDatabase;
 - (void)nextQuestion;

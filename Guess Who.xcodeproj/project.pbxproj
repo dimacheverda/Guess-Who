@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323DA700174F638800077901 /* error_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 323DA6FF174F638800077901 /* error_image.png */; };
 		324EF3E7172A9F0500246733 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3E6172A9F0500246733 /* UIKit.framework */; };
 		324EF3E9172A9F0500246733 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3E8172A9F0500246733 /* Foundation.framework */; };
 		324EF3EB172A9F0500246733 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3EA172A9F0500246733 /* CoreGraphics.framework */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		323DA6FF174F638800077901 /* error_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error_image.png; sourceTree = "<group>"; };
 		324EF3E3172A9F0500246733 /* Guess Who.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess Who.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		324EF3E6172A9F0500246733 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		324EF3E8172A9F0500246733 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -109,6 +111,7 @@
 				324EF411172A9FB100246733 /* SummaryViewController.h */,
 				324EF412172A9FB100246733 /* SummaryViewController.m */,
 				324EF41B173133AF00246733 /* database.plist */,
+				323DA6FF174F638800077901 /* error_image.png */,
 				324EF3ED172A9F0500246733 /* Supporting Files */,
 			);
 			path = "Guess Who";
@@ -187,6 +190,7 @@
 				324EF3FD172A9F0500246733 /* Default-568h@2x.png in Resources */,
 				324EF414172A9FC900246733 /* MainStoryboard.storyboard in Resources */,
 				3290D9411741614D00BCDF24 /* database.plist in Resources */,
+				323DA700174F638800077901 /* error_image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

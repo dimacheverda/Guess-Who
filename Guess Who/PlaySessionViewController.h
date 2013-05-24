@@ -14,6 +14,4 @@
 @property (nonatomic, strong) PlaySession *playSession;
 @property (nonatomic ,strong) NSMutableArray *questionDatabase;
 
-@property (weak, nonatomic) IBOutlet UILabel *questionLabel;
-
 @end

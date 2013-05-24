@@ -10,4 +10,10 @@
 
 @interface SummaryViewController : UIViewController
 
+@property (nonatomic) NSInteger score;
+@property (nonatomic) NSInteger longestStreak;
+
+@property (nonatomic, weak) IBOutlet UILabel *scoreLabel;
+@property (nonatomic, weak) IBOutlet UILabel *longestStreakLabel;
+
 @end

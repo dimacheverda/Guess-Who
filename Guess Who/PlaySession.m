@@ -20,6 +20,8 @@
 {
     if (self) {
         self.questionDatabase = questionDatabase;
+        self.currentStreak = 0;
+        self.longestStreak = 0;
     }
 //    NSLog(@"%@", self.questionDatabase);
     return self;
@@ -79,15 +81,23 @@
     return _numberOfWrongAnswers;
 }
 
-#define TIME_MULTIPLIER 10;
+#define TIME_MULTIPLIER 20;
+#define RIGHT_ANSWER_SCORE 1000;
+#define STREAK_BONUS 50;
 
 - (void)checkAnswerWithTime:(NSInteger)time
 {
 //    NSLog(@"%d", time);
     if ([self.selectedAnswerString isEqualToString:self.currentQuestion.answer]) {
-        self.score += 1000;
+        self.currentStreak++;
+        self.score += RIGHT_ANSWER_SCORE;
         self.score += time * TIME_MULTIPLIER;
+        self.score += self.currentStreak * STREAK_BONUS;
+        if (self.currentStreak > self.longestStreak) {
+            self.longestStreak = self.currentStreak;
+        }
     } else self.numberOfWrongAnswers++;
+//    NSLog(@"%d", self.currentStreak);
 }
 
 @end
