@@ -3,9 +3,399 @@
 <plist version="1.0">
 <dict>
 	<key>count</key>
-	<integer>10</integer>
+	<integer>50</integer>
 	<key>questions</key>
 	<array>
+		<dict>
+			<key>question</key>
+			<string>What is the weight of the heaviest mango in the world?</string>
+			<key>answer</key>
+			<string>3.5 kg</string>
+			<key>variants</key>
+			<array>
+				<string>3.5 kg</string>
+				<string>2.5 kg</string>
+				<string>3.7 kg</string>
+				<string>2.7 kg</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>How much tooth of John Lennon cost in November 2011?</string>
+			<key>answer</key>
+			<string>31 200 dollars</string>
+			<key>variants</key>
+			<array>
+				<string>31 200 dollars</string>
+				<string>20 800 dollars</string>
+				<string>16 500 dollars</string>
+				<string>41 000 dollars</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Which city is recognized as the poorest cities in England?</string>
+			<key>answer</key>
+			<string>Jaywick</string>
+			<key>variants</key>
+			<array>
+				<string>Jaywick</string>
+				<string>St. Asaph</string>
+				<string>St. David&apos;s</string>
+				<string>Thelwall</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>What is height of the biggest printed book in the world?</string>
+			<key>answer</key>
+			<string>3.00 m</string>
+			<key>variants</key>
+			<array>
+				<string>3.00 m</string>
+				<string>2.56 m</string>
+				<string>3.25 m</string>
+				<string>2.90 m</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>1 September 2010 the German company Ravensburger launches the biggest puzzle in the world, which consists of ... ?</string>
+			<key>answer</key>
+			<string>32 000 items</string>
+			<key>variants</key>
+			<array>
+				<string>32 000 items</string>
+				<string>28 000 items</string>
+				<string>64 000 items</string>
+				<string>16 000 items</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Which of these movies awarded 4 Oscars?</string>
+			<key>answer</key>
+			<string>The Matrix</string>
+			<key>variants</key>
+			<array>
+				<string>The Matrix</string>
+				<string>The Dark Knight</string>
+				<string>The Godfather</string>
+				<string>The Shawshank Redemption</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>What is the maximum speed reaches Bugatti Veyron Super Sport?</string>
+			<key>answer</key>
+			<string>434 km/h</string>
+			<key>variants</key>
+			<array>
+				<string>431 km/h</string>
+				<string>434 km/h</string>
+				<string>450 km/h</string>
+				<string>442 km/h</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Where lived the character of Sherlock Holmes?</string>
+			<key>answer</key>
+			<string>Baker Street 221B</string>
+			<key>variants</key>
+			<array>
+				<string>Baker Street 221B</string>
+				<string>Brook Street 15</string>
+				<string>Maddox Street 118A</string>
+				<string>Carnaby Street 192</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>That the output from such a chemical reaction: Carbon + Oxygen?</string>
+			<key>answer</key>
+			<string>Carbonic acid gas</string>
+			<key>variants</key>
+			<array>
+				<string>Carbonic acid gas</string>
+				<string>Water</string>
+				<string>Carbohydrates</string>
+				<string>Oxalic anhydride</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>What was invented in 1643 year by Evangelista Torricelli?</string>
+			<key>answer</key>
+			<string>Barometer</string>
+			<key>variants</key>
+			<array>
+				<string>Barometer</string>
+				<string>Microscope</string>
+				<string>Lamp</string>
+				<string>Steam engine</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Which of these invented gunpowder?</string>
+			<key>answer</key>
+			<string>Roger Bacon</string>
+			<key>variants</key>
+			<array>
+				<string>Roger Bacon</string>
+				<string>Leonardo da Vinci</string>
+				<string>Cai Lun</string>
+				<string>Bi Sheng</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>When was invented first cannon?</string>
+			<key>answer</key>
+			<string>1128</string>
+			<key>variants</key>
+			<array>
+				<string>1128</string>
+				<string>1342</string>
+				<string>988</string>
+				<string>1024</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>What is the total length of the London Underground?</string>
+			<key>answer</key>
+			<string>408 km</string>
+			<key>variants</key>
+			<array>
+				<string>408 km</string>
+				<string>259 km</string>
+				<string>342 km</string>
+				<string>390 km</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Where Napoleone was imprisoned?</string>
+			<key>answer</key>
+			<string>Island of St. Helena</string>
+			<key>variants</key>
+			<array>
+				<string>Island of St. Helena</string>
+				<string>Island of Corsica</string>
+				<string>Island of Sicilia</string>
+				<string>Island of St.Elma</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Who invented microscope?</string>
+			<key>answer</key>
+			<string>Zacharias Janssen</string>
+			<key>variants</key>
+			<array>
+				<string>Zacharias Janssen</string>
+				<string>Giovanni Faber</string>
+				<string>Galileo Galilei</string>
+				<string>Hans Lippershey</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Who invented thermometer? </string>
+			<key>answer</key>
+			<string>Galileo Galilei</string>
+			<key>variants</key>
+			<array>
+				<string>Galileo Galilei</string>
+				<string>Cornelis Drebbel</string>
+				<string>Giuseppe Biancani</string>
+				<string>Robert Fludd</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>When was invented telescope?</string>
+			<key>answer</key>
+			<string>1608</string>
+			<key>variants</key>
+			<array>
+				<string>1608</string>
+				<string>1592</string>
+				<string>1619</string>
+				<string>1602</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>When Chernobyl nuclear station exploded?</string>
+			<key>answer</key>
+			<string>1986</string>
+			<key>variants</key>
+			<array>
+				<string>1986</string>
+				<string>1983</string>
+				<string>1987</string>
+				<string>1980</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Where was invented the crossbow?</string>
+			<key>answer</key>
+			<string>Greece</string>
+			<key>variants</key>
+			<array>
+				<string>Greece</string>
+				<string>England</string>
+				<string>Turkey</string>
+				<string>Italy</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>What is the biggest berry in the world?</string>
+			<key>answer</key>
+			<string>Watermelon</string>
+			<key>variants</key>
+			<array>
+				<string>Watermelon</string>
+				<string>Pineapple</string>
+				<string>Persimmon</string>
+				<string>Avocado</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Who invented the ballpoint pen?</string>
+			<key>answer</key>
+			<string>Bíró László</string>
+			<key>variants</key>
+			<array>
+				<string>Marcel Bich</string>
+				<string>Bíró László</string>
+				<string>Elsa Schick</string>
+				<string>Tim Wright</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Who created the first car with steam engine?</string>
+			<key>answer</key>
+			<string>Nicolas-Joseph Cugnot</string>
+			<key>variants</key>
+			<array>
+				<string>Nicolas-Joseph Cugnot</string>
+				<string>Jöns Cederholm</string>
+				<string>Richard Trevithick</string>
+				<string>Isaac Newton</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Who is the tallest living person in the world?</string>
+			<key>answer</key>
+			<string>Leonid Stadnyk</string>
+			<key>variants</key>
+			<array>
+				<string>Leonid Stadnyk</string>
+				<string>Robert Wadlow</string>
+				<string>Sultan Kösen</string>
+				<string>Zhang Juncai</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>What is the fastest mammal in the world?</string>
+			<key>answer</key>
+			<string>Cheetah</string>
+			<key>variants</key>
+			<array>
+				<string>Cheetah</string>
+				<string>Lion</string>
+				<string>Antelope</string>
+				<string>Eagle</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Who is the tallest person ever known?</string>
+			<key>answer</key>
+			<string>Robert Wadlow</string>
+			<key>variants</key>
+			<array>
+				<string>Robert Wadlow</string>
+				<string>Leonid Stadnyk</string>
+				<string>John Rogan</string>
+				<string>John F. Carroll</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Who is the fastes football player in the world?</string>
+			<key>answer</key>
+			<string>Cristiano Ronaldo</string>
+			<key>variants</key>
+			<array>
+				<string>Christiano Ronaldo</string>
+				<string>Peter Crouch</string>
+				<string>Wayne Rooney</string>
+				<string>Ronaldinho</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Who first step on the moon?</string>
+			<key>answer</key>
+			<string>Neil Armstrong</string>
+			<key>variants</key>
+			<array>
+				<string>Neil Armstrong</string>
+				<string>Alan Shepherd</string>
+				<string>John Glenn </string>
+				<string>Yuri Gagarin</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>The first mass production electirc car?</string>
+			<key>answer</key>
+			<string>Tesla</string>
+			<key>variants</key>
+			<array>
+				<string>Tesla</string>
+				<string>Bentley</string>
+				<string>Ford</string>
+				<string>Suzuki</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>When World War II started?</string>
+			<key>answer</key>
+			<string>1939</string>
+			<key>variants</key>
+			<array>
+				<string>1939</string>
+				<string>1940</string>
+				<string>1914</string>
+				<string>1918</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Who is Google co-founder</string>
+			<key>answer</key>
+			<string>Sergey Brin</string>
+			<key>variants</key>
+			<array>
+				<string>Sergey Brin</string>
+				<string>Eric Schmidt</string>
+				<string>Marissa Mayer</string>
+				<string>Hubert Chang</string>
+			</array>
+		</dict>
 		<dict>
 			<key>question</key>
 			<string>Who is author of &quot;Eragon&quot; thrilogy?</string>
