@@ -27,5 +27,9 @@
     [super viewDidLoad];
 }
 
+- (IBAction)mainMenuButtonPressed:(id)sender
+{
+    [self.presentingViewController.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end
