@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3200BB6C1757D78900C69C53 /* highscores.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3247E0BF1755E7E600C42EAD /* highscores.plist */; };
 		3200BB6D1757D78D00C69C53 /* database.plist in Resources */ = {isa = PBXBuildFile; fileRef = 324EF41B173133AF00246733 /* database.plist */; };
+		3200BB861757EC2B00C69C53 /* HighscoresTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3200BB851757EC2B00C69C53 /* HighscoresTableViewController.m */; };
 		324EF3E7172A9F0500246733 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3E6172A9F0500246733 /* UIKit.framework */; };
 		324EF3E9172A9F0500246733 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3E8172A9F0500246733 /* Foundation.framework */; };
 		324EF3EB172A9F0500246733 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3EA172A9F0500246733 /* CoreGraphics.framework */; };
@@ -42,6 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3200BB841757EC2B00C69C53 /* HighscoresTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighscoresTableViewController.h; sourceTree = "<group>"; };
+		3200BB851757EC2B00C69C53 /* HighscoresTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighscoresTableViewController.m; sourceTree = "<group>"; };
 		3247E0BF1755E7E600C42EAD /* highscores.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = highscores.plist; sourceTree = "<group>"; };
 		324EF3E3172A9F0500246733 /* Guess Who.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess Who.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		324EF3E6172A9F0500246733 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -95,6 +98,8 @@
 				324EF40C172A9FB100246733 /* PlaySession.m */,
 				324EF40F172A9FB100246733 /* Question.h */,
 				324EF410172A9FB100246733 /* Question.m */,
+				324EF411172A9FB100246733 /* SummaryViewController.h */,
+				324EF412172A9FB100246733 /* SummaryViewController.m */,
 			);
 			name = "Play Session";
 			sourceTree = "<group>";
@@ -133,8 +138,8 @@
 				324EF409172A9FB100246733 /* MainMenuViewController.h */,
 				324EF40A172A9FB100246733 /* MainMenuViewController.m */,
 				3200BB831757EB9B00C69C53 /* Play Session */,
-				324EF411172A9FB100246733 /* SummaryViewController.h */,
-				324EF412172A9FB100246733 /* SummaryViewController.m */,
+				3200BB841757EC2B00C69C53 /* HighscoresTableViewController.h */,
+				3200BB851757EC2B00C69C53 /* HighscoresTableViewController.m */,
 				324EF41B173133AF00246733 /* database.plist */,
 				3247E0BF1755E7E600C42EAD /* highscores.plist */,
 				32AF4D3617510C9F008C7BB4 /* error_image_disabled.png */,
@@ -238,6 +243,7 @@
 				324EF417172AA0B100246733 /* PlaySessionViewController.m in Sources */,
 				324EF418172AA0B500246733 /* Question.m in Sources */,
 				324EF41A172AAA9600246733 /* SummaryViewController.m in Sources */,
+				3200BB861757EC2B00C69C53 /* HighscoresTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
