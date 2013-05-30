@@ -16,5 +16,4 @@
 @property (nonatomic, weak) IBOutlet UILabel *scoreLabel;
 @property (nonatomic, weak) IBOutlet UILabel *longestStreakLabel;
 
-
 @end

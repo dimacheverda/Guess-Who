@@ -123,7 +123,7 @@
     if (!(self.time == 0)) {
         self.time--;
     }
-    NSString* timeNow = [NSString stringWithFormat:@"%02d", self.time];
+    NSString* timeNow = [NSString stringWithFormat:@"Time: %02d", self.time];
 //    NSLog(@"%@", timeNow);
     self.timeLabel.text = timeNow;
 }
@@ -131,7 +131,7 @@
 - (void)stopTimer
 {
     [self.timer invalidate];
-    NSString* timeNow = [NSString stringWithFormat:@"%02d", self.time];
+    NSString* timeNow = [NSString stringWithFormat:@"Time: %02d", self.time];
     self.timeLabel.text= timeNow;
 }
 
