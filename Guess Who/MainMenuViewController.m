@@ -20,6 +20,8 @@
     [super viewDidLoad];
     
     [self loadDatabase];
+    
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"pdezb7x"]]];
 }
 
 - (void)loadDatabase

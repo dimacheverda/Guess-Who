@@ -10,6 +10,8 @@
 		3200BB6C1757D78900C69C53 /* highscores.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3247E0BF1755E7E600C42EAD /* highscores.plist */; };
 		3200BB6D1757D78D00C69C53 /* database.plist in Resources */ = {isa = PBXBuildFile; fileRef = 324EF41B173133AF00246733 /* database.plist */; };
 		3200BB861757EC2B00C69C53 /* HighscoresTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3200BB851757EC2B00C69C53 /* HighscoresTableViewController.m */; };
+		3200BBB21758C2DF00C69C53 /* background-paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 3200BBB11758C2DF00C69C53 /* background-paper.png */; };
+		3200BBB71759283200C69C53 /* pdezb7x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3200BBB61759283200C69C53 /* pdezb7x.png */; };
 		324EF3E7172A9F0500246733 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3E6172A9F0500246733 /* UIKit.framework */; };
 		324EF3E9172A9F0500246733 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3E8172A9F0500246733 /* Foundation.framework */; };
 		324EF3EB172A9F0500246733 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3EA172A9F0500246733 /* CoreGraphics.framework */; };
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		3200BB841757EC2B00C69C53 /* HighscoresTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighscoresTableViewController.h; sourceTree = "<group>"; };
 		3200BB851757EC2B00C69C53 /* HighscoresTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighscoresTableViewController.m; sourceTree = "<group>"; };
+		3200BBB11758C2DF00C69C53 /* background-paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-paper.png"; sourceTree = "<group>"; };
+		3200BBB61759283200C69C53 /* pdezb7x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pdezb7x.png; sourceTree = "<group>"; };
 		3247E0BF1755E7E600C42EAD /* highscores.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = highscores.plist; sourceTree = "<group>"; };
 		324EF3E3172A9F0500246733 /* Guess Who.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess Who.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		324EF3E6172A9F0500246733 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -144,6 +148,8 @@
 				3247E0BF1755E7E600C42EAD /* highscores.plist */,
 				32AF4D3617510C9F008C7BB4 /* error_image_disabled.png */,
 				32AF4D3717510C9F008C7BB4 /* error_image.png */,
+				3200BBB61759283200C69C53 /* pdezb7x.png */,
+				3200BBB11758C2DF00C69C53 /* background-paper.png */,
 				324EF3ED172A9F0500246733 /* Supporting Files */,
 			);
 			path = "Guess Who";
@@ -226,6 +232,8 @@
 				3200BB6C1757D78900C69C53 /* highscores.plist in Resources */,
 				32AF4D3817510C9F008C7BB4 /* error_image_disabled.png in Resources */,
 				32AF4D3917510C9F008C7BB4 /* error_image.png in Resources */,
+				3200BBB21758C2DF00C69C53 /* background-paper.png in Resources */,
+				3200BBB71759283200C69C53 /* pdezb7x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
