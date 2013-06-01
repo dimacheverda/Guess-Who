@@ -37,7 +37,9 @@
     [self loadHighscores];
     [self addScoreToHighscores];
     [self saveHighscores];
-//    [self.highscoreArray so]
+    
+//    self.navigationItem.hidesBackButton = YES;
+//    self.navigationController.navigationBarHidden = YES;
 }
 
 - (void)loadHighscores
@@ -95,7 +97,8 @@
 
 - (IBAction)mainMenuButtonPressed:(id)sender
 {
-    [self.presentingViewController.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+//    [self.presentingViewController.presentingViewController dismissViewControllerAnimated:YES completion:nil]; //for modal segue
+    [self.navigationController popToRootViewControllerAnimated:YES]; 
 }
 
 @end

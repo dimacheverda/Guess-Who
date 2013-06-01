@@ -21,7 +21,9 @@
     
     [self loadDatabase];
     
-    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"pdezb7x"]]];
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background-pattern"]]];
+    
+//    self.navigationController.navigationBarHidden = YES;
 }
 
 - (void)loadDatabase

@@ -15,6 +15,7 @@
 @property (nonatomic ,strong) NSTimer *timer;
 @property (nonatomic) NSInteger time;
 
+@property (weak, nonatomic) IBOutlet UIImageView *questionBackgroundImageView;
 @property (weak, nonatomic) IBOutlet UILabel *questionLabel;
 @property (weak, nonatomic) IBOutlet UIButton *answerOne;
 @property (weak, nonatomic) IBOutlet UIButton *answerTwo;
@@ -26,8 +27,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *firstErrorImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *secondErrorImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *thirdErrorImageView;
-
-- (IBAction)answerButtonTouchDown;
 
 @end
 
@@ -41,20 +40,33 @@
     [self refreshScore];
     [self.playSession nextQuestion];
     [self loadQuestion];
+    
+    UIImage *buttonImage = [[UIImage imageNamed:@"greenButton.png"]
+                            resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
+    [self.answerOne setBackgroundImage:buttonImage forState:UIControlStateNormal];
+    [self.answerTwo setBackgroundImage:buttonImage forState:UIControlStateNormal];
+    [self.answerThree setBackgroundImage:buttonImage forState:UIControlStateNormal];
+    [self.answerFour setBackgroundImage:buttonImage forState:UIControlStateNormal];
+//    [self.questionBackgroundImageView setImage:buttonImage];
+    
+//    self.navigationController.navigationBarHidden = NO;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background-paper"]]];
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background-pattern"]]];
+    
 }
 
 - (void)loadQuestion
 {
-    [self answerButtonTouchDown];
     self.questionLabel.text = self.playSession.currentQuestion.question;
     [self shuffleAnswers:self.playSession.currentQuestion.variants];
-    self.currentQuestionIndexLabel.text = [NSString stringWithFormat:@"№%d", self.playSession.currentQuestionIndex];
+    
+    self.navigationItem.title = [NSString stringWithFormat:@"Question №%d", self.playSession.currentQuestionIndex];
+//    self.currentQuestionIndexLabel.text = [NSString stringWithFormat:@"Question №%d", self.playSession.currentQuestionIndex];
+    
     [self initTimer];
 }
 
@@ -85,28 +97,26 @@
     [used replaceObjectAtIndex:index withObject:@1];
 }
 
-- (IBAction)answerButtonTouchDown
-{
-    [self.answerOne setHighlighted:NO];
-    [self.answerTwo setHighlighted:NO];
-    [self.answerThree setHighlighted:NO];
-    [self.answerFour setHighlighted:NO];
-}
-
-- (void)highlightButton:(UIButton *)button
-{
-    [self.answerOne setHighlighted:NO];
-    [self.answerTwo setHighlighted:NO];
-    [self.answerThree setHighlighted:NO];
-    [self.answerFour setHighlighted:NO];
-    [button setHighlighted:YES];
-}
-
 - (IBAction)answerButtonPressed:(UIButton *)sender
 {
-    self.selectedButtonTitle = sender.titleLabel.text;
-//    NSLog(@"%@", self.selectedButtonTitle);
-    [self performSelector:@selector(highlightButton:) withObject:sender afterDelay:0.0];
+    self.selectedButtonTitle = sender.titleLabel.text;    
+    
+    self.playSession.selectedAnswerString = self.selectedButtonTitle;
+    [self stopTimer];
+    [self.playSession checkAnswerWithTime:self.time];
+    [self refreshScore];
+    [self checkErrors];
+    
+    //    NSLog(@"%d", self.playSession.numberOfWrongAnswers);
+    
+    if (self.playSession.numberOfWrongAnswers < 3) {
+        [self.playSession nextQuestion];
+        [self loadQuestion];
+    } else {
+        //        [NSThread sleepForTimeInterval:2.0];
+        self.questionLabel.text = @"The End";
+        [self performSegueWithIdentifier:@"Show Summary" sender:self];
+    }
 }
 
 #define TIME_FOR_ANSWER 30;
@@ -141,26 +151,6 @@
     [self.scoreLabel setText:[NSString stringWithFormat:@"Score: %d", self.playSession.score]];
 }
 
-- (IBAction)nextButtonPressed:(id)sender
-{
-    self.playSession.selectedAnswerString = self.selectedButtonTitle;
-    [self stopTimer];
-    [self.playSession checkAnswerWithTime:self.time];
-    [self refreshScore];
-    [self checkErrors];
-    
-//    NSLog(@"%d", self.playSession.numberOfWrongAnswers);
-    
-    if (self.playSession.numberOfWrongAnswers < 3) {
-        [self.playSession nextQuestion];
-        [self loadQuestion];
-    } else {
-//        [NSThread sleepForTimeInterval:2.0];
-        self.questionLabel.text = @"The End";
-        [self performSegueWithIdentifier:@"Show Summary" sender:self];
-    }
-    
-}
 
 - (void)checkErrors
 {
