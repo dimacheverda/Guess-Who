@@ -11,9 +11,26 @@
 
 @interface MainMenuViewController ()
 
+@property (nonatomic, weak) IBOutlet UIButton *playButton;
+@property (nonatomic, weak) IBOutlet UIButton *highscoresButton;
+@property (nonatomic, weak) IBOutlet UIButton *aboutButton;
+
 @end
 
 @implementation MainMenuViewController
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:YES];
+    
+    UIImage *buttonImage = [[UIImage imageNamed:@"greenButton.png"]
+                            resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
+    [self.playButton setBackgroundImage:buttonImage forState:UIControlStateNormal];
+    [self.highscoresButton setBackgroundImage:buttonImage forState:UIControlStateNormal];
+    [self.aboutButton setBackgroundImage:buttonImage forState:UIControlStateNormal];
+    
+    self.navigationController.navigationBarHidden = YES;
+}
 
 - (void)viewDidLoad
 {
@@ -22,8 +39,6 @@
     [self loadDatabase];
     
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background-pattern"]]];
-    
-//    self.navigationController.navigationBarHidden = YES;
 }
 
 - (void)loadDatabase

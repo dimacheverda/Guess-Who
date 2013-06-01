@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) NSMutableArray *highscoreArray;
 @property (nonatomic, strong) NSDictionary *scoreDictionary;
+@property (nonatomic, weak) IBOutlet UIButton *mainMenuButton;
 
 @end
 
@@ -24,7 +25,13 @@
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.score];
     self.longestStreakLabel.text = [NSString stringWithFormat:@"Longest Streak: %d", self.longestStreak];
     
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background-pattern"]]];
     
+    UIImage *buttonImage = [[UIImage imageNamed:@"greenButton.png"]
+                            resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
+    [self.mainMenuButton setBackgroundImage:buttonImage forState:UIControlStateNormal];
+    
+    self.navigationController.navigationBarHidden = YES;
 }
 
 - (void)viewDidLoad
@@ -39,7 +46,6 @@
     [self saveHighscores];
     
 //    self.navigationItem.hidesBackButton = YES;
-//    self.navigationController.navigationBarHidden = YES;
 }
 
 - (void)loadHighscores

@@ -17,7 +17,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Play">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -32,7 +32,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Highscore">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -47,7 +47,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="About">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -75,7 +75,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="AcN-xI-Iro"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="aboutButton" destination="DK1-78-TZw" id="h2H-fF-4kW"/>
+                        <outlet property="highscoresButton" destination="mLs-Sb-4bu" id="DIy-23-wey"/>
+                        <outlet property="playButton" destination="05A-PZ-Igw" id="NRD-75-EVq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,10 +107,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="№" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="40H-Xd-5LG">
-                                <rect key="frame" x="86" y="-20" width="148" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Streak: " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="40H-Xd-5LG">
+                                <rect key="frame" x="211" y="335" width="89" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -168,50 +174,53 @@
                                     <action selector="answerButtonPressed:" destination="mr7-6u-u8H" eventType="touchUpInside" id="cSM-6E-7KG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rmf-4i-wTH">
-                                <rect key="frame" x="20" y="359" width="139" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pts: 3215534" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rmf-4i-wTH">
+                                <rect key="frame" x="20" y="335" width="90" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dxt-VE-yOq">
-                                <rect key="frame" x="20" y="330" width="107" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="error_image_disabled.png" id="cm2-Mp-rG6">
-                                <rect key="frame" x="174" y="338" width="32" height="32"/>
+                                <rect key="frame" x="118" y="333" width="26" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="error_image_disabled.png" id="QNS-TV-WZn">
-                                <rect key="frame" x="214" y="338" width="32" height="32"/>
+                                <rect key="frame" x="147" y="333" width="26" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="error_image_disabled.png" id="S4x-ii-ObV">
-                                <rect key="frame" x="254" y="338" width="32" height="32"/>
+                                <rect key="frame" x="177" y="333" width="26" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" progress="0.5" id="HUy-uN-yZY">
+                                <rect key="frame" x="59" y="376" width="241" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="clock@2x.png" id="yOZ-rs-2Tf">
+                                <rect key="frame" x="20" y="368" width="26" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="oAl-Sc-V79"/>
+                    <navigationItem key="navigationItem" id="oAl-Sc-V79">
+                        <barButtonItem key="backBarButtonItem" title="Quit" id="cDd-eO-iWM"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="answerFour" destination="fjx-iM-ulD" id="6Bg-hk-Eke"/>
                         <outlet property="answerOne" destination="NFO-yB-aKK" id="KAf-hj-aUJ"/>
                         <outlet property="answerThree" destination="diV-3t-sdq" id="pbT-gZ-VMs"/>
                         <outlet property="answerTwo" destination="MC5-kH-eQI" id="iyk-iX-a72"/>
-                        <outlet property="currentQuestionIndexLabel" destination="40H-Xd-5LG" id="3tb-m4-IXn"/>
                         <outlet property="firstErrorImageView" destination="cm2-Mp-rG6" id="oFY-0n-1Vc"/>
                         <outlet property="questionBackgroundImageView" destination="Zv3-V2-WIX" id="xDR-p7-bB7"/>
                         <outlet property="questionLabel" destination="UMA-RH-LKn" id="keW-1Q-2zS"/>
                         <outlet property="scoreLabel" destination="Rmf-4i-wTH" id="Sg8-Mo-j7L"/>
                         <outlet property="secondErrorImageView" destination="QNS-TV-WZn" id="Hbd-bF-ZEX"/>
+                        <outlet property="streakLabel" destination="40H-Xd-5LG" id="Mtc-ls-GPj"/>
                         <outlet property="thirdErrorImageView" destination="S4x-ii-ObV" id="fBM-Cj-Xp3"/>
-                        <outlet property="timeLabel" destination="Dxt-VE-yOq" id="3CS-Nx-6wd"/>
+                        <outlet property="timeProgressView" destination="HUy-uN-yZY" id="hvg-g7-GLq"/>
                         <segue destination="9ls-3w-CHC" kind="push" identifier="Show Summary" id="OwL-sh-SBg"/>
                     </connections>
                 </viewController>
@@ -325,7 +334,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Main Menu">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -342,6 +351,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="longestStreakLabel" destination="TxV-Iv-74c" id="Dd5-Kv-meU"/>
+                        <outlet property="mainMenuButton" destination="BYM-fp-Q7j" id="ued-pa-yQM"/>
                         <outlet property="scoreLabel" destination="Lpr-U4-PWg" id="Qh2-Lc-NXJ"/>
                     </connections>
                 </viewController>
@@ -369,6 +379,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="clock@2x.png" width="52" height="52"/>
         <image name="error_image_disabled.png" width="256" height="256"/>
     </resources>
     <classes>
@@ -380,22 +391,28 @@
         </class>
         <class className="MainMenuViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainMenuViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="aboutButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="highscoresButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="playButton" candidateClass="UIButton"/>
+            </relationships>
         </class>
         <class className="PlaySessionViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PlaySessionViewController.h"/>
             <relationships>
+                <relationship kind="action" name="answerButtonPressed:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="answerFour" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="answerOne" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="answerThree" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="answerTwo" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="currentQuestionIndexLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="firstErrorImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="questionBackgroundImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="questionLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="secondErrorImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="streakLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="thirdErrorImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="timeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="timeProgressView" candidateClass="UIProgressView"/>
             </relationships>
         </class>
         <class className="SummaryViewController" superclassName="UIViewController">
@@ -403,6 +420,7 @@
             <relationships>
                 <relationship kind="action" name="mainMenuButtonPressed:"/>
                 <relationship kind="outlet" name="longestStreakLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mainMenuButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
             </relationships>
         </class>

@@ -21,9 +21,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *answerTwo;
 @property (weak, nonatomic) IBOutlet UIButton *answerThree;
 @property (weak, nonatomic) IBOutlet UIButton *answerFour;
-@property (weak, nonatomic) IBOutlet UILabel *currentQuestionIndexLabel;
+@property (weak, nonatomic) IBOutlet UILabel *streakLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
-@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UIProgressView *timeProgressView;
 @property (weak, nonatomic) IBOutlet UIImageView *firstErrorImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *secondErrorImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *thirdErrorImageView;
@@ -47,26 +47,28 @@
     [self.answerTwo setBackgroundImage:buttonImage forState:UIControlStateNormal];
     [self.answerThree setBackgroundImage:buttonImage forState:UIControlStateNormal];
     [self.answerFour setBackgroundImage:buttonImage forState:UIControlStateNormal];
-//    [self.questionBackgroundImageView setImage:buttonImage];
     
-//    self.navigationController.navigationBarHidden = NO;
+    self.navigationController.navigationBarHidden = NO;
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background-pattern"]]];
+    self.navigationItem.title = [NSString stringWithFormat:@"Question №%d", self.playSession.currentQuestionIndex];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background-pattern"]]];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:YES];
     
+    self.navigationController.navigationBarHidden = YES;
 }
 
 - (void)loadQuestion
 {
     self.questionLabel.text = self.playSession.currentQuestion.question;
     [self shuffleAnswers:self.playSession.currentQuestion.variants];
-    
-    self.navigationItem.title = [NSString stringWithFormat:@"Question №%d", self.playSession.currentQuestionIndex];
-//    self.currentQuestionIndexLabel.text = [NSString stringWithFormat:@"Question №%d", self.playSession.currentQuestionIndex];
-    
     [self initTimer];
 }
 
@@ -134,23 +136,29 @@
     if (!(self.time == 0)) {
         self.time--;
     }
-    NSString* timeNow = [NSString stringWithFormat:@"Time: %02d", self.time];
-//    NSLog(@"%@", timeNow);
-    self.timeLabel.text = timeNow;
+//    NSString* timeNow = [NSString stringWithFormat:@"Time: %02d", self.time];
+    [self.timeProgressView setProgress:self.time/30.0];
+    if (self.time < 20.0) {
+        self.timeProgressView.progressTintColor = [UIColor orangeColor];
+    }
+    if (self.time <= 10.0) {
+        self.timeProgressView.progressTintColor = [UIColor redColor];
+    }
 }
 
 - (void)stopTimer
 {
     [self.timer invalidate];
-    NSString* timeNow = [NSString stringWithFormat:@"Time: %02d", self.time];
-    self.timeLabel.text= timeNow;
+//    NSString* timeNow = [NSString stringWithFormat:@"Time: %02d", self.time];
+    [self.timeProgressView setProgress:self.time/30.0];
+//    self.timeLabel.text= timeNow;
 }
 
 - (void)refreshScore
 {
     [self.scoreLabel setText:[NSString stringWithFormat:@"Score: %d", self.playSession.score]];
+    [self.streakLabel setText:[NSString stringWithFormat:@"Streak: %d", self.playSession.currentStreak]];
 }
-
 
 - (void)checkErrors
 {
