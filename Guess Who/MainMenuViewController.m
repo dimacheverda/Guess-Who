@@ -23,12 +23,16 @@
 {
     [super viewDidAppear:YES];
     
-    UIImage *buttonImage = [[UIImage imageNamed:@"greenButton.png"]
+    //customizing buttons
+    NSString *buttonFilled = @"myButtonFill.png";
+    
+    UIImage *buttonImage = [[UIImage imageNamed:buttonFilled]
                             resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
     [self.playButton setBackgroundImage:buttonImage forState:UIControlStateNormal];
     [self.highscoresButton setBackgroundImage:buttonImage forState:UIControlStateNormal];
     [self.aboutButton setBackgroundImage:buttonImage forState:UIControlStateNormal];
     
+    //hidding NavBar
     self.navigationController.navigationBarHidden = YES;
 }
 
@@ -37,8 +41,6 @@
     [super viewDidLoad];
     
     [self loadDatabase];
-    
-    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background-pattern"]]];
 }
 
 - (void)loadDatabase

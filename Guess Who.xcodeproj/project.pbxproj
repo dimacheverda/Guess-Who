@@ -10,10 +10,16 @@
 		3200BB6C1757D78900C69C53 /* highscores.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3247E0BF1755E7E600C42EAD /* highscores.plist */; };
 		3200BB6D1757D78D00C69C53 /* database.plist in Resources */ = {isa = PBXBuildFile; fileRef = 324EF41B173133AF00246733 /* database.plist */; };
 		3200BB861757EC2B00C69C53 /* HighscoresTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3200BB851757EC2B00C69C53 /* HighscoresTableViewController.m */; };
-		3200BBB21758C2DF00C69C53 /* background-paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 3200BBB11758C2DF00C69C53 /* background-paper.png */; };
-		3200BBB91759349100C69C53 /* greenButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3200BBB81759349100C69C53 /* greenButton@2x.png */; };
-		3200BBBB1759FF2D00C69C53 /* background-pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 3200BBBA1759FF2D00C69C53 /* background-pattern.png */; };
-		3200BBBD175A583100C69C53 /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3200BBBC175A583100C69C53 /* clock@2x.png */; };
+		3200BBBD175A583100C69C53 /* clock1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3200BBBC175A583100C69C53 /* clock1@2x.png */; };
+		323576F017785E3B00A75713 /* myButtonFill.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576EE17785E3B00A75713 /* myButtonFill.png */; };
+		323576F117785E3B00A75713 /* myButtonFill@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576EF17785E3B00A75713 /* myButtonFill@2x.png */; };
+		323576FA1778644B00A75713 /* myButtonH.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576F61778644A00A75713 /* myButtonH.png */; };
+		323576FB1778644B00A75713 /* myButtonH@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576F71778644A00A75713 /* myButtonH@2x.png */; };
+		323576FC1778644B00A75713 /* myButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576F81778644A00A75713 /* myButton.png */; };
+		323576FD1778644B00A75713 /* myButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576F91778644A00A75713 /* myButton@2x.png */; };
+		323577011779A74700A75713 /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323577001779A74700A75713 /* clock@2x.png */; };
+		323577031779D6DD00A75713 /* errorDisabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323577021779D6DD00A75713 /* errorDisabled@2x.png */; };
+		323577051779D83A00A75713 /* errorEnabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323577041779D83A00A75713 /* errorEnabled@2x.png */; };
 		324EF3E7172A9F0500246733 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3E6172A9F0500246733 /* UIKit.framework */; };
 		324EF3E9172A9F0500246733 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3E8172A9F0500246733 /* Foundation.framework */; };
 		324EF3EB172A9F0500246733 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3EA172A9F0500246733 /* CoreGraphics.framework */; };
@@ -29,8 +35,6 @@
 		324EF417172AA0B100246733 /* PlaySessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF40E172A9FB100246733 /* PlaySessionViewController.m */; };
 		324EF418172AA0B500246733 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF410172A9FB100246733 /* Question.m */; };
 		324EF41A172AAA9600246733 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF412172A9FB100246733 /* SummaryViewController.m */; };
-		32AF4D3817510C9F008C7BB4 /* error_image_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 32AF4D3617510C9F008C7BB4 /* error_image_disabled.png */; };
-		32AF4D3917510C9F008C7BB4 /* error_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 32AF4D3717510C9F008C7BB4 /* error_image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,10 +53,16 @@
 /* Begin PBXFileReference section */
 		3200BB841757EC2B00C69C53 /* HighscoresTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighscoresTableViewController.h; sourceTree = "<group>"; };
 		3200BB851757EC2B00C69C53 /* HighscoresTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighscoresTableViewController.m; sourceTree = "<group>"; };
-		3200BBB11758C2DF00C69C53 /* background-paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-paper.png"; sourceTree = "<group>"; };
-		3200BBB81759349100C69C53 /* greenButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greenButton@2x.png"; sourceTree = "<group>"; };
-		3200BBBA1759FF2D00C69C53 /* background-pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-pattern.png"; sourceTree = "<group>"; };
-		3200BBBC175A583100C69C53 /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
+		3200BBBC175A583100C69C53 /* clock1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock1@2x.png"; sourceTree = "<group>"; };
+		323576EE17785E3B00A75713 /* myButtonFill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myButtonFill.png; sourceTree = "<group>"; };
+		323576EF17785E3B00A75713 /* myButtonFill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myButtonFill@2x.png"; sourceTree = "<group>"; };
+		323576F61778644A00A75713 /* myButtonH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myButtonH.png; sourceTree = "<group>"; };
+		323576F71778644A00A75713 /* myButtonH@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myButtonH@2x.png"; sourceTree = "<group>"; };
+		323576F81778644A00A75713 /* myButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myButton.png; sourceTree = "<group>"; };
+		323576F91778644A00A75713 /* myButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myButton@2x.png"; sourceTree = "<group>"; };
+		323577001779A74700A75713 /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
+		323577021779D6DD00A75713 /* errorDisabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "errorDisabled@2x.png"; sourceTree = "<group>"; };
+		323577041779D83A00A75713 /* errorEnabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "errorEnabled@2x.png"; sourceTree = "<group>"; };
 		3247E0BF1755E7E600C42EAD /* highscores.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = highscores.plist; sourceTree = "<group>"; };
 		324EF3E3172A9F0500246733 /* Guess Who.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess Who.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		324EF3E6172A9F0500246733 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -79,8 +89,6 @@
 		324EF412172A9FB100246733 /* SummaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
 		324EF413172A9FC900246733 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		324EF41B173133AF00246733 /* database.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = database.plist; sourceTree = "<group>"; };
-		32AF4D3617510C9F008C7BB4 /* error_image_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error_image_disabled.png; sourceTree = "<group>"; };
-		32AF4D3717510C9F008C7BB4 /* error_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error_image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,12 +158,16 @@
 				3200BB851757EC2B00C69C53 /* HighscoresTableViewController.m */,
 				324EF41B173133AF00246733 /* database.plist */,
 				3247E0BF1755E7E600C42EAD /* highscores.plist */,
-				32AF4D3617510C9F008C7BB4 /* error_image_disabled.png */,
-				32AF4D3717510C9F008C7BB4 /* error_image.png */,
-				3200BBBA1759FF2D00C69C53 /* background-pattern.png */,
-				3200BBBC175A583100C69C53 /* clock@2x.png */,
-				3200BBB81759349100C69C53 /* greenButton@2x.png */,
-				3200BBB11758C2DF00C69C53 /* background-paper.png */,
+				323577021779D6DD00A75713 /* errorDisabled@2x.png */,
+				323577041779D83A00A75713 /* errorEnabled@2x.png */,
+				3200BBBC175A583100C69C53 /* clock1@2x.png */,
+				323577001779A74700A75713 /* clock@2x.png */,
+				323576EE17785E3B00A75713 /* myButtonFill.png */,
+				323576EF17785E3B00A75713 /* myButtonFill@2x.png */,
+				323576F61778644A00A75713 /* myButtonH.png */,
+				323576F71778644A00A75713 /* myButtonH@2x.png */,
+				323576F81778644A00A75713 /* myButton.png */,
+				323576F91778644A00A75713 /* myButton@2x.png */,
 				324EF3ED172A9F0500246733 /* Supporting Files */,
 			);
 			path = "Guess Who";
@@ -236,12 +248,16 @@
 				324EF414172A9FC900246733 /* MainStoryboard.storyboard in Resources */,
 				3200BB6D1757D78D00C69C53 /* database.plist in Resources */,
 				3200BB6C1757D78900C69C53 /* highscores.plist in Resources */,
-				32AF4D3817510C9F008C7BB4 /* error_image_disabled.png in Resources */,
-				32AF4D3917510C9F008C7BB4 /* error_image.png in Resources */,
-				3200BBB21758C2DF00C69C53 /* background-paper.png in Resources */,
-				3200BBB91759349100C69C53 /* greenButton@2x.png in Resources */,
-				3200BBBB1759FF2D00C69C53 /* background-pattern.png in Resources */,
-				3200BBBD175A583100C69C53 /* clock@2x.png in Resources */,
+				3200BBBD175A583100C69C53 /* clock1@2x.png in Resources */,
+				323576F017785E3B00A75713 /* myButtonFill.png in Resources */,
+				323576F117785E3B00A75713 /* myButtonFill@2x.png in Resources */,
+				323576FA1778644B00A75713 /* myButtonH.png in Resources */,
+				323576FB1778644B00A75713 /* myButtonH@2x.png in Resources */,
+				323576FC1778644B00A75713 /* myButton.png in Resources */,
+				323576FD1778644B00A75713 /* myButton@2x.png in Resources */,
+				323577011779A74700A75713 /* clock@2x.png in Resources */,
+				323577031779D6DD00A75713 /* errorDisabled@2x.png in Resources */,
+				323577051779D83A00A75713 /* errorEnabled@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +318,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -326,7 +342,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -336,6 +352,10 @@
 		324EF407172A9F0600246733 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Guess Who/Guess Who-Prefix.pch";
 				INFOPLIST_FILE = "Guess Who/Guess Who-Info.plist";
@@ -347,6 +367,10 @@
 		324EF408172A9F0600246733 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Guess Who/Guess Who-Prefix.pch";
 				INFOPLIST_FILE = "Guess Who/Guess Who-Info.plist";

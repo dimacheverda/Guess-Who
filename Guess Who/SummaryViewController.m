@@ -25,7 +25,7 @@
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.score];
     self.longestStreakLabel.text = [NSString stringWithFormat:@"Longest Streak: %d", self.longestStreak];
     
-    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background-pattern"]]];
+//    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background-pattern"]]];
     
     UIImage *buttonImage = [[UIImage imageNamed:@"greenButton.png"]
                             resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];

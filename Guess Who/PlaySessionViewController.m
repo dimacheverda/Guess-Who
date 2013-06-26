@@ -21,12 +21,14 @@
 @property (weak, nonatomic) IBOutlet UIButton *answerTwo;
 @property (weak, nonatomic) IBOutlet UIButton *answerThree;
 @property (weak, nonatomic) IBOutlet UIButton *answerFour;
+@property (weak, nonatomic) IBOutlet UIImageView *footerBackgroundImageView;
 @property (weak, nonatomic) IBOutlet UILabel *streakLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UIProgressView *timeProgressView;
 @property (weak, nonatomic) IBOutlet UIImageView *firstErrorImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *secondErrorImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *thirdErrorImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *clockImageView;
 
 @end
 
@@ -36,29 +38,118 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
+ 
+    //init data
     self.playSession = [[PlaySession alloc] initWithQuestionsDatabase:self.questionDatabase];
     [self refreshScore];
     [self.playSession nextQuestion];
     [self loadQuestion];
     
-    UIImage *buttonImage = [[UIImage imageNamed:@"greenButton.png"]
+    //setting buttons state images and colors
+    NSString *button = @"myButton.png";
+    NSString *buttonHighlighted = @"myButtonH.png";
+    
+    UIImage *buttonImage = [[UIImage imageNamed:button]
+                            resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
+    UIImage *buttonImageHighlighted = [[UIImage imageNamed:buttonHighlighted]
                             resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
     [self.answerOne setBackgroundImage:buttonImage forState:UIControlStateNormal];
     [self.answerTwo setBackgroundImage:buttonImage forState:UIControlStateNormal];
     [self.answerThree setBackgroundImage:buttonImage forState:UIControlStateNormal];
     [self.answerFour setBackgroundImage:buttonImage forState:UIControlStateNormal];
+    [self.answerOne setBackgroundImage:buttonImageHighlighted forState:UIControlStateHighlighted];
+    [self.answerTwo setBackgroundImage:buttonImageHighlighted forState:UIControlStateHighlighted];
+    [self.answerThree setBackgroundImage:buttonImageHighlighted forState:UIControlStateHighlighted];
+    [self.answerFour setBackgroundImage:buttonImageHighlighted forState:UIControlStateHighlighted];
+    [self.answerOne setTitleColor:[UIColor darkGrayColor] forState:UIControlStateHighlighted];
+    [self.answerTwo setTitleColor:[UIColor darkGrayColor] forState:UIControlStateHighlighted];
+    [self.answerThree setTitleColor:[UIColor darkGrayColor] forState:UIControlStateHighlighted];
+    [self.answerFour setTitleColor:[UIColor darkGrayColor] forState:UIControlStateHighlighted];
     
+    //view main background color
+    [self.view setBackgroundColor:[UIColor colorWithRed:244.0/255.0 green:250.0/255.0 blue:233.0/255.0 alpha:1.0]];
+    
+    //footerColor
+    [self.footerBackgroundImageView setBackgroundColor:[UIColor colorWithRed:167.0/255.0 green:199.0/255.0 blue:151.0/255.0 alpha:1.0]];
+    
+    //setting up NavBar
     self.navigationController.navigationBarHidden = NO;
-    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background-pattern"]]];
     self.navigationItem.title = [NSString stringWithFormat:@"Question №%d", self.playSession.currentQuestionIndex];
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:116.0/255.0 green:150.0/255.0 blue:96.0/255.0 alpha:1.0];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Gill Sans" size:20.0], UITextAttributeFont, nil]];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self adjustForIPhone5];
 }
 
--(void)viewWillDisappear:(BOOL)animated
+- (void)adjustForIPhone5
+{
+    CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
+    if ((screenRect.size.height == 568.0) || (screenRect.size.height == 548.0))
+    {
+        screenRect = self.questionBackgroundImageView.frame;
+        screenRect.size.height += 22.0;
+        self.questionBackgroundImageView.frame = screenRect;
+        
+        screenRect = self.questionLabel.frame;
+        screenRect.size.height += 22.0;
+        self.questionLabel.frame = screenRect;
+        
+        screenRect = self.answerOne.frame;
+        screenRect.origin.y += 44.0;
+        self.answerOne.frame = screenRect;
+        
+        screenRect = self.answerTwo.frame;
+        screenRect.origin.y += 44.0;
+        self.answerTwo.frame = screenRect;
+        
+        screenRect = self.answerThree.frame;
+        screenRect.origin.y += 44.0;
+        self.answerThree.frame = screenRect;
+        
+        screenRect = self.answerFour.frame;
+        screenRect.origin.y += 44.0;
+        self.answerFour.frame = screenRect;
+        
+        screenRect = self.footerBackgroundImageView.frame;
+        screenRect.origin.y += 88.0;
+        self.footerBackgroundImageView.frame = screenRect;
+        
+        screenRect = self.scoreLabel.frame;
+        screenRect.origin.y += 88.0;
+        self.scoreLabel.frame = screenRect;
+        
+        screenRect = self.timeProgressView.frame;
+        screenRect.origin.y += 88.0;
+        self.timeProgressView.frame = screenRect;
+        
+        screenRect = self.firstErrorImageView.frame;
+        screenRect.origin.y += 88.0;
+        self.firstErrorImageView.frame = screenRect;
+        
+        screenRect = self.secondErrorImageView.frame;
+        screenRect.origin.y += 88.0;
+        self.secondErrorImageView.frame = screenRect;
+        
+        screenRect = self.thirdErrorImageView.frame;
+        screenRect.origin.y += 88.0;
+        self.thirdErrorImageView.frame = screenRect;
+        
+        screenRect = self.streakLabel.frame;
+        screenRect.origin.y += 88.0;
+        self.streakLabel.frame = screenRect;
+        
+        screenRect = self.clockImageView.frame;
+        screenRect.origin.y += 88.0;
+        self.clockImageView.frame = screenRect;
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:YES];
     
@@ -115,7 +206,7 @@
         [self.playSession nextQuestion];
         [self loadQuestion];
     } else {
-        //        [NSThread sleepForTimeInterval:2.0];
+//        [NSThread sleepForTimeInterval:2.0];
         self.questionLabel.text = @"The End";
         [self performSegueWithIdentifier:@"Show Summary" sender:self];
     }
@@ -125,7 +216,8 @@
 
 - (void)initTimer
 {
-    self.time = 1 + TIME_FOR_ANSWER;
+    self.time = 1 + TIME_FOR_ANSWER;    
+    self.timeProgressView.progressTintColor = [UIColor blueColor];
     [self timerTick];
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTick) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
@@ -160,16 +252,18 @@
     [self.streakLabel setText:[NSString stringWithFormat:@"Streak: %d", self.playSession.currentStreak]];
 }
 
+#define errorEnabledImage @"errorEnabled"
+
 - (void)checkErrors
 {
     if (self.playSession.numberOfWrongAnswers >= 1) {
-        self.firstErrorImageView.image = [UIImage imageNamed:@"error_image"];
+        self.firstErrorImageView.image = [UIImage imageNamed:errorEnabledImage];
     }
     if (self.playSession.numberOfWrongAnswers >= 2) {
-        self.secondErrorImageView.image = [UIImage imageNamed:@"error_image"];
+        self.secondErrorImageView.image = [UIImage imageNamed:errorEnabledImage];
     }
     if (self.playSession.numberOfWrongAnswers >= 3) {
-        self.thirdErrorImageView.image = [UIImage imageNamed:@"error_image"];
+        self.thirdErrorImageView.image = [UIImage imageNamed:errorEnabledImage];
     }
 }
 
