@@ -7,7 +7,7 @@
 //
 
 #import "PlaySessionViewController.h"
-
+#include <QuartzCore/QuartzCore.h>
 
 @interface PlaySessionViewController ()
 
@@ -45,6 +45,10 @@
     [self.playSession nextQuestion];
     [self loadQuestion];
     
+    //shadow
+    CALayer* shadowLayer = [self createShadowWithFrame:CGRectMake(0, 0, 320, 5)];
+    [self.view.layer addSublayer:shadowLayer];
+    
     //setting buttons state images and colors
     NSString *button = @"myButton.png";
     NSString *buttonHighlighted = @"myButtonH.png";
@@ -70,10 +74,12 @@
     [self.view setBackgroundColor:[UIColor colorWithRed:244.0/255.0 green:250.0/255.0 blue:233.0/255.0 alpha:1.0]];
     
     //footerColor
-    [self.footerBackgroundImageView setBackgroundColor:[UIColor colorWithRed:167.0/255.0 green:199.0/255.0 blue:151.0/255.0 alpha:1.0]];
+    UIImage *footerImage = [[UIImage imageNamed:@"footerImage"] resizableImageWithCapInsets:UIEdgeInsetsMake(40.0, 40.0, 40.0, 40.0)];
+    self.footerBackgroundImageView.image = footerImage;
+//    [self.footerBackgroundImageView setBackgroundColor:[UIColor colorWithRed:167.0/255.0 green:199.0/255.0 blue:151.0/255.0 alpha:1.0]];
     
     //setting up NavBar
-    self.navigationController.navigationBarHidden = NO;
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     self.navigationItem.title = [NSString stringWithFormat:@"Question №%d", self.playSession.currentQuestionIndex];
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:116.0/255.0 green:150.0/255.0 blue:96.0/255.0 alpha:1.0];
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Gill Sans" size:20.0], UITextAttributeFont, nil]];
@@ -84,6 +90,19 @@
     [super viewDidLoad];
     
     [self adjustForIPhone5];
+}
+
+-(CALayer *)createShadowWithFrame:(CGRect)frame
+{
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = frame;
+    
+    UIColor* lightColor = [[UIColor blackColor] colorWithAlphaComponent:0.0];
+    UIColor* darkColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
+    
+    gradient.colors = [NSArray arrayWithObjects:(id)darkColor.CGColor, (id)lightColor.CGColor, nil];
+    
+    return gradient;
 }
 
 - (void)adjustForIPhone5
@@ -153,7 +172,7 @@
 {
     [super viewWillDisappear:YES];
     
-    self.navigationController.navigationBarHidden = YES;
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)loadQuestion
@@ -217,7 +236,7 @@
 - (void)initTimer
 {
     self.time = 1 + TIME_FOR_ANSWER;    
-    self.timeProgressView.progressTintColor = [UIColor blueColor];
+//    self.timeProgressView.progressTintColor = [UIColor blueColor];
     [self timerTick];
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTick) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
@@ -229,13 +248,15 @@
         self.time--;
     }
 //    NSString* timeNow = [NSString stringWithFormat:@"Time: %02d", self.time];
+    
+    //adjusting progress bar color
     [self.timeProgressView setProgress:self.time/30.0];
-    if (self.time < 20.0) {
-        self.timeProgressView.progressTintColor = [UIColor orangeColor];
-    }
-    if (self.time <= 10.0) {
-        self.timeProgressView.progressTintColor = [UIColor redColor];
-    }
+//    if (self.time < 20.0) {
+//        self.timeProgressView.progressTintColor = [UIColor orangeColor];
+//    }
+//    if (self.time <= 10.0) {
+//        self.timeProgressView.progressTintColor = [UIColor redColor];
+//    }
 }
 
 - (void)stopTimer

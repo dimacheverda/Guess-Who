@@ -32,15 +32,40 @@
     [self.highscoresButton setBackgroundImage:buttonImage forState:UIControlStateNormal];
     [self.aboutButton setBackgroundImage:buttonImage forState:UIControlStateNormal];
     
+    //view main background color
+    [self.view setBackgroundColor:[UIColor colorWithRed:244.0/255.0 green:250.0/255.0 blue:233.0/255.0 alpha:1.0]];
+    
     //hidding NavBar
     self.navigationController.navigationBarHidden = YES;
+    
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    [self adjustForIPhone5];
+    
     [self loadDatabase];
+}
+
+- (void)adjustForIPhone5
+{
+    CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
+    if ((screenRect.size.height == 568.0) || (screenRect.size.height == 548.0))
+    {        
+        screenRect = self.playButton.frame;
+        screenRect.origin.y += 68.0;
+        self.playButton.frame = screenRect;
+        
+        screenRect = self.highscoresButton.frame;
+        screenRect.origin.y += 68.0;
+        self.highscoresButton.frame = screenRect;
+        
+        screenRect = self.aboutButton.frame;
+        screenRect.origin.y += 68.0;
+        self.aboutButton.frame = screenRect;
+    }
 }
 
 - (void)loadDatabase

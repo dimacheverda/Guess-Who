@@ -7,10 +7,12 @@
 //
 
 #import "HighscoresTableViewController.h"
+#include <QuartzCore/QuartzCore.h>
 
 @interface HighscoresTableViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) NSArray *highscoresArray;
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 
 @end
 
@@ -25,6 +27,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //shadow
+    CALayer* shadowLayer = [self createShadowWithFrame:CGRectMake(0, 44, 320, 5)];
+    [self.view.layer addSublayer:shadowLayer];
+    
+    //setting NavBar
+    self.toolbar.tintColor = [UIColor colorWithRed:116.0/255.0 green:150.0/255.0 blue:96.0/255.0 alpha:1.0];
+}
+
+-(CALayer *)createShadowWithFrame:(CGRect)frame
+{
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = frame;
+    
+    UIColor* lightColor = [[UIColor blackColor] colorWithAlphaComponent:0.0];
+    UIColor* darkColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
+    
+    gradient.colors = [NSArray arrayWithObjects:(id)darkColor.CGColor, (id)lightColor.CGColor, nil];
+    
+    return gradient;
 }
 
 - (void)loadHighscoresToArray

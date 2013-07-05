@@ -23,7 +23,6 @@
         self.currentStreak = 0;
         self.longestStreak = 0;
     }
-//    NSLog(@"%@", self.questionDatabase);
     return self;
 }
 
@@ -44,10 +43,6 @@
     Question *currentQuestion = [[Question alloc] initWithQuestionID:randomIndex fromQuestionDatabase:self.questionDatabase];
     
     self.currentQuestion = currentQuestion;
-//    NSLog(@"%@", self.currentQuestion.question);
-//    NSLog(@"%@", self.currentQuestion.answer);
-//    NSLog(@"%@", self.currentQuestion.variants);
-//    NSLog(@"%@", self.usedQuestionsID);
 }
 
 - (NSMutableSet *)usedQuestionsID
@@ -81,13 +76,12 @@
     return _numberOfWrongAnswers;
 }
 
-#define TIME_MULTIPLIER 20;
-#define RIGHT_ANSWER_SCORE 1000;
-#define STREAK_BONUS 50;
+#define TIME_MULTIPLIER 21;
+#define RIGHT_ANSWER_SCORE 987;
+#define STREAK_BONUS 49;
 
 - (void)checkAnswerWithTime:(NSInteger)time
 {
-//    NSLog(@"%d", time);
     if ([self.selectedAnswerString isEqualToString:self.currentQuestion.answer]) {
         self.currentStreak++;
         self.score += RIGHT_ANSWER_SCORE;
@@ -97,7 +91,6 @@
             self.longestStreak = self.currentStreak;
         }
     } else self.numberOfWrongAnswers++;
-//    NSLog(@"%d", self.currentStreak);
 }
 
 @end
