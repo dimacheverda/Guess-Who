@@ -76,7 +76,6 @@
     //footerColor
     UIImage *footerImage = [[UIImage imageNamed:@"footerImage"] resizableImageWithCapInsets:UIEdgeInsetsMake(40.0, 40.0, 40.0, 40.0)];
     self.footerBackgroundImageView.image = footerImage;
-//    [self.footerBackgroundImageView setBackgroundColor:[UIColor colorWithRed:167.0/255.0 green:199.0/255.0 blue:151.0/255.0 alpha:1.0]];
     
     //setting up NavBar
     [self.navigationController setNavigationBarHidden:NO animated:YES];
@@ -171,7 +170,7 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:YES];
-    
+    [self stopTimer];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
@@ -219,24 +218,25 @@
     [self refreshScore];
     [self checkErrors];
     
-    //    NSLog(@"%d", self.playSession.numberOfWrongAnswers);
-    
     if (self.playSession.numberOfWrongAnswers < 3) {
         [self.playSession nextQuestion];
         [self loadQuestion];
     } else {
-//        [NSThread sleepForTimeInterval:2.0];
-        self.questionLabel.text = @"The End";
-        [self performSegueWithIdentifier:@"Show Summary" sender:self];
+        [self terminateSession];
     }
 }
 
 #define TIME_FOR_ANSWER 30;
 
+- (void)terminateSession
+{
+    self.questionLabel.text = @"The End";
+    [self performSegueWithIdentifier:@"Show Summary" sender:self];
+}
+
 - (void)initTimer
 {
-    self.time = 1 + TIME_FOR_ANSWER;    
-//    self.timeProgressView.progressTintColor = [UIColor blueColor];
+    self.time = 1 + TIME_FOR_ANSWER;
     [self timerTick];
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTick) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
@@ -247,24 +247,20 @@
     if (!(self.time == 0)) {
         self.time--;
     }
-//    NSString* timeNow = [NSString stringWithFormat:@"Time: %02d", self.time];
     
     //adjusting progress bar color
     [self.timeProgressView setProgress:self.time/30.0];
-//    if (self.time < 20.0) {
-//        self.timeProgressView.progressTintColor = [UIColor orangeColor];
-//    }
-//    if (self.time <= 10.0) {
-//        self.timeProgressView.progressTintColor = [UIColor redColor];
-//    }
+    
+    if (self.time <= 0.0) {
+        [self stopTimer];
+        [self terminateSession];
+    }
 }
 
 - (void)stopTimer
 {
     [self.timer invalidate];
-//    NSString* timeNow = [NSString stringWithFormat:@"Time: %02d", self.time];
     [self.timeProgressView setProgress:self.time/30.0];
-//    self.timeLabel.text= timeNow;
 }
 
 - (void)refreshScore

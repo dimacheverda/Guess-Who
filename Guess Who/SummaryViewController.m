@@ -46,10 +46,22 @@
     self.scoreDictionary = score;
     
     [self loadHighscores];
-    [self addScoreToHighscores];
+    if (self.score != 0) {
+        [self addScoreToHighscores];
+    }
+    [self sortHighscores];
     [self saveHighscores];
     
 //    self.navigationItem.hidesBackButton = YES;
+}
+
+- (void)sortHighscores
+{
+    NSArray *tempArray;
+    NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@"score" ascending:NO];
+    NSArray *DA = [NSArray arrayWithObject:descriptor];
+    tempArray = [self.highscoreArray sortedArrayUsingDescriptors:DA];
+    self.highscoreArray = [tempArray mutableCopy];
 }
 
 - (void)loadHighscores

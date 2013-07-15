@@ -37,7 +37,6 @@
     
     //hidding NavBar
     self.navigationController.navigationBarHidden = YES;
-    
 }
 
 - (void)viewDidLoad
@@ -75,7 +74,6 @@
     NSString *plistPath;
     NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     plistPath = [rootPath stringByAppendingPathComponent:@"database.plist"];
-//    NSLog(@"path: %@",plistPath);
     if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
         plistPath = [[NSBundle mainBundle] pathForResource:@"database" ofType:@"plist"];
     }
@@ -89,7 +87,6 @@
     if (!self.database) {
         NSLog(@"Error reading plist: %@, format: %d", errorDesc, format);
     }
-//    NSLog(@"%@", self.database);
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
