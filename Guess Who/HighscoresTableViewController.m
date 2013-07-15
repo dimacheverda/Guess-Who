@@ -7,6 +7,7 @@
 //
 
 #import "HighscoresTableViewController.h"
+#import "HighscoreCell.h"
 #include <QuartzCore/QuartzCore.h>
 
 @interface HighscoresTableViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -22,6 +23,9 @@
 {
     [super viewWillAppear:YES];
     [self loadHighscoresToArray];
+    
+    //view main background color
+    [self.view setBackgroundColor:[UIColor colorWithRed:244.0/255.0 green:250.0/255.0 blue:233.0/255.0 alpha:1.0]];
 }
 
 - (void)viewDidLoad
@@ -83,16 +87,16 @@
     return self.highscoresArray.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (HighscoreCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    HighscoreCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     NSString *score = [NSString stringWithFormat:@"%@", [[self.highscoresArray objectAtIndex:indexPath.row] objectForKey:@"score"]];
     NSString *streak = [NSString stringWithFormat:@"%@", [[self.highscoresArray objectAtIndex:indexPath.row] objectForKey:@"streak"]];
     
-    [cell.textLabel setText:score];
-    [cell.detailTextLabel setText:streak];
+    [cell.scoreLabel setText:score];
+    [cell.streakLabel setText:streak];
     
     return cell;
 }

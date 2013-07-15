@@ -90,7 +90,10 @@
         if (self.currentStreak > self.longestStreak) {
             self.longestStreak = self.currentStreak;
         }
-    } else self.numberOfWrongAnswers++;
+    } else {
+        self.numberOfWrongAnswers++;
+        self.currentStreak = 0;
+    }
 }
 
 @end

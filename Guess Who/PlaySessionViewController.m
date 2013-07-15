@@ -79,7 +79,6 @@
     
     //setting up NavBar
     [self.navigationController setNavigationBarHidden:NO animated:YES];
-    self.navigationItem.title = [NSString stringWithFormat:@"Question №%d", self.playSession.currentQuestionIndex];
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:116.0/255.0 green:150.0/255.0 blue:96.0/255.0 alpha:1.0];
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Gill Sans" size:20.0], UITextAttributeFont, nil]];
 }
@@ -177,6 +176,7 @@
 - (void)loadQuestion
 {
     self.questionLabel.text = self.playSession.currentQuestion.question;
+    self.navigationItem.title = [NSString stringWithFormat:@"Question №%d", self.playSession.currentQuestionIndex];
     [self shuffleAnswers:self.playSession.currentQuestion.variants];
     [self initTimer];
 }
@@ -238,7 +238,10 @@
 {
     self.time = 1 + TIME_FOR_ANSWER;
     [self timerTick];
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTick) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self
+                                                selector:@selector(timerTick)
+                                                userInfo:nil
+                                                 repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
 }
 

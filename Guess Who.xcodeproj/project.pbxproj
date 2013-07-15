@@ -40,6 +40,7 @@
 		324EF417172AA0B100246733 /* PlaySessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF40E172A9FB100246733 /* PlaySessionViewController.m */; };
 		324EF418172AA0B500246733 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF410172A9FB100246733 /* Question.m */; };
 		324EF41A172AAA9600246733 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF412172A9FB100246733 /* SummaryViewController.m */; };
+		326BFC38179484BA0086CDAE /* HighscoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 326BFC37179484BA0086CDAE /* HighscoreCell.m */; };
 		32E1F04A177F79410001C1FD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E1F049177F79410001C1FD /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,8 @@
 		324EF412172A9FB100246733 /* SummaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
 		324EF413172A9FC900246733 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		324EF41B173133AF00246733 /* database.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = database.plist; sourceTree = "<group>"; };
+		326BFC36179484BA0086CDAE /* HighscoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighscoreCell.h; sourceTree = "<group>"; };
+		326BFC37179484BA0086CDAE /* HighscoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighscoreCell.m; sourceTree = "<group>"; };
 		32E1F049177F79410001C1FD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -190,8 +193,7 @@
 				324EF409172A9FB100246733 /* MainMenuViewController.h */,
 				324EF40A172A9FB100246733 /* MainMenuViewController.m */,
 				3200BB831757EB9B00C69C53 /* Play Session */,
-				3200BB841757EC2B00C69C53 /* HighscoresTableViewController.h */,
-				3200BB851757EC2B00C69C53 /* HighscoresTableViewController.m */,
+				326BFC39179484C20086CDAE /* Highscore */,
 				324EF41B173133AF00246733 /* database.plist */,
 				3247E0BF1755E7E600C42EAD /* highscores.plist */,
 				32357706177B64FA00A75713 /* Artwork */,
@@ -214,6 +216,17 @@
 				324EF3FC172A9F0500246733 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		326BFC39179484C20086CDAE /* Highscore */ = {
+			isa = PBXGroup;
+			children = (
+				3200BB841757EC2B00C69C53 /* HighscoresTableViewController.h */,
+				3200BB851757EC2B00C69C53 /* HighscoresTableViewController.m */,
+				326BFC36179484BA0086CDAE /* HighscoreCell.h */,
+				326BFC37179484BA0086CDAE /* HighscoreCell.m */,
+			);
+			name = Highscore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +321,7 @@
 				324EF418172AA0B500246733 /* Question.m in Sources */,
 				324EF41A172AAA9600246733 /* SummaryViewController.m in Sources */,
 				3200BB861757EC2B00C69C53 /* HighscoresTableViewController.m in Sources */,
+				326BFC38179484BA0086CDAE /* HighscoreCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
