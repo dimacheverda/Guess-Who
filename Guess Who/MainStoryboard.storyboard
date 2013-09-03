@@ -213,9 +213,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="oAl-Sc-V79">
-                        <barButtonItem key="backBarButtonItem" title="Quit" style="plain" id="cDd-eO-iWM"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="oAl-Sc-V79"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="answerFour" destination="fjx-iM-ulD" id="6Bg-hk-Eke"/>
@@ -414,57 +412,6 @@
         <image name="clock@2x.png" width="52" height="52"/>
         <image name="errorDisabled@2x.png" width="52" height="52"/>
     </resources>
-    <classes>
-        <class className="HighscoreCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HighscoreCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="streakLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="HighscoresTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HighscoresTableViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="backButtonPressed:"/>
-                <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
-            </relationships>
-        </class>
-        <class className="MainMenuViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainMenuViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="aboutButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="highscoresButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="playButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="PlaySessionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlaySessionViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="answerFour" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="answerOne" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="answerThree" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="answerTwo" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clockImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="firstErrorImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="footerBackgroundImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="questionBackgroundImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="questionLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="secondErrorImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="streakLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="thirdErrorImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="timeProgressView" candidateClass="UIProgressView"/>
-            </relationships>
-        </class>
-        <class className="SummaryViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SummaryViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="longestStreakLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="mainMenuButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

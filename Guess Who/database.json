@@ -1,0 +1,2289 @@
+[{
+    "dict": {
+        "key": "questions",
+        "array": {
+            "dict": [
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What bird harassed chained Prometheus?",
+                                "Eagle"
+                                ],
+                     "array": {
+                     "string": [
+                                "Eagle",
+                                "Pigeon",
+                                "Seagull",
+                                "Falcon"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Which sea does not exist?",
+                                "Blue"
+                                ],
+                     "array": {
+                     "string": [
+                                "Blue",
+                                "Black",
+                                "Yellow",
+                                "Red"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What measures the in knots?",
+                                "Speed"
+                                ],
+                     "array": {
+                     "string": [
+                                "Speed",
+                                "Volume",
+                                "Length",
+                                "Brightness"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What Herostratus burned?",
+                                "Temple of Diana at Ephesus"
+                                ],
+                     "array": {
+                     "string": [
+                                "Temple of Diana at Ephesus",
+                                "Gardens Semyramidy",
+                                "Alexandrian library",
+                                "Colossus of Rhodes"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Which is the color of the mineral malachite?",
+                                "Green"
+                                ],
+                     "array": {
+                     "string": [
+                                "Green",
+                                "Blue",
+                                "Red",
+                                "Violet"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "In which city is the Grand Opera House?",
+                                "Paris"
+                                ],
+                     "array": {
+                     "string": [
+                                "Paris",
+                                "London",
+                                "Sydney",
+                                "Rome"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "How many pairs of chromosomes human has?",
+                                "23 pairs"
+                                ],
+                     "array": {
+                     "string": [
+                                "23 pairs",
+                                "25 pairs",
+                                "21 pairs",
+                                "24 pairs"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "How to write 2000 in Roman numerals?",
+                                "MM"
+                                ],
+                     "array": {
+                     "string": [
+                                "MM",
+                                "XX",
+                                "DD",
+                                "CC"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "In what measure the strength of engines?",
+                                "Horse"
+                                ],
+                     "array": {
+                     "string": [
+                                "Horse",
+                                "Donkey",
+                                "Elephant",
+                                "Bull"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Alex Ferguson is the coach of the football club?",
+                                "Manchester United"
+                                ],
+                     "array": {
+                     "string": [
+                                "Manchester United",
+                                "Real Madrid",
+                                "Barcelona",
+                                "Juventus"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What was the name of the sun god in ancient Egypt?",
+                                "Ra"
+                                ],
+                     "array": {
+                     "string": [
+                                "Ra",
+                                "Asiris",
+                                "Re",
+                                "Ibis"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What group is lead singer Mick Jagger?",
+                                "Rolling Stones"
+                                ],
+                     "array": {
+                     "string": [
+                                "Rolling Stones",
+                                "Aerosmith",
+                                "Metallica",
+                                "Beatles"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What is called 'Red Planet'?",
+                                "Mars"
+                                ],
+                     "array": {
+                     "string": [
+                                "Mars",
+                                "Saturn",
+                                "Pluto",
+                                "Venus"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "In an equilateral triangle, how many sides are equal?",
+                                "All"
+                                ],
+                     "array": {
+                     "string": [
+                                "All",
+                                "Two",
+                                "None",
+                                "Not fixed"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "How many years in millennium?",
+                                "1000"
+                                ],
+                     "array": {
+                     "string": [
+                                "1000",
+                                "100",
+                                "10",
+                                "1000000"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "3.14 is known as ... ?",
+                                "Pi"
+                                ],
+                     "array": {
+                     "string": [
+                                "Pi",
+                                "Lambda",
+                                "Alpha",
+                                "Beta"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What is known as \"Red Planet\"?",
+                                "Mars"
+                                ],
+                     "array": {
+                     "string": [
+                                "Mars",
+                                "Pluto",
+                                "Mercury",
+                                "Saturn"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "How many Watts in Kilowat",
+                                "1000"
+                                ],
+                     "array": {
+                     "string": [
+                                "1000",
+                                "100",
+                                "10",
+                                "10000"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "In an equilateral triange, how many sides are equal?",
+                                "All"
+                                ],
+                     "array": {
+                     "string": [
+                                "All",
+                                "Two",
+                                "Three",
+                                "None"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Which is the largest animal in the world?",
+                                "Blue Whale"
+                                ],
+                     "array": {
+                     "string": [
+                                "Blue Whale",
+                                "Giraffe",
+                                "Elephant",
+                                "Gorilla"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "The name of this fruit is translated as \"Chinese apple\"?",
+                                "Orange"
+                                ],
+                     "array": {
+                     "string": [
+                                "Orange",
+                                "Watermelon",
+                                "Papaya",
+                                "Melon"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "In which year group The Beatles broke up?",
+                                "1970 year"
+                                ],
+                     "array": {
+                     "string": [
+                                "1970 year",
+                                "1972 year",
+                                "1974 year",
+                                "1968 year"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "In what city was born the legendary British band The Beatles?",
+                                "Liverpool"
+                                ],
+                     "array": {
+                     "string": [
+                                "Liverpool",
+                                "London",
+                                "Manchester",
+                                "Hamburg"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "The most expensive in the world of the entertainment industry is recognized as a clip of Michael Jackson's song?",
+                                "\"Scream\""
+                                ],
+                     "array": {
+                     "string": [
+                                "\"Scream\"",
+                                "\"Bad\"",
+                                "\"Thriller\"",
+                                "\"Dangerous\""
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "How many times did Michael Jackson got into the Guinness Book of Records for individual achievement in music?",
+                                "30"
+                                ],
+                     "array": {
+                     "string": [
+                                "30",
+                                "25",
+                                "13",
+                                "2"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "How many kids in the family of Joseph and Katherine Jackson?",
+                                "10"
+                                ],
+                     "array": {
+                     "string": [
+                                "10",
+                                "7",
+                                "5",
+                                "12"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What was the primary cause of death of Bob Marley?",
+                                "Football injury"
+                                ],
+                     "array": {
+                     "string": [
+                                "Football injury",
+                                "Drug overdose",
+                                "Gunshoot",
+                                "Inherited disease"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "The birthplace of Bob Marley?",
+                                "Jamaica"
+                                ],
+                     "array": {
+                     "string": [
+                                "Jamaica",
+                                "USA",
+                                "Great Britain",
+                                "Ephiopia"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What is the style of music that is heard in the songs of Bob Marley?",
+                                "Reggae"
+                                ],
+                     "array": {
+                     "string": [
+                                "Reggae",
+                                "Rap",
+                                "Jazz",
+                                "Funk"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Freddie Mercury - is a pseudonym. And what is the real name of the singer?",
+                                "Farrokh Bulsara"
+                                ],
+                     "array": {
+                     "string": [
+                                "Farrokh Bulsara",
+                                "Fidel Beleser",
+                                "Frederick Baltazar",
+                                "Friedrich Merky"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "In what year did the group Queen gave the last concert with Freddie Mercury?",
+                                "1986 year"
+                                ],
+                     "array": {
+                     "string": [
+                                "1986 year",
+                                "1987 year",
+                                "1976 year",
+                                "1991 year"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "The highest sound of wind makes a flute piccolo. What does the word \"piccolo\"?",
+                                "Small"
+                                ],
+                     "array": {
+                     "string": [
+                                "Small",
+                                "Large",
+                                "Long",
+                                "Thin"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What is the genre, which is based on a combination of drum machines and samplers?",
+                                "new-school"
+                                ],
+                     "array": {
+                     "string": [
+                                "new-school",
+                                "hardcore-rap",
+                                "gangsta-rap",
+                                "old-school"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "In what year was born subculture of hip-hop?",
+                                "1974 year"
+                                ],
+                     "array": {
+                     "string": [
+                                "1972 year",
+                                "1970 year",
+                                "1982 year",
+                                "1974 year"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "When was the first exhibition of the Impressionists?",
+                                "1874 year"
+                                ],
+                     "array": {
+                     "string": [
+                                "1892 year",
+                                "1874 year",
+                                "1884 year",
+                                "1790 year"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who invented the flexible photographic film?",
+                                "Richard Maddox"
+                                ],
+                     "array": {
+                     "string": [
+                                "Richard Maddox",
+                                "Thomas Sutton",
+                                "George Eastman",
+                                "Frederick Scott Archer"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "The statue of Olympian Zeus has ruined this disaster of ... ?",
+                                "fire"
+                                ],
+                     "array": {
+                     "string": [
+                                "fire",
+                                "earthquake",
+                                "flood",
+                                "time"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "On what island was the Lighthouse of Alexandria?",
+                                "Pharos"
+                                ],
+                     "array": {
+                     "string": [
+                                "Pharos",
+                                "Lesbos",
+                                "Knossos",
+                                "Crete"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Hanging Gardens of Babylon were in the territory of the modern state?",
+                                "Iraq"
+                                ],
+                     "array": {
+                     "string": [
+                                "Iraq",
+                                "Iran",
+                                "Syria",
+                                "Israel"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "In which country you are if it is King Albert II?",
+                                "Belgium"
+                                ],
+                     "array": {
+                     "string": [
+                                "Belgium",
+                                "France",
+                                "England",
+                                "Norway"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Which country is \"country of a thousand lakes\"",
+                                "Finland"
+                                ],
+                     "array": {
+                     "string": [
+                                "Finland",
+                                "Canada",
+                                "Italy",
+                                "Russia"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Which country is known as the \"Land of St. Patrick's\"",
+                                "Ireland"
+                                ],
+                     "array": {
+                     "string": [
+                                "Ireland",
+                                "Iceland",
+                                "England",
+                                "Italy"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Among U.S. presidents some of them have the Nobel Prize. Which of these people do not get it?",
+                                "Dwight Eisenhower"
+                                ],
+                     "array": {
+                     "string": [
+                                "Dwight Eisenhower",
+                                "Barack Obama",
+                                "Theodore Roosevelt",
+                                "Woodrow Wilson"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "In the U.S., the man also known as the 22nd, and as the 24th president.",
+                                "Grover Cleveland"
+                                ],
+                     "array": {
+                     "string": [
+                                "Grover Cleveland",
+                                "Theodore Roosevelt",
+                                "Ulysses S. Grant",
+                                "William McKinley"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What kind of vegetable in the Middle Ages was considered a favorite treat gnomes?",
+                                "Carrot"
+                                ],
+                     "array": {
+                     "string": [
+                                "Carrot",
+                                "Potato",
+                                "Apple",
+                                "Cabbage"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "How many hours a day sleeping ferrets?",
+                                "20 hours"
+                                ],
+                     "array": {
+                     "string": [
+                                "20 hours",
+                                "18 hours",
+                                "15 hours",
+                                "16 hours"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "How fast can run the Polar Bears?",
+                                "40 km/h"
+                                ],
+                     "array": {
+                     "string": [
+                                "40 km/h",
+                                "60 km/h",
+                                "45 km/h",
+                                "50 km/h"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What kind of bird is considered the smartest?",
+                                "Crow"
+                                ],
+                     "array": {
+                     "string": [
+                                "Crow",
+                                "Hummingbird",
+                                "Penguin",
+                                "Parrot"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "How many time per minute beats whales heart?",
+                                "9"
+                                ],
+                     "array": {
+                     "string": [
+                                "9",
+                                "13",
+                                "64",
+                                "5"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "How many minutes should boil an ostrich egg?",
+                                "40 min"
+                                ],
+                     "array": {
+                     "string": [
+                                "40 min",
+                                "20 min",
+                                "15 min",
+                                "10 min"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "How many people in Estonia have blue eyes?",
+                                "99%"
+                                ],
+                     "array": {
+                     "string": [
+                                "1%",
+                                "99%",
+                                "56%",
+                                "23%"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What is the higher score made in a Soccer game?",
+                                "149-0"
+                                ],
+                     "array": {
+                     "string": [
+                                "78-0",
+                                "149-0",
+                                "124-0",
+                                "63-0"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "How long does it take for human brain to retieve a memory?",
+                                "0.0004 seconds"
+                                ],
+                     "array": {
+                     "string": [
+                                "0.0004 seconds",
+                                "0.004 seconds",
+                                "0.04 seconds",
+                                "0.00004 seconds"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "How long the average person can live without eating any food? ",
+                                "1 month"
+                                ],
+                     "array": {
+                     "string": [
+                                "1 month",
+                                "1.5 month",
+                                "2 weeks",
+                                "3 weeks"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "People with which eye color see better in the dark?",
+                                "Blue"
+                                ],
+                     "array": {
+                     "string": [
+                                "Blue",
+                                "Green",
+                                "Brown",
+                                "Grey"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "How many people Genghis Khan killed in 1221 in one hour? ",
+                                "1,748,000"
+                                ],
+                     "array": {
+                     "string": [
+                                "1,748,000",
+                                "1,250,000",
+                                "946,000",
+                                "2,145,000"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Which of these don't form armies and don't go to \"war\"?",
+                                "Lions"
+                                ],
+                     "array": {
+                     "string": [
+                                "Lions",
+                                "Humans",
+                                "Ants",
+                                "Crows"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "How much cost a 17 minute battle scene int the movie \"The Matrix Reloaded\"?",
+                                "Over $40 million"
+                                ],
+                     "array": {
+                     "string": [
+                                "Over $40 million",
+                                "Over $30 million",
+                                "Over $35 million",
+                                "Over $45 million"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "The most push ups performed in one day by a single person? ",
+                                "46,001"
+                                ],
+                     "array": {
+                     "string": [
+                                "46,001",
+                                "1,562",
+                                "15,942",
+                                "27,259"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "How much of world currency exists as physical cash?",
+                                "8%"
+                                ],
+                     "array": {
+                     "string": [
+                                "8%",
+                                "13%",
+                                "17%",
+                                "5%"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Average amount of time a woman can keep a secret?",
+                                "47 hours and 15 minutes"
+                                ],
+                     "array": {
+                     "string": [
+                                "35 hours and 30 minutes",
+                                "15 hours",
+                                "27 hours and 15 minutes",
+                                "47 hours and 15 minutes"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "When Pluto will complete its first full orbit around the Sun since it's discovery?",
+                                "2178"
+                                ],
+                     "array": {
+                     "string": [
+                                "2178",
+                                "2014",
+                                "2112",
+                                "2076"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Which of these Albert Einstein never wore?",
+                                "Socks"
+                                ],
+                     "array": {
+                     "string": [
+                                "Socks",
+                                "Ties",
+                                "Jackets",
+                                "Suits"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Which color causes brain to release calming hormones?",
+                                "Blue"
+                                ],
+                     "array": {
+                     "string": [
+                                "Blue",
+                                "Green",
+                                "Red",
+                                "Yellow"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Why people started to shake their hand with strangers?",
+                                "To show they don't have a gun"
+                                ],
+                     "array": {
+                     "string": [
+                                "To show they don't have a gun",
+                                "Just to be friendly",
+                                "To show their support",
+                                "To feel each other"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What is the most common name in the world?",
+                                "Mohammed"
+                                ],
+                     "array": {
+                     "string": [
+                                "Mohammed",
+                                "Lee",
+                                "John",
+                                "Youssef"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Scientific termin of fear of going to school?",
+                                "Didaskaleinophobia"
+                                ],
+                     "array": {
+                     "string": [
+                                "Didaskaleinophobia",
+                                "Dikephobia",
+                                "Maniaphobia",
+                                "Nelophobia"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "When Titanic II is scheduled to set sail?",
+                                "2016 year"
+                                ],
+                     "array": {
+                     "string": [
+                                "2016 year",
+                                "2017 year",
+                                "2020 year",
+                                "2015 year"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Which of these a disease that allows people to remember every detail of their lives?",
+                                "Hyperthymesia"
+                                ],
+                     "array": {
+                     "string": [
+                                "Hyperthymesia",
+                                "Amylose",
+                                "Reye Syndrome",
+                                "Wolman Disease"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Having excessive body hair is linked to having ... ?",
+                                "higher intelligence"
+                                ],
+                     "array": {
+                     "string": [
+                                "higher intelligence",
+                                "longer lifetime",
+                                "big nose",
+                                "long legs"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What is the weight of the heaviest mango in the world?",
+                                "3.5 kg"
+                                ],
+                     "array": {
+                     "string": [
+                                "3.5 kg",
+                                "2.5 kg",
+                                "3.7 kg",
+                                "2.7 kg"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "How much tooth of John Lennon cost in November 2011?",
+                                "31 200 dollars"
+                                ],
+                     "array": {
+                     "string": [
+                                "31 200 dollars",
+                                "20 800 dollars",
+                                "16 500 dollars",
+                                "41 000 dollars"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Which city is recognized as the poorest cities in England?",
+                                "Jaywick"
+                                ],
+                     "array": {
+                     "string": [
+                                "Jaywick",
+                                "St. Asaph",
+                                "St. David's",
+                                "Thelwall"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What is height of the biggest printed book in the world?",
+                                "3.00 m"
+                                ],
+                     "array": {
+                     "string": [
+                                "3.00 m",
+                                "2.56 m",
+                                "3.25 m",
+                                "2.90 m"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "1 September 2010 the German company Ravensburger launches the biggest puzzle in the world, which consists of ... ?",
+                                "32 000 items"
+                                ],
+                     "array": {
+                     "string": [
+                                "32 000 items",
+                                "28 000 items",
+                                "64 000 items",
+                                "16 000 items"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Which of these movies awarded 4 Oscars?",
+                                "The Matrix"
+                                ],
+                     "array": {
+                     "string": [
+                                "The Matrix",
+                                "The Dark Knight",
+                                "The Godfather",
+                                "The Shawshank Redemption"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What is the maximum speed reaches Bugatti Veyron Super Sport?",
+                                "434 km/h"
+                                ],
+                     "array": {
+                     "string": [
+                                "431 km/h",
+                                "434 km/h",
+                                "450 km/h",
+                                "442 km/h"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Where lived the character of Sherlock Holmes?",
+                                "Baker Street 221B"
+                                ],
+                     "array": {
+                     "string": [
+                                "Baker Street 221B",
+                                "Brook Street 15",
+                                "Maddox Street 118A",
+                                "Carnaby Street 192"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "That the output from such a chemical reaction: Carbon + Oxygen?",
+                                "Carbonic acid gas"
+                                ],
+                     "array": {
+                     "string": [
+                                "Carbonic acid gas",
+                                "Water",
+                                "Carbohydrates",
+                                "Oxalic anhydride"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What was invented in 1643 year by Evangelista Torricelli?",
+                                "Barometer"
+                                ],
+                     "array": {
+                     "string": [
+                                "Barometer",
+                                "Microscope",
+                                "Lamp",
+                                "Steam engine"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Which of these invented gunpowder?",
+                                "Roger Bacon"
+                                ],
+                     "array": {
+                     "string": [
+                                "Roger Bacon",
+                                "Leonardo da Vinci",
+                                "Cai Lun",
+                                "Bi Sheng"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "When was invented first cannon?",
+                                "1128"
+                                ],
+                     "array": {
+                     "string": [
+                                "1128",
+                                "1342",
+                                "988",
+                                "1024"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What is the total length of the London Underground?",
+                                "408 km"
+                                ],
+                     "array": {
+                     "string": [
+                                "408 km",
+                                "259 km",
+                                "342 km",
+                                "390 km"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Where Napoleone was imprisoned?",
+                                "Island of St. Helena"
+                                ],
+                     "array": {
+                     "string": [
+                                "Island of St. Helena",
+                                "Island of Corsica",
+                                "Island of Sicilia",
+                                "Island of St.Elma"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who invented microscope?",
+                                "Zacharias Janssen"
+                                ],
+                     "array": {
+                     "string": [
+                                "Zacharias Janssen",
+                                "Giovanni Faber",
+                                "Galileo Galilei",
+                                "Hans Lippershey"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who invented thermometer? ",
+                                "Galileo Galilei"
+                                ],
+                     "array": {
+                     "string": [
+                                "Galileo Galilei",
+                                "Cornelis Drebbel",
+                                "Giuseppe Biancani",
+                                "Robert Fludd"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "When was invented telescope?",
+                                "1608"
+                                ],
+                     "array": {
+                     "string": [
+                                "1608",
+                                "1592",
+                                "1619",
+                                "1602"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "When Chernobyl nuclear station exploded?",
+                                "1986"
+                                ],
+                     "array": {
+                     "string": [
+                                "1986",
+                                "1983",
+                                "1987",
+                                "1980"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Where was invented the crossbow?",
+                                "Greece"
+                                ],
+                     "array": {
+                     "string": [
+                                "Greece",
+                                "England",
+                                "Turkey",
+                                "Italy"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What is the biggest berry in the world?",
+                                "Watermelon"
+                                ],
+                     "array": {
+                     "string": [
+                                "Watermelon",
+                                "Pineapple",
+                                "Persimmon",
+                                "Avocado"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who invented the ballpoint pen?",
+                                "Bíró László"
+                                ],
+                     "array": {
+                     "string": [
+                                "Marcel Bich",
+                                "Bíró László",
+                                "Elsa Schick",
+                                "Tim Wright"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who created the first car with steam engine?",
+                                "Nicolas-Joseph Cugnot"
+                                ],
+                     "array": {
+                     "string": [
+                                "Nicolas-Joseph Cugnot",
+                                "Jöns Cederholm",
+                                "Richard Trevithick",
+                                "Isaac Newton"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who is the tallest living person in the world?",
+                                "Leonid Stadnyk"
+                                ],
+                     "array": {
+                     "string": [
+                                "Leonid Stadnyk",
+                                "Robert Wadlow",
+                                "Sultan Kösen",
+                                "Zhang Juncai"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "What is the fastest mammal in the world?",
+                                "Cheetah"
+                                ],
+                     "array": {
+                     "string": [
+                                "Cheetah",
+                                "Lion",
+                                "Antelope",
+                                "Eagle"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who is the tallest person ever known?",
+                                "Robert Wadlow"
+                                ],
+                     "array": {
+                     "string": [
+                                "Robert Wadlow",
+                                "Leonid Stadnyk",
+                                "John Rogan",
+                                "John F. Carroll"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who is the fastes football player in the world?",
+                                "Cristiano Ronaldo"
+                                ],
+                     "array": {
+                     "string": [
+                                "Christiano Ronaldo",
+                                "Peter Crouch",
+                                "Wayne Rooney",
+                                "Ronaldinho"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who first step on the moon?",
+                                "Neil Armstrong"
+                                ],
+                     "array": {
+                     "string": [
+                                "Neil Armstrong",
+                                "Alan Shepherd",
+                                "John Glenn ",
+                                "Yuri Gagarin"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "The first mass production electirc car?",
+                                "Tesla"
+                                ],
+                     "array": {
+                     "string": [
+                                "Tesla",
+                                "Bentley",
+                                "Ford",
+                                "Suzuki"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "When World War II started?",
+                                "1939"
+                                ],
+                     "array": {
+                     "string": [
+                                "1939",
+                                "1940",
+                                "1914",
+                                "1918"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who is Google co-founder",
+                                "Sergey Brin"
+                                ],
+                     "array": {
+                     "string": [
+                                "Sergey Brin",
+                                "Eric Schmidt",
+                                "Marissa Mayer",
+                                "Hubert Chang"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who is author of \"Eragon\" thrilogy?",
+                                "Christopher Paolini"
+                                ],
+                     "array": {
+                     "string": [
+                                "Christopher Paolini",
+                                "John Palencar",
+                                "Stefen Fangmeier",
+                                "Joanne Rowling"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who said: “The man who does not read has no advantage over the man who cannot read.”?",
+                                "Mark Twain"
+                                ],
+                     "array": {
+                     "string": [
+                                "Mark Twain",
+                                "Groucho Marx",
+                                "Malcolm X",
+                                "Jane Austen"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Whos quote it is: \"Be yourself; everyone else is already taken.\"? ",
+                                "Oscar Wilde"
+                                ],
+                     "array": {
+                     "string": [
+                                "Oscar Wilde",
+                                "Mark Twain",
+                                "Jack London",
+                                "Friedrich Nietzsche"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who said \"Don't cry because it's over, smile because it happened\"?",
+                                "Dr. Seuss"
+                                ],
+                     "array": {
+                     "string": [
+                                "Dr. Seuss",
+                                "Marilyn Monroe",
+                                "Oscar Wilde",
+                                "Mahatma Gandhi"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who 'clearly thinks of himself as a hacker'?",
+                                "Mark Zuckerberg"
+                                ],
+                     "array": {
+                     "string": [
+                                "Mark Zuckerberg",
+                                "Bill Gates",
+                                "Steve Jobs",
+                                "Jack Dorsey"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who thought that Newtonian mechanics was no longer enough to reconcile the laws of classical mechanics?",
+                                "Albert Einstein"
+                                ],
+                     "array": {
+                     "string": [
+                                "Albert Einstein",
+                                "Michael Faraday",
+                                "Wilhelm Röntgen",
+                                "Ernest Rutherford"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who was Robinson Crusoe bestfriend?",
+                                "Friday"
+                                ],
+                     "array": {
+                     "string": [
+                                "Friday",
+                                "Saturday",
+                                "Sunday",
+                                "Wednesday"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who author of \"The Old Man And The Sea\"?",
+                                "Ernest Hemingway"
+                                ],
+                     "array": {
+                     "string": [
+                                "Ernest Hemingway",
+                                "Daniel Defoe",
+                                "Oscar Wilde",
+                                "Edgar Allan Poe"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who was director of \"Titanic\" movie",
+                                " James Cameron"
+                                ],
+                     "array": {
+                     "string": [
+                                " James Cameron",
+                                "Christopher Nolan",
+                                "Martin Scorsese",
+                                "Luc Besson"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who invented tyre?",
+                                "Robert William Thomson"
+                                ],
+                     "array": {
+                     "string": [
+                                "John Boyd Dunlop",
+                                "William Harvey",
+                                "Robert William Thomson",
+                                "Jack Bentley"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who created james Bond charecter in 1953?",
+                                "Ian Fleming"
+                                ],
+                     "array": {
+                     "string": [
+                                "John Gardner",
+                                "Ian Fleming",
+                                "William Boyd",
+                                "Sebastian Faulks"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who said: \"To be or not to be\"?",
+                                "William Shakespear"
+                                ],
+                     "array": {
+                     "string": [
+                                "William Shakespear",
+                                "Jack London",
+                                "Paulo Coelho",
+                                "Franz Kafka"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who discovered penicillin?",
+                                "Alexander Fleming"
+                                ],
+                     "array": {
+                     "string": [
+                                "Mary Anning",
+                                "Charles Darwin",
+                                "Erwin Chargaff",
+                                "Alexander Fleming"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who was author of the U.S. Declaration of Independence?",
+                                "Thomas Jefferson"
+                                ],
+                     "array": {
+                     "string": [
+                                "George Washington",
+                                "Abraham Lincoln",
+                                "William Harrison",
+                                "Thomas Jefferson"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who was one of Microsoft co-founder?",
+                                "Paul Allen"
+                                ],
+                     "array": {
+                     "string": [
+                                "Steve Wozniac",
+                                "Paul Allen",
+                                "Steve Balmer",
+                                "Jonathan Ive"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who developed assembly line?",
+                                "Henry Ford"
+                                ],
+                     "array": {
+                     "string": [
+                                "Henry Ford",
+                                "William Bentley",
+                                "Joseph Henry",
+                                "Eli Whitney"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who developed 'Family Guy'?",
+                                "Seth MacFarlane"
+                                ],
+                     "array": {
+                     "string": [
+                                "Seth Green",
+                                "Chery Chevapravadrumrong",
+                                "Seth MacFarlane",
+                                "Mathew Grooening"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who played Batman in all \"Batman\" movies?",
+                                "Christian Bale"
+                                ],
+                     "array": {
+                     "string": [
+                                "Hugh Jackman",
+                                "Christian Bale",
+                                "Jason Statham",
+                                "Chris Pine"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who invented electricity?",
+                                "Thomas Edison"
+                                ],
+                     "array": {
+                     "string": [
+                                "Thomas Edison",
+                                "Nicola Tesla",
+                                "Henry Ford",
+                                "William Wright"
+                                ]
+                     }
+                     },
+                     {
+                     "key": [
+                             "question",
+                             "answer",
+                             "variants"
+                             ],
+                     "string": [
+                                "Who is 44th USA president?",
+                                "Barack Obama"
+                                ],
+                     "array": {
+                     "string": [
+                                "Bill Clinton",
+                                "Bill Gates",
+                                "Barack Obama",
+                                "George Bush"
+                                ]
+                     }
+                     }
+                     ]
+        }
+    }
+}]

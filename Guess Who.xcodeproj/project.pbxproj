@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3200BB6C1757D78900C69C53 /* highscores.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3247E0BF1755E7E600C42EAD /* highscores.plist */; };
-		3200BB6D1757D78D00C69C53 /* database.plist in Resources */ = {isa = PBXBuildFile; fileRef = 324EF41B173133AF00246733 /* database.plist */; };
 		3200BB861757EC2B00C69C53 /* HighscoresTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3200BB851757EC2B00C69C53 /* HighscoresTableViewController.m */; };
 		323576F017785E3B00A75713 /* myButtonFill.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576EE17785E3B00A75713 /* myButtonFill.png */; };
 		323576F117785E3B00A75713 /* myButtonFill@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576EF17785E3B00A75713 /* myButtonFill@2x.png */; };
@@ -41,6 +40,8 @@
 		324EF418172AA0B500246733 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF410172A9FB100246733 /* Question.m */; };
 		324EF41A172AAA9600246733 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF412172A9FB100246733 /* SummaryViewController.m */; };
 		326BFC38179484BA0086CDAE /* HighscoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 326BFC37179484BA0086CDAE /* HighscoreCell.m */; };
+		329DC7F617D6461A00A8154B /* database.plist in Resources */ = {isa = PBXBuildFile; fileRef = 329DC7F517D6461A00A8154B /* database.plist */; };
+		329DC7F817D64B0600A8154B /* database.json in Resources */ = {isa = PBXBuildFile; fileRef = 329DC7F717D64B0600A8154B /* database.json */; };
 		32E1F04A177F79410001C1FD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E1F049177F79410001C1FD /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,9 +101,10 @@
 		324EF411172A9FB100246733 /* SummaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
 		324EF412172A9FB100246733 /* SummaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
 		324EF413172A9FC900246733 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		324EF41B173133AF00246733 /* database.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = database.plist; sourceTree = "<group>"; };
 		326BFC36179484BA0086CDAE /* HighscoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighscoreCell.h; sourceTree = "<group>"; };
 		326BFC37179484BA0086CDAE /* HighscoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighscoreCell.m; sourceTree = "<group>"; };
+		329DC7F517D6461A00A8154B /* database.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = database.plist; sourceTree = "<group>"; };
+		329DC7F717D64B0600A8154B /* database.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = database.json; sourceTree = "<group>"; };
 		32E1F049177F79410001C1FD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -194,8 +196,8 @@
 				324EF40A172A9FB100246733 /* MainMenuViewController.m */,
 				3200BB831757EB9B00C69C53 /* Play Session */,
 				326BFC39179484C20086CDAE /* Highscore */,
-				324EF41B173133AF00246733 /* database.plist */,
 				3247E0BF1755E7E600C42EAD /* highscores.plist */,
+				329DC7F517D6461A00A8154B /* database.plist */,
 				32357706177B64FA00A75713 /* Artwork */,
 				324EF3ED172A9F0500246733 /* Supporting Files */,
 			);
@@ -214,6 +216,7 @@
 				324EF3F8172A9F0500246733 /* Default.png */,
 				324EF3FA172A9F0500246733 /* Default@2x.png */,
 				324EF3FC172A9F0500246733 /* Default-568h@2x.png */,
+				329DC7F717D64B0600A8154B /* database.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -286,7 +289,6 @@
 				324EF3FB172A9F0500246733 /* Default@2x.png in Resources */,
 				324EF3FD172A9F0500246733 /* Default-568h@2x.png in Resources */,
 				324EF414172A9FC900246733 /* MainStoryboard.storyboard in Resources */,
-				3200BB6D1757D78D00C69C53 /* database.plist in Resources */,
 				3200BB6C1757D78900C69C53 /* highscores.plist in Resources */,
 				323576F017785E3B00A75713 /* myButtonFill.png in Resources */,
 				323576F117785E3B00A75713 /* myButtonFill@2x.png in Resources */,
@@ -303,6 +305,8 @@
 				3235770E177B6A2400A75713 /* footerImageWithShadow@2x.png in Resources */,
 				32357710177B6A8A00A75713 /* footerImage@2x.png in Resources */,
 				32357712177B6C4F00A75713 /* footerImage.png in Resources */,
+				329DC7F617D6461A00A8154B /* database.plist in Resources */,
+				329DC7F817D64B0600A8154B /* database.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

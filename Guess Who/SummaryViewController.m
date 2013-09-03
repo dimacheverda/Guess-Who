@@ -74,7 +74,7 @@
 //    NSLog(@"path: %@",plistPath);
     if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
         plistPath = [[NSBundle mainBundle] pathForResource:@"highscores" ofType:@"plist"];
-    }
+     }
     NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
     
     self.highscoreArray = (NSMutableArray *)[NSPropertyListSerialization

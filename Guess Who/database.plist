@@ -2,10 +2,268 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>count</key>
-	<integer>100</integer>
 	<key>questions</key>
 	<array>
+		<dict>
+			<key>question</key>
+			<string>What bird harassed chained Prometheus?</string>
+			<key>answer</key>
+			<string>Eagle</string>
+			<key>variants</key>
+			<array>
+				<string>Eagle</string>
+				<string>Pigeon</string>
+				<string>Seagull</string>
+				<string>Falcon</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Which sea does not exist?</string>
+			<key>answer</key>
+			<string>Blue</string>
+			<key>variants</key>
+			<array>
+				<string>Blue</string>
+				<string>Black</string>
+				<string>Yellow</string>
+				<string>Red</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>What measures the in knots?</string>
+			<key>answer</key>
+			<string>Speed</string>
+			<key>variants</key>
+			<array>
+				<string>Speed</string>
+				<string>Volume</string>
+				<string>Length</string>
+				<string>Brightness</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>What Herostratus burned?</string>
+			<key>answer</key>
+			<string>Temple of Diana at Ephesus</string>
+			<key>variants</key>
+			<array>
+				<string>Temple of Diana at Ephesus</string>
+				<string>Gardens Semyramidy</string>
+				<string>Alexandrian library</string>
+				<string>Colossus of Rhodes</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Which is the color of the mineral malachite?</string>
+			<key>answer</key>
+			<string>Green</string>
+			<key>variants</key>
+			<array>
+				<string>Green</string>
+				<string>Blue</string>
+				<string>Red</string>
+				<string>Violet</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>In which city is the Grand Opera House?</string>
+			<key>answer</key>
+			<string>Paris</string>
+			<key>variants</key>
+			<array>
+				<string>Paris</string>
+				<string>London</string>
+				<string>Sydney</string>
+				<string>Rome</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>How many pairs of chromosomes human has?</string>
+			<key>answer</key>
+			<string>23 pairs</string>
+			<key>variants</key>
+			<array>
+				<string>23 pairs</string>
+				<string>25 pairs</string>
+				<string>21 pairs</string>
+				<string>24 pairs</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>How to write 2000 in Roman numerals?</string>
+			<key>answer</key>
+			<string>MM</string>
+			<key>variants</key>
+			<array>
+				<string>MM</string>
+				<string>XX</string>
+				<string>DD</string>
+				<string>CC</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>In what measure the strength of engines?</string>
+			<key>answer</key>
+			<string>Horse</string>
+			<key>variants</key>
+			<array>
+				<string>Horse</string>
+				<string>Donkey</string>
+				<string>Elephant</string>
+				<string>Bull</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Alex Ferguson is the coach of the football club?</string>
+			<key>answer</key>
+			<string>Manchester United</string>
+			<key>variants</key>
+			<array>
+				<string>Manchester United</string>
+				<string>Real Madrid</string>
+				<string>Barcelona</string>
+				<string>Juventus</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>What was the name of the sun god in ancient Egypt?</string>
+			<key>answer</key>
+			<string>Ra</string>
+			<key>variants</key>
+			<array>
+				<string>Ra</string>
+				<string>Asiris</string>
+				<string>Re</string>
+				<string>Ibis</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>What group is lead singer Mick Jagger?</string>
+			<key>answer</key>
+			<string>Rolling Stones</string>
+			<key>variants</key>
+			<array>
+				<string>Rolling Stones</string>
+				<string>Aerosmith</string>
+				<string>Metallica</string>
+				<string>Beatles</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>What is called &apos;Red Planet&apos;?</string>
+			<key>answer</key>
+			<string>Mars</string>
+			<key>variants</key>
+			<array>
+				<string>Mars</string>
+				<string>Saturn</string>
+				<string>Pluto</string>
+				<string>Venus</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>In an equilateral triangle, how many sides are equal?</string>
+			<key>answer</key>
+			<string>All</string>
+			<key>variants</key>
+			<array>
+				<string>All</string>
+				<string>Two</string>
+				<string>None</string>
+				<string>Not fixed</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>How many years in millennium?</string>
+			<key>answer</key>
+			<string>1000</string>
+			<key>variants</key>
+			<array>
+				<string>1000</string>
+				<string>100</string>
+				<string>10</string>
+				<string>1000000</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>3.14 is known as ... ?</string>
+			<key>answer</key>
+			<string>Pi</string>
+			<key>variants</key>
+			<array>
+				<string>Pi</string>
+				<string>Lambda</string>
+				<string>Alpha</string>
+				<string>Beta</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>What is known as &quot;Red Planet&quot;?</string>
+			<key>answer</key>
+			<string>Mars</string>
+			<key>variants</key>
+			<array>
+				<string>Mars</string>
+				<string>Pluto</string>
+				<string>Mercury</string>
+				<string>Saturn</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>How many Watts in Kilowat</string>
+			<key>answer</key>
+			<string>1000</string>
+			<key>variants</key>
+			<array>
+				<string>1000</string>
+				<string>100</string>
+				<string>10</string>
+				<string>10000</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>In an equilateral triange, how many sides are equal?</string>
+			<key>answer</key>
+			<string>All</string>
+			<key>variants</key>
+			<array>
+				<string>All</string>
+				<string>Two</string>
+				<string>Three</string>
+				<string>None</string>
+			</array>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Which is the largest animal in the world?</string>
+			<key>answer</key>
+			<string>Blue Whale</string>
+			<key>variants</key>
+			<array>
+				<string>Blue Whale</string>
+				<string>Giraffe</string>
+				<string>Elephant</string>
+				<string>Gorilla</string>
+			</array>
+		</dict>
 		<dict>
 			<key>question</key>
 			<string>The name of this fruit is translated as &quot;Chinese apple&quot;?</string>
