@@ -71,16 +71,19 @@
 {
     NSString *errorDesc = nil;
     NSPropertyListFormat format;
-    NSString *plistPath;
-    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    plistPath = [rootPath stringByAppendingPathComponent:@"database.plist"];
-    if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
-        plistPath = [[NSBundle mainBundle] pathForResource:@"database" ofType:@"plist"];
-    }
-    NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
+
+//    NSString *plistPath;
+//    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+//    plistPath = [rootPath stringByAppendingPathComponent:@"database.plist"];
+//    if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
+//        plistPath = [[NSBundle mainBundle] pathForResource:@"database" ofType:@"plist"];
+//    }
+//    NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
+    
+    NSData *urlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://dl.dropboxusercontent.com/u/100095175/database.plist"]];
     
     self.database = (NSMutableDictionary *)[NSPropertyListSerialization
-                                          propertyListFromData:plistXML
+                                          propertyListFromData:urlData
                                           mutabilityOption:NSPropertyListMutableContainersAndLeaves
                                           format:&format
                                           errorDescription:&errorDesc];
