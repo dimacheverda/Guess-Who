@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4JD-Av-wXt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4JD-Av-wXt">
     <dependencies>
         <deployment version="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
@@ -374,12 +374,20 @@
                                     <action selector="mainMenuButtonPressed:" destination="9ls-3w-CHC" eventType="touchUpInside" id="R3H-th-Jnj"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="New Highscore!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mzg-bT-DE3">
+                                <rect key="frame" x="55" y="245" width="211" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="17"/>
+                                <color key="textColor" red="0.6550539001937985" green="0.046883061963004728" blue="0.26521065258201593" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="dsU-5g-jE5"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="isHighscoreLabel" destination="mzg-bT-DE3" id="DFa-9h-gHk"/>
                         <outlet property="longestStreakLabel" destination="TxV-Iv-74c" id="Dd5-Kv-meU"/>
                         <outlet property="mainMenuButton" destination="BYM-fp-Q7j" id="ued-pa-yQM"/>
                         <outlet property="scoreLabel" destination="Lpr-U4-PWg" id="Qh2-Lc-NXJ"/>

@@ -13,6 +13,7 @@
 @property (nonatomic, strong) NSMutableArray *highscoreArray;
 @property (nonatomic, strong) NSDictionary *scoreDictionary;
 @property (nonatomic, weak) IBOutlet UIButton *mainMenuButton;
+@property (nonatomic, weak) IBOutlet UILabel *isHighscoreLabel;
 
 @end
 
@@ -36,6 +37,10 @@
     
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:116.0/255.0 green:150.0/255.0 blue:96.0/255.0 alpha:1.0];
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Gill Sans" size:20.0], UITextAttributeFont, nil]];
+    
+    [self loadHighscores];
+    
+    [self checkIfHighscore];
 }
 
 - (void)viewDidLoad
@@ -45,14 +50,11 @@
     NSDictionary *score = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:self.score], @"score", [NSNumber numberWithInteger:self.longestStreak], @"streak", nil];
     self.scoreDictionary = score;
     
-    [self loadHighscores];
     if (self.score != 0) {
         [self addScoreToHighscores];
     }
     [self sortHighscores];
     [self saveHighscores];
-    
-//    self.navigationItem.hidesBackButton = YES;
 }
 
 - (void)sortHighscores
@@ -84,18 +86,19 @@
                                             errorDescription:&errorDesc];
     if (!self.highscoreArray) {
         NSLog(@"Error reading plist: %@, format: %d", errorDesc, format);
-    }
-//    NSLog(@"%@", plistPath);
-//    NSLog(@"%@", self.highscoreArray);
-    
+    }    
 }
 
-- (BOOL)isHighscore
+- (void)checkIfHighscore
 {
-    if ([NSNumber numberWithInteger:self.score] > [[self.highscoreArray objectAtIndex:0] objectForKey:@"score"]) {
-        return YES;
-    } else
-        return NO;
+    NSLog(@"%f = %f", [[NSNumber numberWithInteger:self.score] doubleValue], [[[self.highscoreArray objectAtIndex:0] objectForKey:@"score"] doubleValue]);
+    if ([[NSNumber numberWithInteger:self.score] doubleValue] > [[[self.highscoreArray objectAtIndex:0] objectForKey:@"score"] doubleValue]) {
+        [self.isHighscoreLabel setAlpha:1.0];
+        NSLog(@"1");
+    } else {
+        [self.isHighscoreLabel setAlpha:0.0];
+        NSLog(@"2");
+    }
 }
 
 - (void)addScoreToHighscores
@@ -110,8 +113,6 @@
     NSData *plistData = [NSPropertyListSerialization dataFromPropertyList:self.highscoreArray
                                                                    format:NSPropertyListXMLFormat_v1_0
                                                          errorDescription:&error];
-//    NSLog(@"%@", self.scoreDictionary);
-//    NSLog(@"%@", self.highscoreArray);
     if (plistData) {
         [plistData writeToFile:plistPath atomically:YES];
     }
