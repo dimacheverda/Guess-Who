@@ -11,6 +11,7 @@
 @interface PlaySession ()
 
 @property (nonatomic, strong) NSMutableSet *usedQuestionsID;
+@property (nonatomic) NSUInteger COUNT;
 
 @end
 
@@ -19,6 +20,7 @@
 - (id)initWithQuestionsDatabase:(NSMutableArray *)questionDatabase
 {
     if (self) {
+        self.COUNT = questionDatabase.count;
         self.questionDatabase = questionDatabase;
         self.currentStreak = 0;
         self.longestStreak = 0;
@@ -26,17 +28,15 @@
     return self;
 }
 
-#define COUNT 100
-
 - (void)nextQuestion
 {
     ++self.currentQuestionIndex;
-    if (self.usedQuestionsID.count == COUNT) {
+    if (self.usedQuestionsID.count == self.COUNT) {
         [self.usedQuestionsID setSet:nil];
     }
-    NSUInteger randomIndex = arc4random() % COUNT;
+    NSUInteger randomIndex = arc4random() % self.COUNT;
     while ([self.usedQuestionsID intersectsSet:[NSSet setWithObject:[NSNumber numberWithUnsignedInteger:randomIndex]]]) {
-        randomIndex = arc4random() % COUNT;
+        randomIndex = arc4random() % self.COUNT;
     }
     [self.usedQuestionsID addObject:[NSNumber numberWithUnsignedInteger:randomIndex]];
     

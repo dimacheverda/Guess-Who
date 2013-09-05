@@ -38,9 +38,6 @@
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:116.0/255.0 green:150.0/255.0 blue:96.0/255.0 alpha:1.0];
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Gill Sans" size:20.0], UITextAttributeFont, nil]];
     
-    [self loadHighscores];
-    
-    [self checkIfHighscore];
 }
 
 - (void)viewDidLoad
@@ -49,6 +46,10 @@
     
     NSDictionary *score = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:self.score], @"score", [NSNumber numberWithInteger:self.longestStreak], @"streak", nil];
     self.scoreDictionary = score;
+    
+    [self loadHighscores];
+    
+    [self checkIfHighscore];
     
     if (self.score != 0) {
         [self addScoreToHighscores];
@@ -73,7 +74,6 @@
     NSString *plistPath;
     NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     plistPath = [rootPath stringByAppendingPathComponent:@"highscores.plist"];
-//    NSLog(@"path: %@",plistPath);
     if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
         plistPath = [[NSBundle mainBundle] pathForResource:@"highscores" ofType:@"plist"];
      }
@@ -91,13 +91,13 @@
 
 - (void)checkIfHighscore
 {
-    NSLog(@"%f = %f", [[NSNumber numberWithInteger:self.score] doubleValue], [[[self.highscoreArray objectAtIndex:0] objectForKey:@"score"] doubleValue]);
+//    NSLog(@"%f = %f", [[NSNumber numberWithInteger:self.score] doubleValue], [[[self.highscoreArray objectAtIndex:0] objectForKey:@"score"] doubleValue]);
     if ([[NSNumber numberWithInteger:self.score] doubleValue] > [[[self.highscoreArray objectAtIndex:0] objectForKey:@"score"] doubleValue]) {
         [self.isHighscoreLabel setAlpha:1.0];
-        NSLog(@"1");
+//        NSLog(@"1");
     } else {
         [self.isHighscoreLabel setAlpha:0.0];
-        NSLog(@"2");
+//        NSLog(@"2");
     }
 }
 

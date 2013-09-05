@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "324EF3E2172A9F0500246733"
                BuildableName = "Guess Who.app"
-               BlueprintName = "Guess Who"
-               ReferencedContainer = "container:Guess Who.xcodeproj">
+               BlueprintName = "theQuiz"
+               ReferencedContainer = "container:theQuiz.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "324EF3E2172A9F0500246733"
             BuildableName = "Guess Who.app"
-            BlueprintName = "Guess Who"
-            ReferencedContainer = "container:Guess Who.xcodeproj">
+            BlueprintName = "theQuiz"
+            ReferencedContainer = "container:theQuiz.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,8 +53,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "324EF3E2172A9F0500246733"
             BuildableName = "Guess Who.app"
-            BlueprintName = "Guess Who"
-            ReferencedContainer = "container:Guess Who.xcodeproj">
+            BlueprintName = "theQuiz"
+            ReferencedContainer = "container:theQuiz.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,8 +71,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "324EF3E2172A9F0500246733"
             BuildableName = "Guess Who.app"
-            BlueprintName = "Guess Who"
-            ReferencedContainer = "container:Guess Who.xcodeproj">
+            BlueprintName = "theQuiz"
+            ReferencedContainer = "container:theQuiz.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

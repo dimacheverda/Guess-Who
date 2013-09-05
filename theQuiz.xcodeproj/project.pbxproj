@@ -75,14 +75,14 @@
 		3235770F177B6A8A00A75713 /* footerImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footerImage@2x.png"; sourceTree = "<group>"; };
 		32357711177B6C4F00A75713 /* footerImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footerImage.png; sourceTree = "<group>"; };
 		3247E0BF1755E7E600C42EAD /* highscores.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = highscores.plist; sourceTree = "<group>"; };
-		324EF3E3172A9F0500246733 /* Guess Who.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess Who.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		324EF3E3172A9F0500246733 /* theQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324EF3E6172A9F0500246733 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		324EF3E8172A9F0500246733 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		324EF3EA172A9F0500246733 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		324EF3EE172A9F0500246733 /* Guess Who-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Guess Who-Info.plist"; sourceTree = "<group>"; };
+		324EF3EE172A9F0500246733 /* theQuiz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "theQuiz-Info.plist"; sourceTree = "<group>"; };
 		324EF3F0172A9F0500246733 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		324EF3F2172A9F0500246733 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		324EF3F4172A9F0500246733 /* Guess Who-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Guess Who-Prefix.pch"; sourceTree = "<group>"; };
+		324EF3F4172A9F0500246733 /* theQuiz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "theQuiz-Prefix.pch"; sourceTree = "<group>"; };
 		324EF3F5172A9F0500246733 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		324EF3F6172A9F0500246733 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		324EF3F8172A9F0500246733 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		324EF3E4172A9F0500246733 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				324EF3E3172A9F0500246733 /* Guess Who.app */,
+				324EF3E3172A9F0500246733 /* theQuiz.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,10 +204,10 @@
 			children = (
 				324EF3F5172A9F0500246733 /* AppDelegate.h */,
 				324EF3F6172A9F0500246733 /* AppDelegate.m */,
-				324EF3EE172A9F0500246733 /* Guess Who-Info.plist */,
+				324EF3EE172A9F0500246733 /* theQuiz-Info.plist */,
 				324EF3EF172A9F0500246733 /* InfoPlist.strings */,
 				324EF3F2172A9F0500246733 /* main.m */,
-				324EF3F4172A9F0500246733 /* Guess Who-Prefix.pch */,
+				324EF3F4172A9F0500246733 /* theQuiz-Prefix.pch */,
 				324EF3F8172A9F0500246733 /* Default.png */,
 				324EF3FA172A9F0500246733 /* Default@2x.png */,
 				324EF3FC172A9F0500246733 /* Default-568h@2x.png */,
@@ -229,9 +229,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		324EF3E2172A9F0500246733 /* Guess Who */ = {
+		324EF3E2172A9F0500246733 /* theQuiz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 324EF406172A9F0600246733 /* Build configuration list for PBXNativeTarget "Guess Who" */;
+			buildConfigurationList = 324EF406172A9F0600246733 /* Build configuration list for PBXNativeTarget "theQuiz" */;
 			buildPhases = (
 				324EF3DF172A9F0500246733 /* Sources */,
 				324EF3E0172A9F0500246733 /* Frameworks */,
@@ -242,9 +242,9 @@
 			);
 			dependencies = (
 			);
-			name = "Guess Who";
+			name = theQuiz;
 			productName = "Guess Who";
-			productReference = 324EF3E3172A9F0500246733 /* Guess Who.app */;
+			productReference = 324EF3E3172A9F0500246733 /* theQuiz.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -256,7 +256,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Dima;
 			};
-			buildConfigurationList = 324EF3DE172A9F0500246733 /* Build configuration list for PBXProject "Guess Who" */;
+			buildConfigurationList = 324EF3DE172A9F0500246733 /* Build configuration list for PBXProject "theQuiz" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -268,7 +268,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				324EF3E2172A9F0500246733 /* Guess Who */,
+				324EF3E2172A9F0500246733 /* theQuiz */,
 			);
 		};
 /* End PBXProject section */
@@ -399,9 +399,15 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Guess Who/Guess Who-Prefix.pch";
-				INFOPLIST_FILE = "Guess Who/Guess Who-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Guess Who/theQuiz-Prefix.pch";
+				INFOPLIST_FILE = "Guess Who/theQuiz-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Data/Downloads/GoogleAnalyticsServicesiOS_3.0/GoogleAnalytics/Library\"",
+					"\"$(SRCROOT)/../../../../Data/Downloads/GoogleAnalyticsServicesiOS_3.0\"",
+					"\"$(SRCROOT)/Library\"",
+				);
+				PRODUCT_NAME = theQuiz;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -414,9 +420,15 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Guess Who/Guess Who-Prefix.pch";
-				INFOPLIST_FILE = "Guess Who/Guess Who-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Guess Who/theQuiz-Prefix.pch";
+				INFOPLIST_FILE = "Guess Who/theQuiz-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Data/Downloads/GoogleAnalyticsServicesiOS_3.0/GoogleAnalytics/Library\"",
+					"\"$(SRCROOT)/../../../../Data/Downloads/GoogleAnalyticsServicesiOS_3.0\"",
+					"\"$(SRCROOT)/Library\"",
+				);
+				PRODUCT_NAME = theQuiz;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -424,7 +436,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		324EF3DE172A9F0500246733 /* Build configuration list for PBXProject "Guess Who" */ = {
+		324EF3DE172A9F0500246733 /* Build configuration list for PBXProject "theQuiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				324EF404172A9F0600246733 /* Debug */,
@@ -433,7 +445,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		324EF406172A9F0600246733 /* Build configuration list for PBXNativeTarget "Guess Who" */ = {
+		324EF406172A9F0600246733 /* Build configuration list for PBXNativeTarget "theQuiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				324EF407172A9F0600246733 /* Debug */,
