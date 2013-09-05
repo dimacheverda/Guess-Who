@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7B2C8E1F-A8A1-4708-9F72-3212CEA4D443</string>
+	<key>IDESourceControlProjectName</key>
+	<string>theQuiz</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>229362BA-FF6B-4959-AEC0-220984831880</key>
+		<string>https://github.com/dimacheverda/Guess-Who.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>theQuiz.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>229362BA-FF6B-4959-AEC0-220984831880</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/dimacheverda/Guess-Who.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>229362BA-FF6B-4959-AEC0-220984831880</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>229362BA-FF6B-4959-AEC0-220984831880</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Guess Who</string>
+		</dict>
+	</array>
+</dict>
+</plist>
