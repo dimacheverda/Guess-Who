@@ -23,6 +23,8 @@
 {
     [super viewDidAppear:YES];
     
+    self.screenName = @"main screen";
+    
     //customizing buttons
     NSString *buttonFilled = @"myButtonFill.png";
     
@@ -37,6 +39,11 @@
     
     //hidding NavBar
     self.navigationController.navigationBarHidden = YES;
+}
+
+-(BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 - (void)viewDidLoad

@@ -58,6 +58,11 @@
     [self saveHighscores];
 }
 
+-(BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 - (void)sortHighscores
 {
     NSArray *tempArray;

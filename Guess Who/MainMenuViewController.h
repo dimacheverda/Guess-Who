@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAITrackedViewController.h"
 
-@interface MainMenuViewController : UIViewController
+@interface MainMenuViewController : GAITrackedViewController
 
 @property (nonatomic, strong) NSMutableDictionary *database;
 

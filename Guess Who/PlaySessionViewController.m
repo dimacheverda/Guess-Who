@@ -90,6 +90,11 @@
     [self adjustForIPhone5];
 }
 
+-(BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 -(CALayer *)createShadowWithFrame:(CGRect)frame
 {
     CAGradientLayer *gradient = [CAGradientLayer layer];

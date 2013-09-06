@@ -40,6 +40,10 @@
 		324EF418172AA0B500246733 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF410172A9FB100246733 /* Question.m */; };
 		324EF41A172AAA9600246733 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF412172A9FB100246733 /* SummaryViewController.m */; };
 		326BFC38179484BA0086CDAE /* HighscoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 326BFC37179484BA0086CDAE /* HighscoreCell.m */; };
+		3286F01017D92E5700514AB6 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3286F00F17D92E5700514AB6 /* libGoogleAnalyticsServices.a */; };
+		3286F01317D92EA400514AB6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3286F01217D92EA400514AB6 /* CoreData.framework */; };
+		3286F01517D92EAA00514AB6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3286F01417D92EAA00514AB6 /* SystemConfiguration.framework */; };
+		3286F01717D92EBA00514AB6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3286F01617D92EBA00514AB6 /* libz.dylib */; };
 		32E1F04A177F79410001C1FD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E1F049177F79410001C1FD /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +105,16 @@
 		324EF413172A9FC900246733 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		326BFC36179484BA0086CDAE /* HighscoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighscoreCell.h; sourceTree = "<group>"; };
 		326BFC37179484BA0086CDAE /* HighscoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighscoreCell.m; sourceTree = "<group>"; };
+		3286F00917D92E4D00514AB6 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		3286F00A17D92E4D00514AB6 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		3286F00B17D92E4D00514AB6 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		3286F00C17D92E4D00514AB6 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		3286F00D17D92E4D00514AB6 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		3286F00E17D92E4D00514AB6 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		3286F00F17D92E5700514AB6 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		3286F01217D92EA400514AB6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3286F01417D92EAA00514AB6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3286F01617D92EBA00514AB6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		32E1F049177F79410001C1FD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -109,9 +123,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3286F01717D92EBA00514AB6 /* libz.dylib in Frameworks */,
+				3286F01517D92EAA00514AB6 /* SystemConfiguration.framework in Frameworks */,
+				3286F01317D92EA400514AB6 /* CoreData.framework in Frameworks */,
 				32E1F04A177F79410001C1FD /* QuartzCore.framework in Frameworks */,
 				324EF3E7172A9F0500246733 /* UIKit.framework in Frameworks */,
 				324EF3E9172A9F0500246733 /* Foundation.framework in Frameworks */,
+				3286F01017D92E5700514AB6 /* libGoogleAnalyticsServices.a in Frameworks */,
 				324EF3EB172A9F0500246733 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +194,9 @@
 		324EF3E5172A9F0500246733 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3286F01617D92EBA00514AB6 /* libz.dylib */,
+				3286F01417D92EAA00514AB6 /* SystemConfiguration.framework */,
+				3286F01217D92EA400514AB6 /* CoreData.framework */,
 				32E1F049177F79410001C1FD /* QuartzCore.framework */,
 				324EF3E6172A9F0500246733 /* UIKit.framework */,
 				324EF3E8172A9F0500246733 /* Foundation.framework */,
@@ -202,6 +223,7 @@
 		324EF3ED172A9F0500246733 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3286F01117D92E6F00514AB6 /* GAI */,
 				324EF3F5172A9F0500246733 /* AppDelegate.h */,
 				324EF3F6172A9F0500246733 /* AppDelegate.m */,
 				324EF3EE172A9F0500246733 /* theQuiz-Info.plist */,
@@ -224,6 +246,20 @@
 				326BFC37179484BA0086CDAE /* HighscoreCell.m */,
 			);
 			name = Highscore;
+			sourceTree = "<group>";
+		};
+		3286F01117D92E6F00514AB6 /* GAI */ = {
+			isa = PBXGroup;
+			children = (
+				3286F00F17D92E5700514AB6 /* libGoogleAnalyticsServices.a */,
+				3286F00917D92E4D00514AB6 /* GAI.h */,
+				3286F00A17D92E4D00514AB6 /* GAIDictionaryBuilder.h */,
+				3286F00B17D92E4D00514AB6 /* GAIFields.h */,
+				3286F00C17D92E4D00514AB6 /* GAILogger.h */,
+				3286F00D17D92E4D00514AB6 /* GAITrackedViewController.h */,
+				3286F00E17D92E4D00514AB6 /* GAITracker.h */,
+			);
+			name = GAI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +291,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Dima;
+				TargetAttributes = {
+					324EF3E2172A9F0500246733 = {
+						DevelopmentTeam = LQ43N5F28R;
+					};
+				};
 			};
 			buildConfigurationList = 324EF3DE172A9F0500246733 /* Build configuration list for PBXProject "theQuiz" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -394,6 +435,7 @@
 		324EF407172A9F0600246733 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -403,9 +445,10 @@
 				INFOPLIST_FILE = "Guess Who/theQuiz-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../../Data/Downloads/GoogleAnalyticsServicesiOS_3.0/GoogleAnalytics/Library\"",
-					"\"$(SRCROOT)/../../../../Data/Downloads/GoogleAnalyticsServicesiOS_3.0\"",
-					"\"$(SRCROOT)/Library\"",
+					"\\\"$(SRCROOT)/../../../../Data/Downloads/GoogleAnalyticsServicesiOS_3.0/GoogleAnalytics/Library\\\"",
+					"\\\"$(SRCROOT)/../../../../Data/Downloads/GoogleAnalyticsServicesiOS_3.0\\\"",
+					"\\\"$(SRCROOT)/Library\\\"",
+					"/Volumes/Documents/Dropbox/iOS\\ Dev/Guess\\ Who/Guess\\ Who",
 				);
 				PRODUCT_NAME = theQuiz;
 				WRAPPER_EXTENSION = app;
@@ -415,6 +458,7 @@
 		324EF408172A9F0600246733 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -424,9 +468,10 @@
 				INFOPLIST_FILE = "Guess Who/theQuiz-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../../Data/Downloads/GoogleAnalyticsServicesiOS_3.0/GoogleAnalytics/Library\"",
-					"\"$(SRCROOT)/../../../../Data/Downloads/GoogleAnalyticsServicesiOS_3.0\"",
-					"\"$(SRCROOT)/Library\"",
+					"\\\"$(SRCROOT)/../../../../Data/Downloads/GoogleAnalyticsServicesiOS_3.0/GoogleAnalytics/Library\\\"",
+					"\\\"$(SRCROOT)/../../../../Data/Downloads/GoogleAnalyticsServicesiOS_3.0\\\"",
+					"\\\"$(SRCROOT)/Library\\\"",
+					"/Volumes/Documents/Dropbox/iOS\\ Dev/Guess\\ Who/Guess\\ Who",
 				);
 				PRODUCT_NAME = theQuiz;
 				WRAPPER_EXTENSION = app;
