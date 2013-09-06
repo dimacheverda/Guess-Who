@@ -46,8 +46,8 @@
     [self loadQuestion];
     
     //shadow
-    CALayer* shadowLayer = [self createShadowWithFrame:CGRectMake(0, 0, 320, 5)];
-    [self.view.layer addSublayer:shadowLayer];
+//    CALayer* shadowLayer = [self createShadowWithFrame:CGRectMake(0, 0, 320, 5)];
+//    [self.view.layer addSublayer:shadowLayer];
     
     //setting buttons state images and colors
     NSString *button = @"myButton.png";

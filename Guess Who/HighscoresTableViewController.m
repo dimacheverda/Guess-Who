@@ -63,26 +63,14 @@
 
 - (void)loadHighscoresToArray
 {
-    NSString *errorDesc = nil;
-    NSPropertyListFormat format;
-    NSString *plistPath;
-    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    plistPath = [rootPath stringByAppendingPathComponent:@"highscores.plist"];
-    //    NSLog(@"path: %@",plistPath);
-    if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
-        plistPath = [[NSBundle mainBundle] pathForResource:@"highscores" ofType:@"plist"];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:@"highscores"]) {
+        NSMutableArray *arrayFromDisk = [defaults objectForKey:@"highscores"];
+        self.highscoresArray = arrayFromDisk;
+    } else {
+        self.highscoresArray = [[NSMutableArray alloc] init];
     }
-    NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
-    
-    self.highscoresArray = (NSMutableArray *)[NSPropertyListSerialization
-                                             propertyListFromData:plistXML
-                                             mutabilityOption:NSPropertyListMutableContainersAndLeaves
-                                             format:&format
-                                             errorDescription:&errorDesc];
-    if (!self.highscoresArray) {
-        NSLog(@"Error reading plist: %@, format: %d", errorDesc, format);
-    }
-//    NSLog(@"%@", self.highscoresArray);
+    NSLog(@"\n\n\nhighscore %@ \n\n\n", self.highscoresArray);
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
