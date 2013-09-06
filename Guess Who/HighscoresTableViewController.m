@@ -43,6 +43,11 @@
     self.toolbar.tintColor = [UIColor colorWithRed:116.0/255.0 green:150.0/255.0 blue:96.0/255.0 alpha:1.0];
 }
 
+-(BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 -(CALayer *)createShadowWithFrame:(CGRect)frame
 {
     CAGradientLayer *gradient = [CAGradientLayer layer];
