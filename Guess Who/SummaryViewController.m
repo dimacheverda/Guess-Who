@@ -74,35 +74,25 @@
 
 - (void)loadHighscores
 {
-    NSString *errorDesc = nil;
-    NSPropertyListFormat format;
-    NSString *plistPath;
-    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    plistPath = [rootPath stringByAppendingPathComponent:@"highscores.plist"];
-    if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
-        plistPath = [[NSBundle mainBundle] pathForResource:@"highscores" ofType:@"plist"];
-     }
-    NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
-    
-    self.highscoreArray = (NSMutableArray *)[NSPropertyListSerialization
-                                            propertyListFromData:plistXML
-                                            mutabilityOption:NSPropertyListMutableContainersAndLeaves
-                                            format:&format
-                                            errorDescription:&errorDesc];
-    if (!self.highscoreArray) {
-        NSLog(@"Error reading plist: %@, format: %d", errorDesc, format);
-    }    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:@"highscores"]) {
+        NSMutableArray *arrayFromDisk = [defaults objectForKey:@"highscores"];
+        self.highscoreArray = arrayFromDisk;
+    } else {
+        self.highscoreArray = [[NSMutableArray alloc] init];
+    }
 }
 
 - (void)checkIfHighscore
 {
-//    NSLog(@"%f = %f", [[NSNumber numberWithInteger:self.score] doubleValue], [[[self.highscoreArray objectAtIndex:0] objectForKey:@"score"] doubleValue]);
-    if ([[NSNumber numberWithInteger:self.score] doubleValue] > [[[self.highscoreArray objectAtIndex:0] objectForKey:@"score"] doubleValue]) {
-        [self.isHighscoreLabel setAlpha:1.0];
-//        NSLog(@"1");
-    } else {
-        [self.isHighscoreLabel setAlpha:0.0];
-//        NSLog(@"2");
+    if (self.highscoreArray.count != 0) {
+        if ([[NSNumber numberWithInteger:self.score] doubleValue] > [[[self.highscoreArray objectAtIndex:0] objectForKey:@"score"] doubleValue]) {
+            [self.isHighscoreLabel setAlpha:1.0];
+            //        NSLog(@"1");
+        } else {
+            [self.isHighscoreLabel setAlpha:0.0];
+            //        NSLog(@"2");
+        }
     }
 }
 
@@ -113,14 +103,12 @@
 
 - (void)saveHighscores
 {
-    NSString *error;
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"highscores" ofType:@"plist"];
-    NSData *plistData = [NSPropertyListSerialization dataFromPropertyList:self.highscoreArray
-                                                                   format:NSPropertyListXMLFormat_v1_0
-                                                         errorDescription:&error];
-    if (plistData) {
-        [plistData writeToFile:plistPath atomically:YES];
-    }
+    // Save the array
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:self.highscoreArray forKey:@"highscores"];
+    [defaults synchronize];
+    
+    NSLog(@"\n\n\nsummary %@ \n\n\n", self.highscoreArray);
 }
 
 - (IBAction)mainMenuButtonPressed:(id)sender
