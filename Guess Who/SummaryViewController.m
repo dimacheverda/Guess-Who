@@ -10,7 +10,7 @@
 
 @interface SummaryViewController ()
 
-@property (nonatomic, strong) NSMutableArray *highscoreArray;
+@property (nonatomic, strong) NSArray *highscoreArray;
 @property (nonatomic, strong) NSDictionary *scoreDictionary;
 @property (nonatomic, weak) IBOutlet UIButton *mainMenuButton;
 @property (nonatomic, weak) IBOutlet UILabel *isHighscoreLabel;
@@ -76,17 +76,17 @@
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if ([defaults objectForKey:@"highscores"]) {
-        NSMutableArray *arrayFromDisk = [defaults objectForKey:@"highscores"];
+        NSArray *arrayFromDisk = [defaults objectForKey:@"highscores"];
         self.highscoreArray = arrayFromDisk;
     } else {
-        self.highscoreArray = [[NSMutableArray alloc] init];
+        self.highscoreArray = [[NSArray alloc] init];
     }
 }
 
 - (void)checkIfHighscore
 {
     if (self.highscoreArray.count != 0) {
-        if ([[NSNumber numberWithInteger:self.score] doubleValue] > [[[self.highscoreArray objectAtIndex:0] objectForKey:@"score"] doubleValue]) {
+        if ([[NSNumber numberWithInteger:self.score] integerValue] > [[[self.highscoreArray objectAtIndex:0] objectForKey:@"score"] integerValue]) {
             [self.isHighscoreLabel setAlpha:1.0];
             //        NSLog(@"1");
         } else {
@@ -97,8 +97,10 @@
 }
 
 - (void)addScoreToHighscores
-{    
-    [self.highscoreArray addObject:self.scoreDictionary];
+{
+    NSMutableArray *tempArray = [NSMutableArray arrayWithArray:self.highscoreArray];
+    [tempArray addObject:self.scoreDictionary];
+    self.highscoreArray = [tempArray copy];
 }
 
 - (void)saveHighscores

@@ -13,19 +13,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="05A-PZ-Igw">
-                                <rect key="frame" x="35" y="281" width="251" height="58"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="05A-PZ-Igw">
+                                <rect key="frame" x="47" y="270" width="226" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
                                 <state key="normal" title="Play">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="mr7-6u-u8H" kind="push" identifier="Play Session" id="rbp-nX-VvB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mLs-Sb-4bu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mLs-Sb-4bu">
                                 <rect key="frame" x="61" y="346" width="198" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
@@ -37,7 +36,7 @@
                                     <segue destination="Iwd-77-syd" kind="modal" id="bfW-n2-pnf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DK1-78-TZw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DK1-78-TZw">
                                 <rect key="frame" x="61" y="397" width="198" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
@@ -47,28 +46,26 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="51U-w5-j4s">
-                                <rect key="frame" x="83" y="48" width="181" height="155"/>
+                                <rect key="frame" x="20" y="80" width="280" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="The Quiz">
+                                    <fragment content="theQuiz">
                                         <attributes>
                                             <color key="NSColor" red="0.33557421457585473" green="0.51907703488372092" blue="0.38982353745061094" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="62" name="GillSans"/>
+                                            <font key="NSFont" size="66" name="GillSans-Bold"/>
                                             <font key="NSOriginalFont" size="62" name="GillSansMT"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.059999346559668043" green="0.17370700096899228" blue="0.051365343145277756" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="AcN-xI-Iro"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="aboutButton" destination="DK1-78-TZw" id="h2H-fF-4kW"/>
@@ -101,7 +98,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NFO-yB-aKK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NFO-yB-aKK">
                                 <rect key="frame" x="20" y="150" width="280" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
@@ -113,7 +110,7 @@
                                     <action selector="answerButtonPressed:" destination="mr7-6u-u8H" eventType="touchUpInside" id="23Y-3i-kzI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MC5-kH-eQI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MC5-kH-eQI">
                                 <rect key="frame" x="20" y="201" width="280" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
@@ -125,7 +122,7 @@
                                     <action selector="answerButtonPressed:" destination="mr7-6u-u8H" eventType="touchUpInside" id="LGp-gY-8DU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="diV-3t-sdq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="diV-3t-sdq">
                                 <rect key="frame" x="20" y="252" width="280" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
@@ -137,7 +134,7 @@
                                     <action selector="answerButtonPressed:" destination="mr7-6u-u8H" eventType="touchUpInside" id="LZk-FU-qRV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fjx-iM-ulD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fjx-iM-ulD">
                                 <rect key="frame" x="20" y="303" width="280" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
@@ -238,10 +235,16 @@
                                                 <action selector="backButtonPressed:" destination="Iwd-77-syd" id="5O5-e0-ElG"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem style="plain" systemItem="flexibleSpace" id="dWT-5f-H7e"/>
+                                        <barButtonItem title="Clear" id="j2d-dQ-OFz">
+                                            <connections>
+                                                <action selector="clearButtonPressed:" destination="Iwd-77-syd" id="pNi-OB-G8U"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </items>
                                 </toolbar>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Highscores" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aQC-64-Fbg">
-                                    <rect key="frame" x="78" y="5" width="164" height="34"/>
+                                    <rect key="frame" x="105" y="5" width="110" height="34"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -301,6 +304,8 @@
                             <outlet property="delegate" destination="Iwd-77-syd" id="9uG-O7-ntF"/>
                         </connections>
                     </tableView>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="toolbar" destination="IRc-th-dmw" id="dlH-r1-FXJ"/>
                     </connections>
@@ -338,7 +343,7 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BYM-fp-Q7j">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BYM-fp-Q7j">
                                 <rect key="frame" x="67" y="359" width="187" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
@@ -361,6 +366,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="dsU-5g-jE5"/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="isHighscoreLabel" destination="mzg-bT-DE3" id="DFa-9h-gHk"/>
@@ -378,6 +384,7 @@
             <objects>
                 <navigationController id="4JD-Av-wXt" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="H3k-su-RpW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -396,6 +403,7 @@
         <image name="clock.png" width="26" height="26"/>
         <image name="errorDisabled.png" width="26" height="26"/>
     </resources>
+    <color key="tintColor" red="0.28699062209999998" green="0.4803930475" blue="0.32050878160000001" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

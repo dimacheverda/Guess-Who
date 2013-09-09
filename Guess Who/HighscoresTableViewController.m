@@ -48,18 +48,18 @@
     return YES;
 }
 
--(CALayer *)createShadowWithFrame:(CGRect)frame
-{
-    CAGradientLayer *gradient = [CAGradientLayer layer];
-    gradient.frame = frame;
-    
-    UIColor* lightColor = [[UIColor blackColor] colorWithAlphaComponent:0.0];
-    UIColor* darkColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
-    
-    gradient.colors = [NSArray arrayWithObjects:(id)darkColor.CGColor, (id)lightColor.CGColor, nil];
-    
-    return gradient;
-}
+//-(CALayer *)createShadowWithFrame:(CGRect)frame
+//{
+//    CAGradientLayer *gradient = [CAGradientLayer layer];
+//    gradient.frame = frame;
+//    
+//    UIColor* lightColor = [[UIColor blackColor] colorWithAlphaComponent:0.0];
+//    UIColor* darkColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
+//    
+//    gradient.colors = [NSArray arrayWithObjects:(id)darkColor.CGColor, (id)lightColor.CGColor, nil];
+//    
+//    return gradient;
+//}
 
 - (void)loadHighscoresToArray
 {
@@ -100,6 +100,11 @@
 - (IBAction)backButtonPressed:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)clearButtonPressed:(id)sender
+{
+    
 }
 
 @end
