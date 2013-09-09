@@ -48,19 +48,6 @@
     return YES;
 }
 
-//-(CALayer *)createShadowWithFrame:(CGRect)frame
-//{
-//    CAGradientLayer *gradient = [CAGradientLayer layer];
-//    gradient.frame = frame;
-//    
-//    UIColor* lightColor = [[UIColor blackColor] colorWithAlphaComponent:0.0];
-//    UIColor* darkColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
-//    
-//    gradient.colors = [NSArray arrayWithObjects:(id)darkColor.CGColor, (id)lightColor.CGColor, nil];
-//    
-//    return gradient;
-//}
-
 - (void)loadHighscoresToArray
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -104,7 +91,16 @@
 
 - (IBAction)clearButtonPressed:(id)sender
 {
+    // Save the array
+    NSArray *array = [[NSArray alloc] init];
+    self.highscoresArray = array;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:self.highscoresArray forKey:@"highscores"];
+    [defaults synchronize];
+    [self.tableView reloadData];
     
+    NSLog(@"\n\n\nsummary %@ \n\n\n", self.highscoresArray);
+
 }
 
 @end
