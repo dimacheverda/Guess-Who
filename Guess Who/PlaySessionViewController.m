@@ -32,7 +32,6 @@
 
 @end
 
-
 @implementation PlaySessionViewController
 
 - (void)viewWillAppear:(BOOL)animated

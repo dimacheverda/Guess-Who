@@ -15,7 +15,7 @@
 
 @implementation AboutViewController
 
--(void)viewWillAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
     
@@ -23,7 +23,7 @@
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
--(void)viewDidAppear:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:YES];
 }
@@ -34,7 +34,7 @@
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
--(BOOL)prefersStatusBarHidden
+- (BOOL)prefersStatusBarHidden
 {
     return YES;
 }
@@ -95,7 +95,5 @@
     // Close the Mail Interface
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
-
-
 
 @end

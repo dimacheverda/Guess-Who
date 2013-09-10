@@ -8,6 +8,7 @@
 
 #import "HighscoresTableViewController.h"
 #import "HighscoreCell.h"
+#import "EmptyCell.h"
 #include <QuartzCore/QuartzCore.h>
 
 @interface HighscoresTableViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -19,7 +20,7 @@
 
 @implementation HighscoresTableViewController
 
--(void)viewWillAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
     [self loadHighscoresToArray];
@@ -53,7 +54,7 @@
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
--(BOOL)prefersStatusBarHidden
+- (BOOL)prefersStatusBarHidden
 {
     return YES;
 }
@@ -77,26 +78,31 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    if (self.highscoresArray.count == 0) {
+        return 1;
+    }
     return self.highscoresArray.count;
 }
 
-- (HighscoreCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    HighscoreCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    NSString *score = [NSString stringWithFormat:@"%@", [[self.highscoresArray objectAtIndex:indexPath.row] objectForKey:@"score"]];
-    NSString *streak = [NSString stringWithFormat:@"%@", [[self.highscoresArray objectAtIndex:indexPath.row] objectForKey:@"streak"]];
-    
-    [cell.scoreLabel setText:score];
-    [cell.streakLabel setText:streak];
-    
-    return cell;
-}
-
-- (IBAction)backButtonPressed:(id)sender
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
+    static NSString *EmptyCellIdentifier = @"EmptyCell";
+    NSLog(@"%d", self.highscoresArray.count);
+    if (self.highscoresArray.count == 0) {
+        EmptyCell *emptyCell = [tableView dequeueReusableCellWithIdentifier:EmptyCellIdentifier forIndexPath:indexPath];
+        return emptyCell;
+    }
+    else {
+        HighscoreCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        NSString *score = [NSString stringWithFormat:@"%@", [[self.highscoresArray objectAtIndex:indexPath.row] objectForKey:@"score"]];
+        NSString *streak = [NSString stringWithFormat:@"%@", [[self.highscoresArray objectAtIndex:indexPath.row] objectForKey:@"streak"]];
+        
+        [cell.scoreLabel setText:score];
+        [cell.streakLabel setText:streak];
+        
+        return cell;
+    }
 }
 
 - (IBAction)clearButtonPressed:(id)sender

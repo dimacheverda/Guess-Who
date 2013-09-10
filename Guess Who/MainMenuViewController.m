@@ -19,7 +19,7 @@
 
 @implementation MainMenuViewController
 
--(void)viewWillAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
     
@@ -48,7 +48,7 @@
     self.navigationController.navigationBarHidden = YES;
 }
 
--(BOOL)prefersStatusBarHidden
+- (BOOL)prefersStatusBarHidden
 {
     return YES;
 }
@@ -116,7 +116,7 @@
     });
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"Play Session"]) {
         [segue.destinationViewController setQuestionDatabase:[self.database objectForKey:@"questions"]];

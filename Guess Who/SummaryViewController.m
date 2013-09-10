@@ -86,7 +86,8 @@
 - (void)checkIfHighscore
 {
     if (self.highscoreArray.count != 0) {
-        if ([[NSNumber numberWithInteger:self.score] integerValue] > [[[self.highscoreArray objectAtIndex:0] objectForKey:@"score"] integerValue]) {
+        NSLog(@"%d", self.score);
+        if ((self.score > 0) && ([[NSNumber numberWithInteger:self.score] integerValue] > [[[self.highscoreArray objectAtIndex:0] objectForKey:@"score"] integerValue])) {
             [self.isHighscoreLabel setAlpha:1.0];
             //        NSLog(@"1");
         } else {

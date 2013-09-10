@@ -33,7 +33,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Iwd-77-syd" kind="push" id="bfW-n2-pnf"/>
+                                    <segue destination="Iwd-77-syd" kind="push" identifier="Highscore" id="rxT-rs-njp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DK1-78-TZw">
@@ -220,7 +220,7 @@
             </objects>
             <point key="canvasLocation" x="1794" y="-156"/>
         </scene>
-        <!--Highscores Table View Controller-->
+        <!--Highscores Table View Controller - Highscores-->
         <scene sceneID="0Rq-Q1-TRw">
             <objects>
                 <tableViewController id="Iwd-77-syd" customClass="HighscoresTableViewController" sceneMemberID="viewController">
@@ -228,9 +228,14 @@
                         <rect key="frame" x="0.0" y="44" width="320" height="436"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="hJW-y4-U9B">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="51" id="G0D-XL-y7W" customClass="HighscoreCell">
-                                <rect key="frame" x="0.0" y="22" width="320" height="51"/>
+                                <rect key="frame" x="0.0" y="38" width="320" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G0D-XL-y7W" id="ccV-WB-ZrG">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
@@ -271,6 +276,23 @@
                                     <outlet property="streakLabel" destination="NWa-OK-1WW" id="PIf-8K-W2S"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EmptyCell" id="CMn-ZC-1ne" customClass="EmptyCell">
+                                <rect key="frame" x="0.0" y="89" width="320" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CMn-ZC-1ne" id="aWv-df-NTS">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No results..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KJ5-4r-2zG">
+                                            <rect key="frame" x="115" y="14" width="90" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </prototypes>
                         <sections/>
                         <connections>
@@ -278,10 +300,24 @@
                             <outlet property="delegate" destination="Iwd-77-syd" id="9uG-O7-ntF"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Highscores" id="1na-b4-gYk">
+                        <barButtonItem key="rightBarButtonItem" title="Clear" id="SzO-ew-ujv">
+                            <connections>
+                                <action selector="clearButtonPressed:" destination="Iwd-77-syd" id="Qnp-Ho-tbo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uik-aA-L5U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationBar contentMode="scaleToFill" id="cVo-mB-OuI">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem title="Title" id="gRT-1K-V3g"/>
+                    </items>
+                </navigationBar>
             </objects>
             <point key="canvasLocation" x="1794" y="480"/>
         </scene>
@@ -293,15 +329,19 @@
                         <rect key="frame" x="0.0" y="44" width="320" height="436"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KbC-SM-NyC">
-                                <rect key="frame" x="83" y="386" width="154" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Send feedback"/>
-                                <connections>
-                                    <action selector="sendFeedbackButtonPressed:" destination="SJD-Ly-qxQ" eventType="touchUpInside" id="ack-Nt-paz"/>
-                                </connections>
-                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Tfz-CH-Y3f">
+                                <rect key="frame" x="0.0" y="392" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="qzh-a9-CNP"/>
+                                    <barButtonItem title="Send feedback" id="aHI-da-fYW">
+                                        <connections>
+                                            <action selector="sendFeedbackButtonPressed:" destination="SJD-Ly-qxQ" id="umo-wB-54v"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Cx3-gP-Fou"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -354,7 +394,7 @@
                                     <action selector="mainMenuButtonPressed:" destination="9ls-3w-CHC" eventType="touchUpInside" id="R3H-th-Jnj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="New Highscore!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mzg-bT-DE3">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" text="New Highscore!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mzg-bT-DE3">
                                 <rect key="frame" x="55" y="291" width="211" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="17"/>
@@ -400,6 +440,8 @@
     </scenes>
     <resources>
         <image name="clock.png" width="26" height="26"/>
+        <image name="errorDisabled.png" width="26" height="26"/>
+        <image name="errorDisabled.png" width="26" height="26"/>
         <image name="errorDisabled.png" width="26" height="26"/>
     </resources>
     <color key="tintColor" red="0.28699062209999998" green="0.4803930475" blue="0.32050878160000001" alpha="1" colorSpace="calibratedRGB"/>
