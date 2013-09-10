@@ -23,9 +23,13 @@
 {
     [super viewWillAppear:YES];
     [self loadHighscoresToArray];
+    [self.navigationItem setTitle:@"Highscores"];
+    
+    //setting up NavBar
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     
     //view main background color
-    [self.view setBackgroundColor:[UIColor colorWithRed:244.0/255.0 green:250.0/255.0 blue:233.0/255.0 alpha:1.0]];
+//    [self.view setBackgroundColor:[UIColor colorWithRed:244.0/255.0 green:250.0/255.0 blue:233.0/255.0 alpha:1.0]];
 }
 
 - (void)viewDidLoad
@@ -41,6 +45,12 @@
     
     //setting NavBar
     self.toolbar.tintColor = [UIColor colorWithRed:116.0/255.0 green:150.0/255.0 blue:96.0/255.0 alpha:1.0];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 -(BOOL)prefersStatusBarHidden
