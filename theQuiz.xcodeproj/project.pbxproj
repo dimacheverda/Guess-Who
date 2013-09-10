@@ -227,9 +227,9 @@
 				324EF40A172A9FB100246733 /* MainMenuViewController.m */,
 				3200BB831757EB9B00C69C53 /* Play Session */,
 				326BFC39179484C20086CDAE /* Highscore */,
+				3284AB6717DF34E200B61700 /* About */,
 				32357706177B64FA00A75713 /* Artwork */,
 				324EF3ED172A9F0500246733 /* Supporting Files */,
-				3284AB6717DF34E200B61700 /* About */,
 			);
 			path = "Guess Who";
 			sourceTree = "<group>";

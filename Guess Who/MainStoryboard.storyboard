@@ -229,7 +229,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="VCy-wY-Rd2">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="IRc-th-dmw">
@@ -262,7 +262,7 @@
                         </view>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="51" id="G0D-XL-y7W" customClass="HighscoreCell">
-                                <rect key="frame" x="0.0" y="66" width="320" height="51"/>
+                                <rect key="frame" x="0.0" y="81" width="320" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G0D-XL-y7W" id="ccV-WB-ZrG">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
@@ -329,7 +329,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KbC-SM-NyC">
-                                <rect key="frame" x="83" y="430" width="154" height="30"/>
+                                <rect key="frame" x="83" y="386" width="154" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Send feedback"/>
@@ -435,6 +435,8 @@
     </scenes>
     <resources>
         <image name="clock.png" width="26" height="26"/>
+        <image name="errorDisabled.png" width="26" height="26"/>
+        <image name="errorDisabled.png" width="26" height="26"/>
         <image name="errorDisabled.png" width="26" height="26"/>
     </resources>
     <color key="tintColor" red="0.28699062209999998" green="0.4803930475" blue="0.32050878160000001" alpha="1" colorSpace="calibratedRGB"/>
