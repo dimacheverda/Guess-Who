@@ -39,6 +39,8 @@
 		324EF418172AA0B500246733 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF410172A9FB100246733 /* Question.m */; };
 		324EF41A172AAA9600246733 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF412172A9FB100246733 /* SummaryViewController.m */; };
 		326BFC38179484BA0086CDAE /* HighscoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 326BFC37179484BA0086CDAE /* HighscoreCell.m */; };
+		3284AB6617DF34DF00B61700 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3284AB6517DF34DF00B61700 /* AboutViewController.m */; };
+		3284AB6917DF379E00B61700 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3284AB6817DF379E00B61700 /* MessageUI.framework */; };
 		3286A5E017DCEEC6006D9845 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 3286A5DC17DCEEC6006D9845 /* Icon-Small.png */; };
 		3286A5E117DCEEC6006D9845 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3286A5DD17DCEEC6006D9845 /* Icon-Small@2x.png */; };
 		3286A5E217DCEEC6006D9845 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3286A5DE17DCEEC6006D9845 /* Icon.png */; };
@@ -107,6 +109,9 @@
 		324EF413172A9FC900246733 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		326BFC36179484BA0086CDAE /* HighscoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighscoreCell.h; sourceTree = "<group>"; };
 		326BFC37179484BA0086CDAE /* HighscoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighscoreCell.m; sourceTree = "<group>"; };
+		3284AB6417DF34DF00B61700 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		3284AB6517DF34DF00B61700 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		3284AB6817DF379E00B61700 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		3286A5DC17DCEEC6006D9845 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
 		3286A5DD17DCEEC6006D9845 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		3286A5DE17DCEEC6006D9845 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -129,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3284AB6917DF379E00B61700 /* MessageUI.framework in Frameworks */,
 				3286F01717D92EBA00514AB6 /* libz.dylib in Frameworks */,
 				3286F01517D92EAA00514AB6 /* SystemConfiguration.framework in Frameworks */,
 				3286F01317D92EA400514AB6 /* CoreData.framework in Frameworks */,
@@ -201,6 +207,7 @@
 		324EF3E5172A9F0500246733 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3284AB6817DF379E00B61700 /* MessageUI.framework */,
 				3286F01617D92EBA00514AB6 /* libz.dylib */,
 				3286F01417D92EAA00514AB6 /* SystemConfiguration.framework */,
 				3286F01217D92EA400514AB6 /* CoreData.framework */,
@@ -222,6 +229,7 @@
 				326BFC39179484C20086CDAE /* Highscore */,
 				32357706177B64FA00A75713 /* Artwork */,
 				324EF3ED172A9F0500246733 /* Supporting Files */,
+				3284AB6717DF34E200B61700 /* About */,
 			);
 			path = "Guess Who";
 			sourceTree = "<group>";
@@ -252,6 +260,15 @@
 				326BFC37179484BA0086CDAE /* HighscoreCell.m */,
 			);
 			name = Highscore;
+			sourceTree = "<group>";
+		};
+		3284AB6717DF34E200B61700 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				3284AB6417DF34DF00B61700 /* AboutViewController.h */,
+				3284AB6517DF34DF00B61700 /* AboutViewController.m */,
+			);
+			name = About;
 			sourceTree = "<group>";
 		};
 		3286A5D317DCED12006D9845 /* icon */ = {
@@ -376,6 +393,7 @@
 				324EF416172AA0AE00246733 /* PlaySession.m in Sources */,
 				324EF417172AA0B100246733 /* PlaySessionViewController.m in Sources */,
 				324EF418172AA0B500246733 /* Question.m in Sources */,
+				3284AB6617DF34DF00B61700 /* AboutViewController.m in Sources */,
 				324EF41A172AAA9600246733 /* SummaryViewController.m in Sources */,
 				3200BB861757EC2B00C69C53 /* HighscoresTableViewController.m in Sources */,
 				326BFC38179484BA0086CDAE /* HighscoreCell.m in Sources */,

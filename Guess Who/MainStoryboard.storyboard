@@ -44,6 +44,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="SJD-Ly-qxQ" kind="push" id="10e-cQ-lz4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="51U-w5-j4s">
                                 <rect key="frame" x="20" y="80" width="280" height="155"/>
@@ -63,6 +66,7 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="AcN-xI-Iro"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -75,14 +79,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1255" y="138"/>
+            <point key="canvasLocation" x="1185" y="480"/>
         </scene>
         <!--Play Session View Controller-->
         <scene sceneID="Dwf-WZ-3Mf">
             <objects>
                 <viewController id="mr7-6u-u8H" customClass="PlaySessionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D2k-LD-bsv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="436"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.70000000000000007" contentMode="scaleToFill" id="Zv3-V2-WIX">
@@ -189,9 +193,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="oAl-Sc-V79"/>
+                    <navigationItem key="navigationItem" id="oAl-Sc-V79">
+                        <barButtonItem key="backBarButtonItem" title="Main Menu" id="bnN-A3-16t"/>
+                    </navigationItem>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="answerFour" destination="fjx-iM-ulD" id="6Bg-hk-Eke"/>
                         <outlet property="answerOne" destination="NFO-yB-aKK" id="KAf-hj-aUJ"/>
@@ -314,6 +320,34 @@
             </objects>
             <point key="canvasLocation" x="1794" y="480"/>
         </scene>
+        <!--About View Controller - About-->
+        <scene sceneID="Ma1-T0-wC6">
+            <objects>
+                <viewController id="SJD-Ly-qxQ" customClass="AboutViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RRY-ed-Icy">
+                        <rect key="frame" x="0.0" y="44" width="320" height="436"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KbC-SM-NyC">
+                                <rect key="frame" x="83" y="430" width="154" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Send feedback"/>
+                                <connections>
+                                    <action selector="sendFeedbackButtonPressed:" destination="SJD-Ly-qxQ" eventType="touchUpInside" id="ack-Nt-paz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="KCB-Qh-49S"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqe-qF-xzj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1794" y="1147"/>
+        </scene>
         <!--Summary View Controller-->
         <scene sceneID="rHp-va-y1M">
             <objects>
@@ -396,7 +430,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xst-cZ-Pv2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="729" y="138"/>
+            <point key="canvasLocation" x="659" y="480"/>
         </scene>
     </scenes>
     <resources>

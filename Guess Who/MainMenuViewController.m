@@ -35,7 +35,7 @@
     [self.aboutButton setBackgroundImage:buttonImage forState:UIControlStateNormal];
     
     //view main background color
-    [self.view setBackgroundColor:[UIColor colorWithRed:244.0/255.0 green:250.0/255.0 blue:233.0/255.0 alpha:1.0]];
+//    [self.view setBackgroundColor:[UIColor colorWithRed:244.0/255.0 green:250.0/255.0 blue:233.0/255.0 alpha:1.0]];
     
     //hidding NavBar
     self.navigationController.navigationBarHidden = YES;
@@ -72,6 +72,11 @@
         screenRect.origin.y += 68.0;
         self.aboutButton.frame = screenRect;
     }
+}
+
+- (void)applyAppearance
+{
+    
 }
 
 - (void)loadDatabase

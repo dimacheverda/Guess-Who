@@ -38,7 +38,12 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
- 
+    
+    //setting up NavBar
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+//    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:116.0/255.0 green:150.0/255.0 blue:96.0/255.0 alpha:1.0];
+//    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Gill Sans" size:20.0], UITextAttributeFont, nil]];
+    
     //init data
     self.playSession = [[PlaySession alloc] initWithQuestionsDatabase:self.questionDatabase];
     [self refreshScore];
@@ -71,16 +76,11 @@
     [self.answerFour setTitleColor:[UIColor darkGrayColor] forState:UIControlStateHighlighted];
     
     //view main background color
-    [self.view setBackgroundColor:[UIColor colorWithRed:244.0/255.0 green:250.0/255.0 blue:233.0/255.0 alpha:1.0]];
+//    [self.view setBackgroundColor:[UIColor colorWithRed:244.0/255.0 green:250.0/255.0 blue:233.0/255.0 alpha:1.0]];
     
     //footerColor
     UIImage *footerImage = [[UIImage imageNamed:@"footerImage"] resizableImageWithCapInsets:UIEdgeInsetsMake(40.0, 40.0, 40.0, 40.0)];
     self.footerBackgroundImageView.image = footerImage;
-    
-    //setting up NavBar
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:116.0/255.0 green:150.0/255.0 blue:96.0/255.0 alpha:1.0];
-    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Gill Sans" size:20.0], UITextAttributeFont, nil]];
 }
 
 - (void)viewDidLoad
