@@ -40,8 +40,6 @@
     
     //setting up NavBar
     [self.navigationController setNavigationBarHidden:NO animated:YES];
-//    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:116.0/255.0 green:150.0/255.0 blue:96.0/255.0 alpha:1.0];
-//    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Gill Sans" size:20.0], UITextAttributeFont, nil]];
     
     //init data
     self.playSession = [[PlaySession alloc] initWithQuestionsDatabase:self.questionDatabase];

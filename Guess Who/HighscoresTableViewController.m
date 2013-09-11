@@ -14,7 +14,6 @@
 @interface HighscoresTableViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) NSArray *highscoresArray;
-@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 
 @end
 
@@ -36,16 +35,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    //shadow
-//    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
-//    {
-//        CALayer* shadowLayer = [self createShadowWithFrame:CGRectMake(0, 44, 320, 5)];
-//        [self.view.layer addSublayer:shadowLayer];
-//    }
-    
-    //setting NavBar
-    self.toolbar.tintColor = [UIColor colorWithRed:116.0/255.0 green:150.0/255.0 blue:96.0/255.0 alpha:1.0];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

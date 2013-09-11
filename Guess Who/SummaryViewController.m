@@ -24,7 +24,7 @@
     [super viewWillAppear:YES];
     
     //view main background color
-    [self.view setBackgroundColor:[UIColor colorWithRed:244.0/255.0 green:250.0/255.0 blue:233.0/255.0 alpha:1.0]];
+//    [self.view setBackgroundColor:[UIColor colorWithRed:244.0/255.0 green:250.0/255.0 blue:233.0/255.0 alpha:1.0]];
     
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.score];
     self.longestStreakLabel.text = [NSString stringWithFormat:@"Longest Streak: %d", self.longestStreak];
@@ -116,7 +116,6 @@
 
 - (IBAction)mainMenuButtonPressed:(id)sender
 {
-//    [self.presentingViewController.presentingViewController dismissViewControllerAnimated:YES completion:nil]; //for modal segue
     [self.navigationController popToRootViewControllerAnimated:YES]; 
 }
 
