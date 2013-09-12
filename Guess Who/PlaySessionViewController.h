@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "PlaySession.h"
+#import "GAITrackedViewController.h"
 
-@interface PlaySessionViewController : UIViewController
+@interface PlaySessionViewController : GAITrackedViewController
 
 @property (nonatomic, strong) PlaySession *playSession;
 @property (nonatomic ,strong) NSMutableArray *questionDatabase;

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAITrackedViewController.h"
 
-@interface SummaryViewController : UIViewController
+@interface SummaryViewController : GAITrackedViewController
 
 @property (nonatomic) NSInteger score;
 @property (nonatomic) NSInteger longestStreak;

@@ -26,6 +26,8 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:YES];
+    
+    self.screenName = @"About screen";
 }
 
 - (void)viewWillDisappear:(BOOL)animated

@@ -44,6 +44,8 @@
 {
     [super viewDidLoad];
     
+    self.screenName = @"Summary screen";
+    
     NSDictionary *score = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:self.score], @"score", [NSNumber numberWithInteger:self.longestStreak], @"streak", nil];
     self.scoreDictionary = score;
     
@@ -94,6 +96,8 @@
             [self.isHighscoreLabel setAlpha:0.0];
             //        NSLog(@"2");
         }
+    } else if (self.score > 0) {
+        [self.isHighscoreLabel setAlpha:1.0];
     }
 }
 

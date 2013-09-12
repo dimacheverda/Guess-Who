@@ -226,8 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				324EF413172A9FC900246733 /* MainStoryboard.storyboard */,
-				324EF409172A9FB100246733 /* MainMenuViewController.h */,
-				324EF40A172A9FB100246733 /* MainMenuViewController.m */,
+				32CBC38417E226820012F36C /* Main Menu */,
 				3200BB831757EB9B00C69C53 /* Play Session */,
 				326BFC39179484C20086CDAE /* Highscore */,
 				3284AB6717DF34E200B61700 /* About */,
@@ -299,6 +298,15 @@
 				3286F00E17D92E4D00514AB6 /* GAITracker.h */,
 			);
 			name = GAI;
+			sourceTree = "<group>";
+		};
+		32CBC38417E226820012F36C /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				324EF409172A9FB100246733 /* MainMenuViewController.h */,
+				324EF40A172A9FB100246733 /* MainMenuViewController.m */,
+			);
+			name = "Main Menu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

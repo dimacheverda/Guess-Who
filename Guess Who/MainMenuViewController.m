@@ -30,7 +30,7 @@
 {
     [super viewDidAppear:YES];
     
-    self.screenName = @"main screen";
+    self.screenName = @"Main Menu screen";
     
     //customizing buttons
     NSString *buttonFilled = @"myButtonFill.png";

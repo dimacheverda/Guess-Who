@@ -85,6 +85,8 @@
     [super viewDidLoad];
     
     [self adjustForIPhone5];
+    
+    self.screenName = @"Play Session screen";
 }
 
 -(BOOL)prefersStatusBarHidden
