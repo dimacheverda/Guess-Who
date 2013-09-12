@@ -13,6 +13,6 @@
 @interface PlaySessionViewController : GAITrackedViewController
 
 @property (nonatomic, strong) PlaySession *playSession;
-@property (nonatomic ,strong) NSMutableArray *questionDatabase;
+@property (nonatomic, strong) NSMutableArray *questionDatabase;
 
 @end

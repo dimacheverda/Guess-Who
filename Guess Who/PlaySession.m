@@ -77,10 +77,10 @@
 }
 
 #define TIME_MULTIPLIER 21;
-#define RIGHT_ANSWER_SCORE 987;
+#define RIGHT_ANSWER_SCORE 957;
 #define STREAK_BONUS 49;
 
-- (void)checkAnswerWithTime:(NSInteger)time
+- (BOOL)checkAnswerWithTime:(NSInteger)time
 {
     if ([self.selectedAnswerString isEqualToString:self.currentQuestion.answer]) {
         self.currentStreak++;
@@ -90,9 +90,11 @@
         if (self.currentStreak > self.longestStreak) {
             self.longestStreak = self.currentStreak;
         }
+        return YES;
     } else {
         self.numberOfWrongAnswers++;
         self.currentStreak = 0;
+        return NO;
     }
 }
 

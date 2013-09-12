@@ -22,5 +22,5 @@
 
 - (id)initWithQuestionsDatabase:(NSMutableArray *)questionDatabase;
 - (void)nextQuestion;
-- (void)checkAnswerWithTime:(NSInteger)time;
+- (BOOL)checkAnswerWithTime:(NSInteger)time;
 @end

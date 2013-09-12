@@ -19,6 +19,8 @@
 
 @implementation SummaryViewController
 
+#define BUTTON_FILLED_GREEN @"myButtonFilledGreen"
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
@@ -29,7 +31,7 @@
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.score];
     self.longestStreakLabel.text = [NSString stringWithFormat:@"Longest Streak: %d", self.longestStreak];
     
-    UIImage *buttonImage = [[UIImage imageNamed:@"myButtonFill"]
+    UIImage *buttonImage = [[UIImage imageNamed:BUTTON_FILLED_GREEN]
                             resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
     [self.mainMenuButton setBackgroundImage:buttonImage forState:UIControlStateNormal];
     

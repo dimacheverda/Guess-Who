@@ -9,10 +9,15 @@
 #import "PlaySessionViewController.h"
 #include <QuartzCore/QuartzCore.h>
 
-@interface PlaySessionViewController ()
+@interface PlaySessionViewController () {
+    UIImage *buttonImageNormal;
+    UIImage *buttonImageHighlighted;
+    UIImage *buttonRightAnswer;
+    UIImage *buttonWrongAnswer;
+}
 
 @property (nonatomic, strong) NSString *selectedButtonTitle;
-@property (nonatomic ,strong) NSTimer *timer;
+@property (nonatomic, strong) NSTimer *timer;
 @property (nonatomic) NSInteger time;
 
 @property (weak, nonatomic) IBOutlet UIImageView *questionBackgroundImageView;
@@ -34,6 +39,11 @@
 
 @implementation PlaySessionViewController
 
+#define BUTTON_NORMAL_GREEN @"myButtonNormalGreen"
+#define BUTTON_HIGHLIGHTED_GREEN @"myButtonHighlightedGreen"
+#define BUTTON_WRONG_ANSWER_RED @"myButtonWrongAnswerRed"
+#define BUTTON_RIGHT_ANSWER_GREEN @"myButtonRightAnswerGreen"
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
@@ -52,17 +62,14 @@
 //    [self.view.layer addSublayer:shadowLayer];
     
     //setting buttons state images and colors
-    NSString *button = @"myButton.png";
-    NSString *buttonHighlighted = @"myButtonH.png";
-    
-    UIImage *buttonImage = [[UIImage imageNamed:button]
+    buttonImageNormal = [[UIImage imageNamed:BUTTON_NORMAL_GREEN]
                             resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
-    UIImage *buttonImageHighlighted = [[UIImage imageNamed:buttonHighlighted]
+    buttonImageHighlighted = [[UIImage imageNamed:BUTTON_HIGHLIGHTED_GREEN]
                             resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
-    [self.answerOne setBackgroundImage:buttonImage forState:UIControlStateNormal];
-    [self.answerTwo setBackgroundImage:buttonImage forState:UIControlStateNormal];
-    [self.answerThree setBackgroundImage:buttonImage forState:UIControlStateNormal];
-    [self.answerFour setBackgroundImage:buttonImage forState:UIControlStateNormal];
+    [self.answerOne setBackgroundImage:buttonImageNormal forState:UIControlStateNormal];
+    [self.answerTwo setBackgroundImage:buttonImageNormal forState:UIControlStateNormal];
+    [self.answerThree setBackgroundImage:buttonImageNormal forState:UIControlStateNormal];
+    [self.answerFour setBackgroundImage:buttonImageNormal forState:UIControlStateNormal];
     [self.answerOne setBackgroundImage:buttonImageHighlighted forState:UIControlStateHighlighted];
     [self.answerTwo setBackgroundImage:buttonImageHighlighted forState:UIControlStateHighlighted];
     [self.answerThree setBackgroundImage:buttonImageHighlighted forState:UIControlStateHighlighted];
@@ -218,8 +225,34 @@
     
     self.playSession.selectedAnswerString = self.selectedButtonTitle;
     [self stopTimer];
-    [self.playSession checkAnswerWithTime:self.time];
+    BOOL isAnswerRight = [self.playSession checkAnswerWithTime:self.time];
+    
     [self refreshScore];
+    
+    buttonRightAnswer = [[UIImage imageNamed:BUTTON_RIGHT_ANSWER_GREEN]
+                                  resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
+    buttonWrongAnswer = [[UIImage imageNamed:BUTTON_WRONG_ANSWER_RED]
+                                  resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
+
+    if (isAnswerRight) {
+        [self setImageBackground:buttonRightAnswer forButton:sender];
+    } else {
+        [self setImageBackground:buttonWrongAnswer forButton:sender];
+    }
+    [NSTimer scheduledTimerWithTimeInterval:0.3 target:self
+                                   selector:@selector(completeChecking)
+                                   userInfo:nil
+                                    repeats:NO];
+}
+
+- (void)completeChecking
+{
+    [NSThread sleepForTimeInterval:0.2];
+    [self setImageBackground:buttonImageNormal forButton:self.answerOne];
+    [self setImageBackground:buttonImageNormal forButton:self.answerTwo];
+    [self setImageBackground:buttonImageNormal forButton:self.answerThree];
+    [self setImageBackground:buttonImageNormal forButton:self.answerFour];
+    
     [self checkErrors];
     
     if (self.playSession.numberOfWrongAnswers < 3) {
@@ -228,6 +261,11 @@
     } else {
         [self terminateSession];
     }
+}
+
+- (void)setImageBackground:(UIImage *)image forButton:(UIButton *)button
+{
+    [button setBackgroundImage:image forState:UIControlStateNormal];
 }
 
 #define TIME_FOR_ANSWER 30;

@@ -8,21 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		3200BB861757EC2B00C69C53 /* HighscoresTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3200BB851757EC2B00C69C53 /* HighscoresTableViewController.m */; };
-		323576F017785E3B00A75713 /* myButtonFill.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576EE17785E3B00A75713 /* myButtonFill.png */; };
-		323576F117785E3B00A75713 /* myButtonFill@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576EF17785E3B00A75713 /* myButtonFill@2x.png */; };
-		323576FA1778644B00A75713 /* myButtonH.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576F61778644A00A75713 /* myButtonH.png */; };
-		323576FB1778644B00A75713 /* myButtonH@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576F71778644A00A75713 /* myButtonH@2x.png */; };
-		323576FC1778644B00A75713 /* myButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576F81778644A00A75713 /* myButton.png */; };
-		323576FD1778644B00A75713 /* myButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576F91778644A00A75713 /* myButton@2x.png */; };
+		323576F017785E3B00A75713 /* myButtonFilledGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576EE17785E3B00A75713 /* myButtonFilledGreen.png */; };
+		323576F117785E3B00A75713 /* myButtonFilledGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576EF17785E3B00A75713 /* myButtonFilledGreen@2x.png */; };
+		323576FA1778644B00A75713 /* myButtonHighlightedGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576F61778644A00A75713 /* myButtonHighlightedGreen.png */; };
+		323576FB1778644B00A75713 /* myButtonHighlightedGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576F71778644A00A75713 /* myButtonHighlightedGreen@2x.png */; };
+		323576FC1778644B00A75713 /* myButtonNormalGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576F81778644A00A75713 /* myButtonNormalGreen.png */; };
+		323576FD1778644B00A75713 /* myButtonNormalGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576F91778644A00A75713 /* myButtonNormalGreen@2x.png */; };
 		323577011779A74700A75713 /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323577001779A74700A75713 /* clock@2x.png */; };
 		323577031779D6DD00A75713 /* errorDisabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323577021779D6DD00A75713 /* errorDisabled@2x.png */; };
 		323577051779D83A00A75713 /* errorEnabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323577041779D83A00A75713 /* errorEnabled@2x.png */; };
 		3235770A177B667E00A75713 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 32357707177B667E00A75713 /* clock.png */; };
 		3235770B177B667E00A75713 /* errorEnabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 32357708177B667E00A75713 /* errorEnabled.png */; };
 		3235770C177B667E00A75713 /* errorDisabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 32357709177B667E00A75713 /* errorDisabled.png */; };
-		3235770E177B6A2400A75713 /* footerImageWithShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3235770D177B6A2300A75713 /* footerImageWithShadow@2x.png */; };
-		32357710177B6A8A00A75713 /* footerImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3235770F177B6A8A00A75713 /* footerImage@2x.png */; };
-		32357712177B6C4F00A75713 /* footerImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 32357711177B6C4F00A75713 /* footerImage.png */; };
+		32357710177B6A8A00A75713 /* footerImageGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3235770F177B6A8A00A75713 /* footerImageGreen@2x.png */; };
+		32357712177B6C4F00A75713 /* footerImageGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 32357711177B6C4F00A75713 /* footerImageGreen.png */; };
 		324EF3E7172A9F0500246733 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3E6172A9F0500246733 /* UIKit.framework */; };
 		324EF3E9172A9F0500246733 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3E8172A9F0500246733 /* Foundation.framework */; };
 		324EF3EB172A9F0500246733 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3EA172A9F0500246733 /* CoreGraphics.framework */; };
@@ -50,6 +49,10 @@
 		3286F01317D92EA400514AB6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3286F01217D92EA400514AB6 /* CoreData.framework */; };
 		3286F01517D92EAA00514AB6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3286F01417D92EAA00514AB6 /* SystemConfiguration.framework */; };
 		3286F01717D92EBA00514AB6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3286F01617D92EBA00514AB6 /* libz.dylib */; };
+		32CBC38917E2433D0012F36C /* myButtonRightAnswerGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CBC38517E2433C0012F36C /* myButtonRightAnswerGreen.png */; };
+		32CBC38A17E2433D0012F36C /* myButtonRightAnswerGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CBC38617E2433C0012F36C /* myButtonRightAnswerGreen@2x.png */; };
+		32CBC38F17E25F750012F36C /* myButtonWrongAnswerRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CBC38D17E25F750012F36C /* myButtonWrongAnswerRed.png */; };
+		32CBC39017E25F750012F36C /* myButtonWrongAnswerRed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CBC38E17E25F750012F36C /* myButtonWrongAnswerRed@2x.png */; };
 		32E1F04A177F79410001C1FD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E1F049177F79410001C1FD /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,21 +72,20 @@
 /* Begin PBXFileReference section */
 		3200BB841757EC2B00C69C53 /* HighscoresTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighscoresTableViewController.h; sourceTree = "<group>"; };
 		3200BB851757EC2B00C69C53 /* HighscoresTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighscoresTableViewController.m; sourceTree = "<group>"; };
-		323576EE17785E3B00A75713 /* myButtonFill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myButtonFill.png; sourceTree = "<group>"; };
-		323576EF17785E3B00A75713 /* myButtonFill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myButtonFill@2x.png"; sourceTree = "<group>"; };
-		323576F61778644A00A75713 /* myButtonH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myButtonH.png; sourceTree = "<group>"; };
-		323576F71778644A00A75713 /* myButtonH@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myButtonH@2x.png"; sourceTree = "<group>"; };
-		323576F81778644A00A75713 /* myButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myButton.png; sourceTree = "<group>"; };
-		323576F91778644A00A75713 /* myButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myButton@2x.png"; sourceTree = "<group>"; };
+		323576EE17785E3B00A75713 /* myButtonFilledGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myButtonFilledGreen.png; sourceTree = "<group>"; };
+		323576EF17785E3B00A75713 /* myButtonFilledGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myButtonFilledGreen@2x.png"; sourceTree = "<group>"; };
+		323576F61778644A00A75713 /* myButtonHighlightedGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myButtonHighlightedGreen.png; sourceTree = "<group>"; };
+		323576F71778644A00A75713 /* myButtonHighlightedGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myButtonHighlightedGreen@2x.png"; sourceTree = "<group>"; };
+		323576F81778644A00A75713 /* myButtonNormalGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myButtonNormalGreen.png; sourceTree = "<group>"; };
+		323576F91778644A00A75713 /* myButtonNormalGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myButtonNormalGreen@2x.png"; sourceTree = "<group>"; };
 		323577001779A74700A75713 /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
 		323577021779D6DD00A75713 /* errorDisabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "errorDisabled@2x.png"; sourceTree = "<group>"; };
 		323577041779D83A00A75713 /* errorEnabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "errorEnabled@2x.png"; sourceTree = "<group>"; };
 		32357707177B667E00A75713 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
 		32357708177B667E00A75713 /* errorEnabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = errorEnabled.png; sourceTree = "<group>"; };
 		32357709177B667E00A75713 /* errorDisabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = errorDisabled.png; sourceTree = "<group>"; };
-		3235770D177B6A2300A75713 /* footerImageWithShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footerImageWithShadow@2x.png"; sourceTree = "<group>"; };
-		3235770F177B6A8A00A75713 /* footerImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footerImage@2x.png"; sourceTree = "<group>"; };
-		32357711177B6C4F00A75713 /* footerImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footerImage.png; sourceTree = "<group>"; };
+		3235770F177B6A8A00A75713 /* footerImageGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footerImageGreen@2x.png"; sourceTree = "<group>"; };
+		32357711177B6C4F00A75713 /* footerImageGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footerImageGreen.png; sourceTree = "<group>"; };
 		324EF3E3172A9F0500246733 /* theQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324EF3E6172A9F0500246733 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		324EF3E8172A9F0500246733 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -129,6 +131,10 @@
 		3286F01217D92EA400514AB6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3286F01417D92EAA00514AB6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3286F01617D92EBA00514AB6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		32CBC38517E2433C0012F36C /* myButtonRightAnswerGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myButtonRightAnswerGreen.png; sourceTree = "<group>"; };
+		32CBC38617E2433C0012F36C /* myButtonRightAnswerGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myButtonRightAnswerGreen@2x.png"; sourceTree = "<group>"; };
+		32CBC38D17E25F750012F36C /* myButtonWrongAnswerRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myButtonWrongAnswerRed.png; sourceTree = "<group>"; };
+		32CBC38E17E25F750012F36C /* myButtonWrongAnswerRed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myButtonWrongAnswerRed@2x.png"; sourceTree = "<group>"; };
 		32E1F049177F79410001C1FD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -170,22 +176,25 @@
 		32357706177B64FA00A75713 /* Artwork */ = {
 			isa = PBXGroup;
 			children = (
+				32CBC38517E2433C0012F36C /* myButtonRightAnswerGreen.png */,
+				32CBC38617E2433C0012F36C /* myButtonRightAnswerGreen@2x.png */,
+				32CBC38D17E25F750012F36C /* myButtonWrongAnswerRed.png */,
+				32CBC38E17E25F750012F36C /* myButtonWrongAnswerRed@2x.png */,
 				3286A5D317DCED12006D9845 /* icon */,
-				3235770D177B6A2300A75713 /* footerImageWithShadow@2x.png */,
-				32357711177B6C4F00A75713 /* footerImage.png */,
-				3235770F177B6A8A00A75713 /* footerImage@2x.png */,
+				32357711177B6C4F00A75713 /* footerImageGreen.png */,
+				3235770F177B6A8A00A75713 /* footerImageGreen@2x.png */,
 				32357709177B667E00A75713 /* errorDisabled.png */,
 				323577021779D6DD00A75713 /* errorDisabled@2x.png */,
 				32357708177B667E00A75713 /* errorEnabled.png */,
 				323577041779D83A00A75713 /* errorEnabled@2x.png */,
 				32357707177B667E00A75713 /* clock.png */,
 				323577001779A74700A75713 /* clock@2x.png */,
-				323576EE17785E3B00A75713 /* myButtonFill.png */,
-				323576EF17785E3B00A75713 /* myButtonFill@2x.png */,
-				323576F61778644A00A75713 /* myButtonH.png */,
-				323576F71778644A00A75713 /* myButtonH@2x.png */,
-				323576F81778644A00A75713 /* myButton.png */,
-				323576F91778644A00A75713 /* myButton@2x.png */,
+				323576EE17785E3B00A75713 /* myButtonFilledGreen.png */,
+				323576EF17785E3B00A75713 /* myButtonFilledGreen@2x.png */,
+				323576F61778644A00A75713 /* myButtonHighlightedGreen.png */,
+				323576F71778644A00A75713 /* myButtonHighlightedGreen@2x.png */,
+				323576F81778644A00A75713 /* myButtonNormalGreen.png */,
+				323576F91778644A00A75713 /* myButtonNormalGreen@2x.png */,
 			);
 			name = Artwork;
 			sourceTree = "<group>";
@@ -366,29 +375,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32CBC38A17E2433D0012F36C /* myButtonRightAnswerGreen@2x.png in Resources */,
 				324EF3F1172A9F0500246733 /* InfoPlist.strings in Resources */,
 				3286A5E317DCEEC6006D9845 /* Icon@2x.png in Resources */,
 				324EF3F9172A9F0500246733 /* Default.png in Resources */,
+				32CBC39017E25F750012F36C /* myButtonWrongAnswerRed@2x.png in Resources */,
 				324EF3FB172A9F0500246733 /* Default@2x.png in Resources */,
 				324EF3FD172A9F0500246733 /* Default-568h@2x.png in Resources */,
 				324EF414172A9FC900246733 /* MainStoryboard.storyboard in Resources */,
-				323576F017785E3B00A75713 /* myButtonFill.png in Resources */,
-				323576F117785E3B00A75713 /* myButtonFill@2x.png in Resources */,
-				323576FA1778644B00A75713 /* myButtonH.png in Resources */,
+				323576F017785E3B00A75713 /* myButtonFilledGreen.png in Resources */,
+				323576F117785E3B00A75713 /* myButtonFilledGreen@2x.png in Resources */,
+				323576FA1778644B00A75713 /* myButtonHighlightedGreen.png in Resources */,
 				3286A5E017DCEEC6006D9845 /* Icon-Small.png in Resources */,
 				3286A5E217DCEEC6006D9845 /* Icon.png in Resources */,
-				323576FB1778644B00A75713 /* myButtonH@2x.png in Resources */,
-				323576FC1778644B00A75713 /* myButton.png in Resources */,
-				323576FD1778644B00A75713 /* myButton@2x.png in Resources */,
+				323576FB1778644B00A75713 /* myButtonHighlightedGreen@2x.png in Resources */,
+				32CBC38F17E25F750012F36C /* myButtonWrongAnswerRed.png in Resources */,
+				323576FC1778644B00A75713 /* myButtonNormalGreen.png in Resources */,
+				323576FD1778644B00A75713 /* myButtonNormalGreen@2x.png in Resources */,
 				323577011779A74700A75713 /* clock@2x.png in Resources */,
 				323577031779D6DD00A75713 /* errorDisabled@2x.png in Resources */,
+				32CBC38917E2433D0012F36C /* myButtonRightAnswerGreen.png in Resources */,
 				323577051779D83A00A75713 /* errorEnabled@2x.png in Resources */,
 				3235770A177B667E00A75713 /* clock.png in Resources */,
 				3235770B177B667E00A75713 /* errorEnabled.png in Resources */,
 				3235770C177B667E00A75713 /* errorDisabled.png in Resources */,
-				3235770E177B6A2400A75713 /* footerImageWithShadow@2x.png in Resources */,
-				32357710177B6A8A00A75713 /* footerImage@2x.png in Resources */,
-				32357712177B6C4F00A75713 /* footerImage.png in Resources */,
+				32357710177B6A8A00A75713 /* footerImageGreen@2x.png in Resources */,
+				32357712177B6C4F00A75713 /* footerImageGreen.png in Resources */,
 				3286A5E117DCEEC6006D9845 /* Icon-Small@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

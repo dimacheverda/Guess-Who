@@ -26,6 +26,8 @@
     [self applyAppearance];
 }
 
+#define BUTTON_FILLED_GREEN @"myButtonFilledGreen"
+
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:YES];
@@ -33,9 +35,7 @@
     self.screenName = @"Main Menu screen";
     
     //customizing buttons
-    NSString *buttonFilled = @"myButtonFill.png";
-    
-    UIImage *buttonImage = [[UIImage imageNamed:buttonFilled]
+    UIImage *buttonImage = [[UIImage imageNamed:BUTTON_FILLED_GREEN]
                             resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
     [self.playButton setBackgroundImage:buttonImage forState:UIControlStateNormal];
     [self.highscoresButton setBackgroundImage:buttonImage forState:UIControlStateNormal];
@@ -101,8 +101,9 @@
         //        plistPath = [[NSBundle mainBundle] pathForResource:@"database" ofType:@"plist"];
         //    }
         //    NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
-        
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
         NSData *urlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://dl.dropboxusercontent.com/u/100095175/database.plist"]];
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         
         self.database = (NSMutableDictionary *)[NSPropertyListSerialization
                                                 propertyListFromData:urlData
