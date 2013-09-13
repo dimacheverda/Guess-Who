@@ -9,7 +9,7 @@
 #import "SummaryViewController.h"
 #import <Social/Social.h>
 
-@interface SummaryViewController ()
+@interface SummaryViewController () <UIActionSheetDelegate>
 
 @property (nonatomic, strong) NSArray *highscoreArray;
 @property (nonatomic, strong) NSDictionary *scoreDictionary;
@@ -17,6 +17,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *isHighscoreLabel;
 @property (nonatomic, strong) NSURL *urlForAppInAppStore;
 @property (nonatomic, strong) UIImage *screenshotImage;
+@property (weak, nonatomic) IBOutlet UIButton *tweetButton;
 
 @end
 
@@ -62,20 +63,27 @@
     if (self.score != 0) {
         [self addScoreToHighscores];
     }
+    if (self.score == 0) {
+        self.tweetButton.enabled = NO;
+        self.tweetButton.alpha = 0.0;
+    }
     [self sortHighscores];
     [self saveHighscores];
 }
 
 - (UIImage *)takeScreenshot
 {
-    UIGraphicsBeginImageContext(CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.width));
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)])
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.width), NO, [UIScreen mainScreen].scale);
+    else
+        UIGraphicsBeginImageContext(CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.width));
     [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return image;
 }
 
--(BOOL)prefersStatusBarHidden
+- (BOOL)prefersStatusBarHidden
 {
     return YES;
 }
@@ -138,7 +146,48 @@
     [self.navigationController popToRootViewControllerAnimated:YES]; 
 }
 
-- (IBAction)postToTwitterYourResult:(id)sender
+- (IBAction)shareButtonPressed:(id)sender
+{
+//    NSString *actionSheetTitle = @"Share"; //Action Sheet Title
+//    NSString *destructiveTitle = @"Destructive Button"; //Action Sheet Button Titles
+    NSString *other1 = @"Post in Twitter";
+    NSString *other2 = @"Post in Facebook";
+    NSString *cancelTitle = @"Cancel";
+
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]
+                                  initWithTitle:nil//actionSheetTitle
+                                  delegate:self
+                                  cancelButtonTitle:cancelTitle
+                                  destructiveButtonTitle:nil//destructiveTitle
+                                  otherButtonTitles:other1, other2, nil];
+    [actionSheet showInView:self.view];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    //Get the name of the current pressed button
+    NSString *buttonTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
+    
+    if  ([buttonTitle isEqualToString:@"Destructive Button"]) {
+        NSLog(@"Destructive pressed --> Delete Something");
+    }
+    
+    if ([buttonTitle isEqualToString:@"Post in Twitter"]) {
+        NSLog(@"Other 1 pressed");
+        [self postToTwitterYourResult:nil];
+    }
+    
+    if ([buttonTitle isEqualToString:@"Post in Facebook"]) {
+        NSLog(@"Other 2 pressed");
+        [self postToFacebookYourResult:nil];
+    }
+    
+    if ([buttonTitle isEqualToString:@"Cancel"]) {
+        NSLog(@"Cancel pressed --> Cancel ActionSheet");
+    }
+}
+
+- (void)postToTwitterYourResult:(id)sender
 {
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
     {
@@ -163,6 +212,34 @@
                                   otherButtonTitles:nil];
         [alertView show];
     }
+}
+
+- (void)postToFacebookYourResult:(id)sender
+{
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook])
+    {
+        self.screenshotImage = [self takeScreenshot];
+        SLComposeViewController *facebookSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        [facebookSheet setInitialText:@"Check out my result in theQuiz! "];
+        if (self.screenshotImage) {
+            [facebookSheet addImage:self.screenshotImage];
+        }
+        if (self.urlForAppInAppStore) {
+            [facebookSheet addURL:self.urlForAppInAppStore];
+        }
+        [self presentViewController:facebookSheet animated:YES completion:nil];
+    }
+    else
+    {
+        UIAlertView *alertView = [[UIAlertView alloc]
+                                  initWithTitle:@"Sorry"
+                                  message:@"You can't send a tweet right now, make sure your device has an internet connection and you have Facebook account setup"
+                                  delegate:self
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil];
+        [alertView show];
+    }
+
 }
 
 @end

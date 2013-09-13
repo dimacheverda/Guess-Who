@@ -396,16 +396,19 @@
                                 <color key="textColor" red="0.6550539001937985" green="0.046883061963004728" blue="0.26521065258201593" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rRl-VK-AHU">
-                                <rect key="frame" x="102" y="396" width="117" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Tweet your result">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="postToTwitterYourResult:" destination="9ls-3w-CHC" eventType="touchUpInside" id="OkN-CF-gqL"/>
-                                </connections>
-                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="WA9-tr-grS">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="wjp-B2-uRu"/>
+                                    <barButtonItem title="Share result" id="FhU-af-uRB">
+                                        <connections>
+                                            <action selector="shareButtonPressed:" destination="9ls-3w-CHC" id="ul5-Os-WeE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="nWX-7j-uLA"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -445,6 +448,8 @@
     </scenes>
     <resources>
         <image name="clock.png" width="26" height="26"/>
+        <image name="errorDisabled.png" width="26" height="26"/>
+        <image name="errorDisabled.png" width="26" height="26"/>
         <image name="errorDisabled.png" width="26" height="26"/>
     </resources>
     <color key="tintColor" red="0.28699062209999998" green="0.4803930475" blue="0.32050878160000001" alpha="1" colorSpace="calibratedRGB"/>

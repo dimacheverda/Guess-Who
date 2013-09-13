@@ -92,7 +92,7 @@
     self.screenName = @"Play Session screen";
 }
 
--(BOOL)prefersStatusBarHidden
+- (BOOL)prefersStatusBarHidden
 {
     return YES;
 }
