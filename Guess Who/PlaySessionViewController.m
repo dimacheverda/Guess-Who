@@ -57,10 +57,6 @@
     [self.playSession nextQuestion];
     [self loadQuestion];
     
-    //shadow
-//    CALayer* shadowLayer = [self createShadowWithFrame:CGRectMake(0, 0, 320, 5)];
-//    [self.view.layer addSublayer:shadowLayer];
-    
     //setting buttons state images and colors
     buttonImageNormal = [[UIImage imageNamed:BUTTON_NORMAL_GREEN]
                             resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
@@ -99,19 +95,6 @@
 -(BOOL)prefersStatusBarHidden
 {
     return YES;
-}
-
--(CALayer *)createShadowWithFrame:(CGRect)frame
-{
-    CAGradientLayer *gradient = [CAGradientLayer layer];
-    gradient.frame = frame;
-    
-    UIColor* lightColor = [[UIColor blackColor] colorWithAlphaComponent:0.0];
-    UIColor* darkColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
-    
-    gradient.colors = [NSArray arrayWithObjects:(id)darkColor.CGColor, (id)lightColor.CGColor, nil];
-    
-    return gradient;
 }
 
 - (void)adjustForIPhone5

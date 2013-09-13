@@ -53,6 +53,7 @@
 		32CBC38A17E2433D0012F36C /* myButtonRightAnswerGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CBC38617E2433C0012F36C /* myButtonRightAnswerGreen@2x.png */; };
 		32CBC38F17E25F750012F36C /* myButtonWrongAnswerRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CBC38D17E25F750012F36C /* myButtonWrongAnswerRed.png */; };
 		32CBC39017E25F750012F36C /* myButtonWrongAnswerRed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CBC38E17E25F750012F36C /* myButtonWrongAnswerRed@2x.png */; };
+		32D2D34417E32760000575ED /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D2D34317E32760000575ED /* Social.framework */; };
 		32E1F04A177F79410001C1FD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E1F049177F79410001C1FD /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +136,7 @@
 		32CBC38617E2433C0012F36C /* myButtonRightAnswerGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myButtonRightAnswerGreen@2x.png"; sourceTree = "<group>"; };
 		32CBC38D17E25F750012F36C /* myButtonWrongAnswerRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myButtonWrongAnswerRed.png; sourceTree = "<group>"; };
 		32CBC38E17E25F750012F36C /* myButtonWrongAnswerRed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myButtonWrongAnswerRed@2x.png"; sourceTree = "<group>"; };
+		32D2D34317E32760000575ED /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		32E1F049177F79410001C1FD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -143,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D2D34417E32760000575ED /* Social.framework in Frameworks */,
 				3284AB6917DF379E00B61700 /* MessageUI.framework in Frameworks */,
 				3286F01717D92EBA00514AB6 /* libz.dylib in Frameworks */,
 				3286F01517D92EAA00514AB6 /* SystemConfiguration.framework in Frameworks */,
@@ -219,6 +222,7 @@
 		324EF3E5172A9F0500246733 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				32D2D34317E32760000575ED /* Social.framework */,
 				3284AB6817DF379E00B61700 /* MessageUI.framework */,
 				3286F01617D92EBA00514AB6 /* libz.dylib */,
 				3286F01417D92EAA00514AB6 /* SystemConfiguration.framework */,

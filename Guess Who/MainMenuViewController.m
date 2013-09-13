@@ -101,6 +101,7 @@
         //        plistPath = [[NSBundle mainBundle] pathForResource:@"database" ofType:@"plist"];
         //    }
         //    NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
+        
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
         NSData *urlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://dl.dropboxusercontent.com/u/100095175/database.plist"]];
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];

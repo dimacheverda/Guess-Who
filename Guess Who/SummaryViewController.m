@@ -7,6 +7,7 @@
 //
 
 #import "SummaryViewController.h"
+#import <Social/Social.h>
 
 @interface SummaryViewController ()
 
@@ -14,6 +15,8 @@
 @property (nonatomic, strong) NSDictionary *scoreDictionary;
 @property (nonatomic, weak) IBOutlet UIButton *mainMenuButton;
 @property (nonatomic, weak) IBOutlet UILabel *isHighscoreLabel;
+@property (nonatomic, strong) NSURL *urlForAppInAppStore;
+@property (nonatomic, strong) UIImage *screenshotImage;
 
 @end
 
@@ -24,6 +27,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
+    
+    self.urlForAppInAppStore = [NSURL URLWithString:@"www.google.com"];
     
     //view main background color
 //    [self.view setBackgroundColor:[UIColor colorWithRed:244.0/255.0 green:250.0/255.0 blue:233.0/255.0 alpha:1.0]];
@@ -39,7 +44,6 @@
     
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:116.0/255.0 green:150.0/255.0 blue:96.0/255.0 alpha:1.0];
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Gill Sans" size:20.0], UITextAttributeFont, nil]];
-    
 }
 
 - (void)viewDidLoad
@@ -60,6 +64,15 @@
     }
     [self sortHighscores];
     [self saveHighscores];
+}
+
+- (UIImage *)takeScreenshot
+{
+    UIGraphicsBeginImageContext(CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.width));
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
 }
 
 -(BOOL)prefersStatusBarHidden
@@ -123,6 +136,33 @@
 - (IBAction)mainMenuButtonPressed:(id)sender
 {
     [self.navigationController popToRootViewControllerAnimated:YES]; 
+}
+
+- (IBAction)postToTwitterYourResult:(id)sender
+{
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
+    {
+        self.screenshotImage = [self takeScreenshot];
+        SLComposeViewController *tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [tweetSheet setInitialText:@"Check out my result in theQuiz! "];
+        if (self.screenshotImage) {
+            [tweetSheet addImage:self.screenshotImage];
+        }
+        if (self.urlForAppInAppStore) {
+            [tweetSheet addURL:self.urlForAppInAppStore];
+        }
+        [self presentViewController:tweetSheet animated:YES completion:nil];
+    }
+    else
+    {
+        UIAlertView *alertView = [[UIAlertView alloc]
+                                  initWithTitle:@"Sorry"
+                                  message:@"You can't send a tweet right now, make sure your device has an internet connection and you have at least one Twitter account setup"
+                                  delegate:self
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil];
+        [alertView show];
+    }
 }
 
 @end
