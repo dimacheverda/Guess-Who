@@ -21,7 +21,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mr7-6u-u8H" kind="push" identifier="Play Session" id="rbp-nX-VvB"/>
+                                    <action selector="playButtonPressed:" destination="2" eventType="touchUpInside" id="6KR-kr-K7P"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mLs-Sb-4bu">
@@ -75,6 +75,7 @@
                         <outlet property="aboutButton" destination="DK1-78-TZw" id="h2H-fF-4kW"/>
                         <outlet property="highscoresButton" destination="mLs-Sb-4bu" id="DIy-23-wey"/>
                         <outlet property="playButton" destination="05A-PZ-Igw" id="NRD-75-EVq"/>
+                        <segue destination="mr7-6u-u8H" kind="push" identifier="Play Session" id="2Qs-Mk-nxy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>

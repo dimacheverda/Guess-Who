@@ -118,6 +118,21 @@
     });
 }
 
+- (IBAction)playButtonPressed:(id)sender
+{
+    if (!self.database) {
+        UIAlertView *alertView = [[UIAlertView alloc]
+                                  initWithTitle:@"Sorry"
+                                  message:@"Questions database naven't downloaded from internet. Check your network connection or wait for it to be downloaded."
+                                  delegate:self
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil];
+        [alertView show];
+    } else {
+        [self performSegueWithIdentifier:@"Play Session" sender:self];
+    }
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"Play Session"]) {
