@@ -281,7 +281,9 @@
     
     if (self.time <= 0.0) {
         [self stopTimer];
-        [self terminateSession];
+        [self.playSession checkAnswerWithTime:self.time];
+        [self completeChecking];
+//        [self terminateSession];
     }
 }
 

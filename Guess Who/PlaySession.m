@@ -77,7 +77,7 @@
 }
 
 #define TIME_MULTIPLIER 21;
-#define RIGHT_ANSWER_SCORE 957;
+#define RIGHT_ANSWER_SCORE 1000;
 #define STREAK_BONUS 49;
 
 - (BOOL)checkAnswerWithTime:(NSInteger)time
