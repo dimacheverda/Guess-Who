@@ -49,6 +49,7 @@
 		3286F01317D92EA400514AB6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3286F01217D92EA400514AB6 /* CoreData.framework */; };
 		3286F01517D92EAA00514AB6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3286F01417D92EAA00514AB6 /* SystemConfiguration.framework */; };
 		3286F01717D92EBA00514AB6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3286F01617D92EBA00514AB6 /* libz.dylib */; };
+		3294650A17F63734009F19A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3294650917F63734009F19A4 /* Images.xcassets */; };
 		32CBC38917E2433D0012F36C /* myButtonRightAnswerGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CBC38517E2433C0012F36C /* myButtonRightAnswerGreen.png */; };
 		32CBC38A17E2433D0012F36C /* myButtonRightAnswerGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CBC38617E2433C0012F36C /* myButtonRightAnswerGreen@2x.png */; };
 		32CBC38F17E25F750012F36C /* myButtonWrongAnswerRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CBC38D17E25F750012F36C /* myButtonWrongAnswerRed.png */; };
@@ -132,6 +133,7 @@
 		3286F01217D92EA400514AB6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3286F01417D92EAA00514AB6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3286F01617D92EBA00514AB6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3294650917F63734009F19A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = theQuiz/Images.xcassets; sourceTree = "<group>"; };
 		32CBC38517E2433C0012F36C /* myButtonRightAnswerGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myButtonRightAnswerGreen.png; sourceTree = "<group>"; };
 		32CBC38617E2433C0012F36C /* myButtonRightAnswerGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myButtonRightAnswerGreen@2x.png"; sourceTree = "<group>"; };
 		32CBC38D17E25F750012F36C /* myButtonWrongAnswerRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myButtonWrongAnswerRed.png; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 		324EF3DA172A9F0500246733 = {
 			isa = PBXGroup;
 			children = (
+				3294650917F63734009F19A4 /* Images.xcassets */,
 				324EF3EC172A9F0500246733 /* Guess Who */,
 				324EF3E5172A9F0500246733 /* Frameworks */,
 				324EF3E4172A9F0500246733 /* Products */,
@@ -388,6 +391,7 @@
 				324EF3FD172A9F0500246733 /* Default-568h@2x.png in Resources */,
 				324EF414172A9FC900246733 /* MainStoryboard.storyboard in Resources */,
 				323576F017785E3B00A75713 /* myButtonFilledGreen.png in Resources */,
+				3294650A17F63734009F19A4 /* Images.xcassets in Resources */,
 				323576F117785E3B00A75713 /* myButtonFilledGreen@2x.png in Resources */,
 				323576FA1778644B00A75713 /* myButtonHighlightedGreen.png in Resources */,
 				3286A5E017DCEEC6006D9845 /* Icon-Small.png in Resources */,
@@ -503,6 +507,8 @@
 		324EF407172A9F0600246733 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -526,6 +532,8 @@
 		324EF408172A9F0600246733 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
