@@ -152,7 +152,7 @@
                                     <action selector="answerButtonPressed:" destination="mr7-6u-u8H" eventType="touchUpInside" id="cSM-6E-7KG"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="NT4-kG-WN2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="footerImage.png" highlightedImage="footerImageGreen.png" id="NT4-kG-WN2">
                                 <rect key="frame" x="0.0" y="356" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -366,7 +366,7 @@
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="e-mail: dima.cheverda@gmail.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="meP-kC-AEt">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="e-mail: cheverda4@e-mail.ua" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="meP-kC-AEt">
                                 <rect key="frame" x="20" y="313" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
@@ -424,7 +424,7 @@
                                     <action selector="mainMenuButtonPressed:" destination="9ls-3w-CHC" eventType="touchUpInside" id="R3H-th-Jnj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="left" text="New Highscore!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mzg-bT-DE3">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" text="New Highscore!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mzg-bT-DE3">
                                 <rect key="frame" x="55" y="100" width="211" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="17"/>
@@ -498,8 +498,8 @@
     <resources>
         <image name="clock.png" width="26" height="26"/>
         <image name="errorDisabled.png" width="26" height="26"/>
-        <image name="errorDisabled.png" width="26" height="26"/>
-        <image name="errorDisabled.png" width="26" height="26"/>
+        <image name="footerImage.png" width="320" height="80"/>
+        <image name="footerImageGreen.png" width="320" height="80"/>
     </resources>
     <color key="tintColor" red="0.28699062209999998" green="0.4803930475" blue="0.32050878160000001" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

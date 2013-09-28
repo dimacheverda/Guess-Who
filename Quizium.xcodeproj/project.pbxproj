@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3200BB861757EC2B00C69C53 /* HighscoresTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3200BB851757EC2B00C69C53 /* HighscoresTableViewController.m */; };
+		320A041F17F744B4008B7200 /* footerImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 320A041D17F744B4008B7200 /* footerImage.png */; };
+		320A042017F744B4008B7200 /* footerImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320A041E17F744B4008B7200 /* footerImage@2x.png */; };
 		323576F017785E3B00A75713 /* myButtonFilledGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576EE17785E3B00A75713 /* myButtonFilledGreen.png */; };
 		323576F117785E3B00A75713 /* myButtonFilledGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576EF17785E3B00A75713 /* myButtonFilledGreen@2x.png */; };
 		323576FA1778644B00A75713 /* myButtonHighlightedGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 323576F61778644A00A75713 /* myButtonHighlightedGreen.png */; };
@@ -20,8 +22,6 @@
 		3235770A177B667E00A75713 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 32357707177B667E00A75713 /* clock.png */; };
 		3235770B177B667E00A75713 /* errorEnabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 32357708177B667E00A75713 /* errorEnabled.png */; };
 		3235770C177B667E00A75713 /* errorDisabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 32357709177B667E00A75713 /* errorDisabled.png */; };
-		32357710177B6A8A00A75713 /* footerImageGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3235770F177B6A8A00A75713 /* footerImageGreen@2x.png */; };
-		32357712177B6C4F00A75713 /* footerImageGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 32357711177B6C4F00A75713 /* footerImageGreen.png */; };
 		324EF3E7172A9F0500246733 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3E6172A9F0500246733 /* UIKit.framework */; };
 		324EF3E9172A9F0500246733 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3E8172A9F0500246733 /* Foundation.framework */; };
 		324EF3EB172A9F0500246733 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EF3EA172A9F0500246733 /* CoreGraphics.framework */; };
@@ -74,6 +74,8 @@
 /* Begin PBXFileReference section */
 		3200BB841757EC2B00C69C53 /* HighscoresTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighscoresTableViewController.h; sourceTree = "<group>"; };
 		3200BB851757EC2B00C69C53 /* HighscoresTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighscoresTableViewController.m; sourceTree = "<group>"; };
+		320A041D17F744B4008B7200 /* footerImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footerImage.png; sourceTree = "<group>"; };
+		320A041E17F744B4008B7200 /* footerImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footerImage@2x.png"; sourceTree = "<group>"; };
 		323576EE17785E3B00A75713 /* myButtonFilledGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myButtonFilledGreen.png; sourceTree = "<group>"; };
 		323576EF17785E3B00A75713 /* myButtonFilledGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myButtonFilledGreen@2x.png"; sourceTree = "<group>"; };
 		323576F61778644A00A75713 /* myButtonHighlightedGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myButtonHighlightedGreen.png; sourceTree = "<group>"; };
@@ -86,8 +88,6 @@
 		32357707177B667E00A75713 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
 		32357708177B667E00A75713 /* errorEnabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = errorEnabled.png; sourceTree = "<group>"; };
 		32357709177B667E00A75713 /* errorDisabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = errorDisabled.png; sourceTree = "<group>"; };
-		3235770F177B6A8A00A75713 /* footerImageGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footerImageGreen@2x.png"; sourceTree = "<group>"; };
-		32357711177B6C4F00A75713 /* footerImageGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footerImageGreen.png; sourceTree = "<group>"; };
 		324EF3E3172A9F0500246733 /* Quizium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324EF3E6172A9F0500246733 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		324EF3E8172A9F0500246733 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -181,13 +181,13 @@
 		32357706177B64FA00A75713 /* Artwork */ = {
 			isa = PBXGroup;
 			children = (
+				3286A5D317DCED12006D9845 /* icon */,
 				32CBC38517E2433C0012F36C /* myButtonRightAnswerGreen.png */,
 				32CBC38617E2433C0012F36C /* myButtonRightAnswerGreen@2x.png */,
 				32CBC38D17E25F750012F36C /* myButtonWrongAnswerRed.png */,
 				32CBC38E17E25F750012F36C /* myButtonWrongAnswerRed@2x.png */,
-				3286A5D317DCED12006D9845 /* icon */,
-				32357711177B6C4F00A75713 /* footerImageGreen.png */,
-				3235770F177B6A8A00A75713 /* footerImageGreen@2x.png */,
+				320A041D17F744B4008B7200 /* footerImage.png */,
+				320A041E17F744B4008B7200 /* footerImage@2x.png */,
 				32357709177B667E00A75713 /* errorDisabled.png */,
 				323577021779D6DD00A75713 /* errorDisabled@2x.png */,
 				32357708177B667E00A75713 /* errorEnabled.png */,
@@ -387,6 +387,7 @@
 				3286A5E317DCEEC6006D9845 /* Icon@2x.png in Resources */,
 				324EF3F9172A9F0500246733 /* Default.png in Resources */,
 				32CBC39017E25F750012F36C /* myButtonWrongAnswerRed@2x.png in Resources */,
+				320A042017F744B4008B7200 /* footerImage@2x.png in Resources */,
 				324EF3FB172A9F0500246733 /* Default@2x.png in Resources */,
 				324EF3FD172A9F0500246733 /* Default-568h@2x.png in Resources */,
 				324EF414172A9FC900246733 /* MainStoryboard.storyboard in Resources */,
@@ -407,9 +408,8 @@
 				3235770A177B667E00A75713 /* clock.png in Resources */,
 				3235770B177B667E00A75713 /* errorEnabled.png in Resources */,
 				3235770C177B667E00A75713 /* errorDisabled.png in Resources */,
-				32357710177B6A8A00A75713 /* footerImageGreen@2x.png in Resources */,
-				32357712177B6C4F00A75713 /* footerImageGreen.png in Resources */,
 				3286A5E117DCEEC6006D9845 /* Icon-Small@2x.png in Resources */,
+				320A041F17F744B4008B7200 /* footerImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

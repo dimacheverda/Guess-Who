@@ -46,7 +46,7 @@
     if ([MFMailComposeViewController canSendMail]) {
         
         // Email Subject
-        NSString *emailTitle = @"Test Email";
+        NSString *emailTitle = @"Feedback Email";
         
         // Email Content
         NSString *messageBody = @"";
