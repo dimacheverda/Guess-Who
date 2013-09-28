@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:theQuiz.xcodeproj">
+      location = "self:Quizium.xcodeproj">
    </FileRef>
 </Workspace>
