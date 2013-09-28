@@ -43,6 +43,7 @@
 #define BUTTON_HIGHLIGHTED_GREEN @"myButtonHighlightedGreen"
 #define BUTTON_WRONG_ANSWER_RED @"myButtonWrongAnswerRed"
 #define BUTTON_RIGHT_ANSWER_GREEN @"myButtonRightAnswerGreen"
+#define errorDisabledImage @"errorDisabled"
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -173,6 +174,7 @@
     self.navigationItem.title = [NSString stringWithFormat:@"Question №%d", self.playSession.currentQuestionIndex];
     [self shuffleAnswers:self.playSession.currentQuestion.variants];
     [self initTimer];
+    [self checkErrors];
 }
 
 - (void)shuffleAnswers:(NSArray *)variants
@@ -303,13 +305,18 @@
 
 - (void)checkErrors
 {
-    if (self.playSession.numberOfWrongAnswers >= 1) {
+    if (self.playSession.numberOfWrongAnswers == 0) {
+        self.firstErrorImageView.image = [UIImage imageNamed:errorDisabledImage];
+        self.secondErrorImageView.image = [UIImage imageNamed:errorDisabledImage];
+        self.thirdErrorImageView.image = [UIImage imageNamed:errorDisabledImage];
+    }
+    if (self.playSession.numberOfWrongAnswers == 1) {
         self.firstErrorImageView.image = [UIImage imageNamed:errorEnabledImage];
     }
-    if (self.playSession.numberOfWrongAnswers >= 2) {
+    if (self.playSession.numberOfWrongAnswers == 2) {
         self.secondErrorImageView.image = [UIImage imageNamed:errorEnabledImage];
     }
-    if (self.playSession.numberOfWrongAnswers >= 3) {
+    if (self.playSession.numberOfWrongAnswers == 3) {
         self.thirdErrorImageView.image = [UIImage imageNamed:errorEnabledImage];
     }
 }
