@@ -29,13 +29,13 @@
 {
     [super viewWillAppear:YES];
     
-    self.urlForAppInAppStore = [NSURL URLWithString:@"www.google.com"];
+//    self.urlForAppInAppStore = [NSURL URLWithString:@"www.google.com"];
     
     //view main background color
 //    [self.view setBackgroundColor:[UIColor colorWithRed:244.0/255.0 green:250.0/255.0 blue:233.0/255.0 alpha:1.0]];
     
-    self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.score];
-    self.longestStreakLabel.text = [NSString stringWithFormat:@"Longest Streak: %d", self.longestStreak];
+    self.scoreLabel.text = [NSString stringWithFormat:@"%d", self.score];
+    self.longestStreakLabel.text = [NSString stringWithFormat:@"%d", self.longestStreak];
     
     UIImage *buttonImage = [[UIImage imageNamed:BUTTON_FILLED_GREEN]
                             resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
@@ -57,6 +57,7 @@
     self.scoreDictionary = score;
     
     [self loadHighscores];
+    [self loadAppstoreURL];
     
     [self checkIfHighscore];
     
@@ -106,6 +107,17 @@
     } else {
         self.highscoreArray = [[NSArray alloc] init];
     }
+}
+
+- (void)loadAppstoreURL
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:@"Appstore Link"]) {
+        NSString *url = [defaults objectForKey:@"Appstore Link"];
+        self.urlForAppInAppStore = [NSURL URLWithString:url];
+    }
+    
+    NSLog(@"\n\n\nsummary%@\n\n\n\n", self.urlForAppInAppStore);
 }
 
 - (void)checkIfHighscore

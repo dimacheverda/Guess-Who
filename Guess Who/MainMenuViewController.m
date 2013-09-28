@@ -112,6 +112,11 @@
                                                 mutabilityOption:NSPropertyListMutableContainersAndLeaves
                                                 format:&format
                                                 errorDescription:&errorDesc];
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSString *url = [self.database objectForKey:@"Appstore Link"];
+        [defaults setObject:url forKey:@"Appstore Link"];
+        [defaults synchronize];
+        NSLog(@"\n\n\\nmain%@\n\n\n\n", url);
         if (!self.database) {
             NSLog(@"Error reading plist: %@, format: %d", errorDesc, format);
         }
