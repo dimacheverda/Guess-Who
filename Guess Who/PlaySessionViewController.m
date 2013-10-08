@@ -206,7 +206,12 @@
 
 - (IBAction)answerButtonPressed:(UIButton *)sender
 {
-    self.selectedButtonTitle = sender.titleLabel.text;    
+    self.selectedButtonTitle = sender.titleLabel.text;
+    
+    [self.answerOne setUserInteractionEnabled:NO];
+    [self.answerTwo setUserInteractionEnabled:NO];
+    [self.answerThree setUserInteractionEnabled:NO];
+    [self.answerFour setUserInteractionEnabled:NO];
     
     self.playSession.selectedAnswerString = self.selectedButtonTitle;
     [self stopTimer];
@@ -233,10 +238,16 @@
 - (void)completeChecking
 {
     [NSThread sleepForTimeInterval:0.2];
+    
     [self setImageBackground:buttonImageNormal forButton:self.answerOne];
     [self setImageBackground:buttonImageNormal forButton:self.answerTwo];
     [self setImageBackground:buttonImageNormal forButton:self.answerThree];
     [self setImageBackground:buttonImageNormal forButton:self.answerFour];
+
+    [self.answerOne setUserInteractionEnabled:YES];
+    [self.answerTwo setUserInteractionEnabled:YES];
+    [self.answerThree setUserInteractionEnabled:YES];
+    [self.answerFour setUserInteractionEnabled:YES];
     
     [self checkErrors];
     
