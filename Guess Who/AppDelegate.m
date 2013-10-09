@@ -8,15 +8,24 @@
 
 #import "AppDelegate.h"
 #import "GAI.h"
+#import "iRate.h"
 
 @implementation AppDelegate
+
++ (void)initialize
+{
+    [iRate sharedInstance].daysUntilPrompt = 0.1f;
+    [iRate sharedInstance].usesUntilPrompt = 5;
+    [iRate sharedInstance].remindPeriod = 0.5f;
+    [iRate sharedInstance].promptAtLaunch = NO;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 //    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:NO];
 //    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
-    // Override point for customization after application launch.
     
+    // Override point for customization after application launch.
     
 //    // Optional: automatically send uncaught exceptions to Google Analytics.
 //    [GAI sharedInstance].trackUncaughtExceptions = YES;

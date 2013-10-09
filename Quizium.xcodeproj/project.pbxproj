@@ -49,6 +49,9 @@
 		3286F01317D92EA400514AB6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3286F01217D92EA400514AB6 /* CoreData.framework */; };
 		3286F01517D92EAA00514AB6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3286F01417D92EAA00514AB6 /* SystemConfiguration.framework */; };
 		3286F01717D92EBA00514AB6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3286F01617D92EBA00514AB6 /* libz.dylib */; };
+		3291DE7C1805C757001179D5 /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3291DE791805C757001179D5 /* iRate.bundle */; };
+		3291DE7D1805C757001179D5 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3291DE7B1805C757001179D5 /* iRate.m */; };
+		3291DE801805C81C001179D5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3291DE7F1805C81C001179D5 /* StoreKit.framework */; };
 		3294650A17F63734009F19A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3294650917F63734009F19A4 /* Images.xcassets */; };
 		32CBC38917E2433D0012F36C /* myButtonRightAnswerGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CBC38517E2433C0012F36C /* myButtonRightAnswerGreen.png */; };
 		32CBC38A17E2433D0012F36C /* myButtonRightAnswerGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CBC38617E2433C0012F36C /* myButtonRightAnswerGreen@2x.png */; };
@@ -133,6 +136,10 @@
 		3286F01217D92EA400514AB6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3286F01417D92EAA00514AB6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3286F01617D92EBA00514AB6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3291DE791805C757001179D5 /* iRate.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iRate.bundle; sourceTree = "<group>"; };
+		3291DE7A1805C757001179D5 /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRate.h; sourceTree = "<group>"; };
+		3291DE7B1805C757001179D5 /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
+		3291DE7F1805C81C001179D5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		3294650917F63734009F19A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = theQuiz/Images.xcassets; sourceTree = "<group>"; };
 		32CBC38517E2433C0012F36C /* myButtonRightAnswerGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myButtonRightAnswerGreen.png; sourceTree = "<group>"; };
 		32CBC38617E2433C0012F36C /* myButtonRightAnswerGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myButtonRightAnswerGreen@2x.png"; sourceTree = "<group>"; };
@@ -147,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3291DE801805C81C001179D5 /* StoreKit.framework in Frameworks */,
 				32D2D34417E32760000575ED /* Social.framework in Frameworks */,
 				3284AB6917DF379E00B61700 /* MessageUI.framework in Frameworks */,
 				3286F01717D92EBA00514AB6 /* libz.dylib in Frameworks */,
@@ -225,6 +233,7 @@
 		324EF3E5172A9F0500246733 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3291DE7F1805C81C001179D5 /* StoreKit.framework */,
 				32D2D34317E32760000575ED /* Social.framework */,
 				3284AB6817DF379E00B61700 /* MessageUI.framework */,
 				3286F01617D92EBA00514AB6 /* libz.dylib */,
@@ -246,6 +255,7 @@
 				3200BB831757EB9B00C69C53 /* Play Session */,
 				326BFC39179484C20086CDAE /* Highscore */,
 				3284AB6717DF34E200B61700 /* About */,
+				3291DE7E1805C75C001179D5 /* iRate */,
 				32357706177B64FA00A75713 /* Artwork */,
 				324EF3ED172A9F0500246733 /* Supporting Files */,
 			);
@@ -314,6 +324,16 @@
 				3286F00E17D92E4D00514AB6 /* GAITracker.h */,
 			);
 			name = GAI;
+			sourceTree = "<group>";
+		};
+		3291DE7E1805C75C001179D5 /* iRate */ = {
+			isa = PBXGroup;
+			children = (
+				3291DE791805C757001179D5 /* iRate.bundle */,
+				3291DE7A1805C757001179D5 /* iRate.h */,
+				3291DE7B1805C757001179D5 /* iRate.m */,
+			);
+			name = iRate;
 			sourceTree = "<group>";
 		};
 		32CBC38417E226820012F36C /* Main Menu */ = {
@@ -401,6 +421,7 @@
 				32CBC38F17E25F750012F36C /* myButtonWrongAnswerRed.png in Resources */,
 				323576FC1778644B00A75713 /* myButtonNormalGreen.png in Resources */,
 				323576FD1778644B00A75713 /* myButtonNormalGreen@2x.png in Resources */,
+				3291DE7C1805C757001179D5 /* iRate.bundle in Resources */,
 				323577011779A74700A75713 /* clock@2x.png in Resources */,
 				323577031779D6DD00A75713 /* errorDisabled@2x.png in Resources */,
 				32CBC38917E2433D0012F36C /* myButtonRightAnswerGreen.png in Resources */,
@@ -423,6 +444,7 @@
 				3284AB6C17DFA6CD00B61700 /* EmptyCell.m in Sources */,
 				324EF3F3172A9F0500246733 /* main.m in Sources */,
 				324EF3F7172A9F0500246733 /* AppDelegate.m in Sources */,
+				3291DE7D1805C757001179D5 /* iRate.m in Sources */,
 				324EF415172AA0AA00246733 /* MainMenuViewController.m in Sources */,
 				324EF416172AA0AE00246733 /* PlaySession.m in Sources */,
 				324EF417172AA0B100246733 /* PlaySessionViewController.m in Sources */,

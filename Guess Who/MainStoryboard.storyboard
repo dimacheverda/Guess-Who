@@ -152,7 +152,7 @@
                                     <action selector="answerButtonPressed:" destination="mr7-6u-u8H" eventType="touchUpInside" id="cSM-6E-7KG"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="footerImage.png" highlightedImage="footerImageGreen.png" id="NT4-kG-WN2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="footerImage.png" highlightedImage="footerImage.png" id="NT4-kG-WN2">
                                 <rect key="frame" x="0.0" y="356" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -499,7 +499,6 @@
         <image name="clock.png" width="26" height="26"/>
         <image name="errorDisabled.png" width="26" height="26"/>
         <image name="footerImage.png" width="320" height="80"/>
-        <image name="footerImageGreen.png" width="320" height="80"/>
     </resources>
     <color key="tintColor" red="0.28699062209999998" green="0.4803930475" blue="0.32050878160000001" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

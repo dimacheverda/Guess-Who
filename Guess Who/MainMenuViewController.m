@@ -146,15 +146,15 @@
 {
     if (!self.database) {
         self.database = [self loadDatabaseFromUsefDefaults];
-        if (!self.database) {
-            UIAlertView *alertView = [[UIAlertView alloc]
-                                      initWithTitle:@"Sorry"
-                                      message:@"Questions database haven't downloaded from internet. Check your network connection or wait for it to be downloaded."
-                                      delegate:self
-                                      cancelButtonTitle:@"OK"
-                                      otherButtonTitles:nil];
-            [alertView show];
-        }
+    }
+    if (!self.database) {
+        UIAlertView *alertView = [[UIAlertView alloc]
+                                  initWithTitle:@"Sorry"
+                                  message:@"Questions database haven't downloaded from internet. Check your network connection or wait for it to be downloaded."
+                                  delegate:self
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil];
+        [alertView show];
     } else {
         [self performSegueWithIdentifier:@"Play Session" sender:self];
     }
