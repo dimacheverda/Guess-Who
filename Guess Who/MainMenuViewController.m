@@ -107,33 +107,54 @@
         NSData *urlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://dl.dropboxusercontent.com/u/100095175/database.plist"]];
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         
-        self.database = (NSMutableDictionary *)[NSPropertyListSerialization
+        NSMutableDictionary *database = nil;
+        database = (NSMutableDictionary *)[NSPropertyListSerialization
                                                 propertyListFromData:urlData
                                                 mutabilityOption:NSPropertyListMutableContainersAndLeaves
                                                 format:&format
                                                 errorDescription:&errorDesc];
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        NSString *url = [self.database objectForKey:@"Appstore Link"];
+        NSString *url = [database objectForKey:@"Appstore Link"];
         [defaults setObject:url forKey:@"Appstore Link"];
         [defaults synchronize];
         NSLog(@"\n\n\\nmain%@\n\n\n\n", url);
-        if (!self.database) {
+        if (!database) {
             NSLog(@"Error reading plist: %@, format: %d", errorDesc, format);
+        } else {
+            self.database = database;
+            [self saveDatabaseToUserDefaults:database];
         }
-
     });
+}
+
+- (void)saveDatabaseToUserDefaults:(NSMutableDictionary *)database
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:database forKey:@"Database"];
+    [defaults synchronize];
+}
+
+- (NSMutableDictionary *)loadDatabaseFromUsefDefaults
+{
+    NSMutableDictionary *database;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    database = [defaults objectForKey:@"Database"];
+    return database;
 }
 
 - (IBAction)playButtonPressed:(id)sender
 {
     if (!self.database) {
-        UIAlertView *alertView = [[UIAlertView alloc]
-                                  initWithTitle:@"Sorry"
-                                  message:@"Questions database naven't downloaded from internet. Check your network connection or wait for it to be downloaded."
-                                  delegate:self
-                                  cancelButtonTitle:@"OK"
-                                  otherButtonTitles:nil];
-        [alertView show];
+        self.database = [self loadDatabaseFromUsefDefaults];
+        if (!self.database) {
+            UIAlertView *alertView = [[UIAlertView alloc]
+                                      initWithTitle:@"Sorry"
+                                      message:@"Questions database haven't downloaded from internet. Check your network connection or wait for it to be downloaded."
+                                      delegate:self
+                                      cancelButtonTitle:@"OK"
+                                      otherButtonTitles:nil];
+            [alertView show];
+        }
     } else {
         [self performSegueWithIdentifier:@"Play Session" sender:self];
     }

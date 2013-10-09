@@ -205,7 +205,7 @@
     {
         self.screenshotImage = [self takeScreenshot];
         SLComposeViewController *tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-        [tweetSheet setInitialText:@"Check out my result in theQuiz! "];
+        [tweetSheet setInitialText:@"Check out my result in Quizium! #Quizium "];
         if (self.screenshotImage) {
             [tweetSheet addImage:self.screenshotImage];
         }
@@ -232,7 +232,7 @@
     {
         self.screenshotImage = [self takeScreenshot];
         SLComposeViewController *facebookSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
-        [facebookSheet setInitialText:@"Check out my result in theQuiz! "];
+        [facebookSheet setInitialText:@"Check out my result in Quizium! #Quizium "];
         if (self.screenshotImage) {
             [facebookSheet addImage:self.screenshotImage];
         }
