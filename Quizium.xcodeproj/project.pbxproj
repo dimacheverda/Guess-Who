@@ -52,6 +52,7 @@
 		3291DE7C1805C757001179D5 /* iRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3291DE791805C757001179D5 /* iRate.bundle */; };
 		3291DE7D1805C757001179D5 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3291DE7B1805C757001179D5 /* iRate.m */; };
 		3291DE801805C81C001179D5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3291DE7F1805C81C001179D5 /* StoreKit.framework */; };
+		3291DE821805DBB3001179D5 /* clock_flat.png in Resources */ = {isa = PBXBuildFile; fileRef = 3291DE811805DBB3001179D5 /* clock_flat.png */; };
 		3294650A17F63734009F19A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3294650917F63734009F19A4 /* Images.xcassets */; };
 		32CBC38917E2433D0012F36C /* myButtonRightAnswerGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CBC38517E2433C0012F36C /* myButtonRightAnswerGreen.png */; };
 		32CBC38A17E2433D0012F36C /* myButtonRightAnswerGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CBC38617E2433C0012F36C /* myButtonRightAnswerGreen@2x.png */; };
@@ -140,6 +141,7 @@
 		3291DE7A1805C757001179D5 /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRate.h; sourceTree = "<group>"; };
 		3291DE7B1805C757001179D5 /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
 		3291DE7F1805C81C001179D5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3291DE811805DBB3001179D5 /* clock_flat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock_flat.png; sourceTree = "<group>"; };
 		3294650917F63734009F19A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = theQuiz/Images.xcassets; sourceTree = "<group>"; };
 		32CBC38517E2433C0012F36C /* myButtonRightAnswerGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myButtonRightAnswerGreen.png; sourceTree = "<group>"; };
 		32CBC38617E2433C0012F36C /* myButtonRightAnswerGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myButtonRightAnswerGreen@2x.png"; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				323577021779D6DD00A75713 /* errorDisabled@2x.png */,
 				32357708177B667E00A75713 /* errorEnabled.png */,
 				323577041779D83A00A75713 /* errorEnabled@2x.png */,
+				3291DE811805DBB3001179D5 /* clock_flat.png */,
 				32357707177B667E00A75713 /* clock.png */,
 				323577001779A74700A75713 /* clock@2x.png */,
 				323576EE17785E3B00A75713 /* myButtonFilledGreen.png */,
@@ -403,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32CBC38A17E2433D0012F36C /* myButtonRightAnswerGreen@2x.png in Resources */,
+				3291DE821805DBB3001179D5 /* clock_flat.png in Resources */,
 				324EF3F1172A9F0500246733 /* InfoPlist.strings in Resources */,
 				3286A5E317DCEEC6006D9845 /* Icon@2x.png in Resources */,
 				324EF3F9172A9F0500246733 /* Default.png in Resources */,
