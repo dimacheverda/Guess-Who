@@ -14,10 +14,10 @@
 
 + (void)initialize
 {
-    [iRate sharedInstance].daysUntilPrompt = 0.1f;
-    [iRate sharedInstance].usesUntilPrompt = 5;
-    [iRate sharedInstance].remindPeriod = 0.5f;
-    [iRate sharedInstance].promptAtLaunch = NO;
+    [iRate sharedInstance].daysUntilPrompt = 0.0f;
+    [iRate sharedInstance].usesUntilPrompt = 0;
+//    [iRate sharedInstance].remindPeriod = 0.05f;
+    [iRate sharedInstance].promptAtLaunch = YES;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -27,17 +27,17 @@
     
     // Override point for customization after application launch.
     
-//    // Optional: automatically send uncaught exceptions to Google Analytics.
-//    [GAI sharedInstance].trackUncaughtExceptions = YES;
-//    
-//    // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
-//    [GAI sharedInstance].dispatchInterval = 20;
-//    
-//    // Optional: set Logger to VERBOSE for debug information.
-//    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
-//    
-//    // Initialize tracker.
-//    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-43759583-1"];
+    // Optional: automatically send uncaught exceptions to Google Analytics.
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    
+    // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
+    [GAI sharedInstance].dispatchInterval = 20;
+    
+    // Optional: set Logger to VERBOSE for debug information.
+    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+    
+    // Initialize tracker.
+    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-43759583-1"];
     
     return YES;
 }
